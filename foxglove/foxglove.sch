@@ -778,71 +778,71 @@ Text Label 5650 7450 1    50   ~ 0
 J1.34
 Text Label 5750 7450 1    50   ~ 0
 J1.36
-Text Label 3050 6650 1    50   ~ 0
-J1.36
-Text Label 3150 6650 1    50   ~ 0
-J1.35
 Text Label 3250 6650 1    50   ~ 0
-J1.34
+J1.36
 Text Label 3350 6650 1    50   ~ 0
-J1.33
-Text Label 3450 6650 1    50   ~ 0
-J1.32
-Text Label 3550 6650 1    50   ~ 0
-J1.31
-Text Label 3650 6650 1    50   ~ 0
-J1.30
-Text Label 3750 6650 1    50   ~ 0
-J1.29
-Text Label 3850 6650 1    50   ~ 0
-J1.28
-Text Label 3950 6650 1    50   ~ 0
-J1.27
-Text Label 4050 6650 1    50   ~ 0
-J1.26
-Text Label 4150 6650 1    50   ~ 0
-J1.25
-Text Label 4250 6650 1    50   ~ 0
-J1.24
-Text Label 4350 6650 1    50   ~ 0
-J1.23
-Text Label 4450 6650 1    50   ~ 0
-J1.22
-Text Label 4550 6650 1    50   ~ 0
-J1.21
-Text Label 4650 6650 1    50   ~ 0
-J1.20
-Text Label 4750 6650 1    50   ~ 0
-J1.19
-Text Label 4850 6650 1    50   ~ 0
-J1.18
-Text Label 4950 6650 1    50   ~ 0
-J1.17
-Text Label 5050 6650 1    50   ~ 0
-J1.16
-Text Label 5150 6650 1    50   ~ 0
-J1.15
-Text Label 5250 6650 1    50   ~ 0
-J1.14
-Text Label 5350 6650 1    50   ~ 0
-J1.13
-Text Label 5450 6650 1    50   ~ 0
-J1.12
-Text Label 5550 6650 1    50   ~ 0
-J1.11
+J1.35
 Text Label 5650 6650 1    50   ~ 0
-J1.10
-Text Label 5750 6650 1    50   ~ 0
-J1.09
+J1.34
+Text Label 3150 6650 1    50   ~ 0
+J1.33
+Text Label 4550 6650 1    50   ~ 0
+J1.32
+Text Label 3850 6650 1    50   ~ 0
+J1.31
+Text Label 3450 6650 1    50   ~ 0
+J1.30
+Text Label 5050 6650 1    50   ~ 0
+J1.29
+Text Label 4050 6650 1    50   ~ 0
+J1.28
+Text Label 4850 6650 1    50   ~ 0
+J1.27
+Text Label 3950 6650 1    50   ~ 0
+J1.26
+Text Label 3650 6650 1    50   ~ 0
+J1.25
+Text Label 3750 6650 1    50   ~ 0
+J1.24
+Text Label 3050 6650 1    50   ~ 0
+J1.23
+Text Label 4350 6650 1    50   ~ 0
+J1.22
+Text Label 4150 6650 1    50   ~ 0
+J1.21
+Text Label 5250 6650 1    50   ~ 0
+J1.20
 Text Label 5850 6650 1    50   ~ 0
-J1.08
-Text Label 5950 6650 1    50   ~ 0
-J1.07
-Text Label 6050 6650 1    50   ~ 0
-J1.06
+J1.19
+Text Label 4450 6650 1    50   ~ 0
+J1.18
+Text Label 5350 6650 1    50   ~ 0
+J1.17
+Text Label 4250 6650 1    50   ~ 0
+J1.16
+Text Label 6350 6650 1    50   ~ 0
+J1.15
+Text Label 4650 6650 1    50   ~ 0
+J1.14
+Text Label 3550 6650 1    50   ~ 0
+J1.13
+Text Label 4750 6650 1    50   ~ 0
+J1.12
+Text Label 5150 6650 1    50   ~ 0
+J1.11
+Text Label 4950 6650 1    50   ~ 0
+J1.10
 Text Label 6150 6650 1    50   ~ 0
-J1.05
+J1.09
 Text Label 6250 6650 1    50   ~ 0
+J1.08
+Text Label 5450 6650 1    50   ~ 0
+J1.07
+Text Label 5550 6650 1    50   ~ 0
+J1.06
+Text Label 5750 6650 1    50   ~ 0
+J1.05
+Text Label 5950 6650 1    50   ~ 0
 J1.04
 Entry Wire Line
 	4150 8150 4250 8250
@@ -3285,7 +3285,7 @@ Wire Wire Line
 Wire Wire Line
 	15100 7500 15050 7500
 Connection ~ 15050 7500
-Text Label 6350 6650 1    50   ~ 0
+Text Label 6050 6650 1    50   ~ 0
 J1.03
 Entry Wire Line
 	6350 6700 6450 6800
@@ -3360,6 +3360,8 @@ Wire Wire Line
 	1950 9050 1900 9050
 Wire Wire Line
 	1900 9150 1950 9150
+Text Notes 9100 2100 0    50   ~ 0
+make single, shared\ndirection signal?
 Wire Bus Line
 	2600 1900 4600 1900
 Wire Bus Line
@@ -3372,6 +3374,4 @@ Wire Bus Line
 	2300 3350 6200 3350
 Wire Bus Line
 	3150 6800 6450 6800
-Text Notes 9100 2100 0    50   ~ 0
-make single, shared\ndirection signal?
 $EndSCHEMATC
