@@ -1615,6 +1615,7 @@ F11 "DAC2" I R 10750 2350 50
 F12 "DAC3" I R 10750 2450 50 
 F13 "COMP1" I R 10750 2550 50 
 F14 "COMP2" I R 10750 2650 50 
+F15 "A_FPGA" I L 10100 2700 50 
 $EndSheet
 Text Notes 16800 3550 1    50   ~ 0
 bank A: ADC, DAC, level shifter, pull-up, pull-down, comparator\nbank B: FPGA
@@ -1996,6 +1997,7 @@ F11 "DAC2" I R 10750 3250 50
 F12 "DAC3" I R 10750 3350 50 
 F13 "COMP1" I R 10750 3450 50 
 F14 "COMP2" I R 10750 3550 50 
+F15 "A_FPGA" I L 10100 3600 50 
 $EndSheet
 Text Label 10750 3450 0    50   ~ 0
 COMP1
@@ -3360,8 +3362,8 @@ Wire Wire Line
 	1950 9050 1900 9050
 Wire Wire Line
 	1900 9150 1950 9150
-Text Notes 9100 2100 0    50   ~ 0
-make single, shared\ndirection signal?
+Text Notes 9200 1850 0    50   ~ 0
+keep separate direction signals
 Wire Bus Line
 	2600 1900 4600 1900
 Wire Bus Line
@@ -3374,4 +3376,8 @@ Wire Bus Line
 	2300 3350 6200 3350
 Wire Bus Line
 	3150 6800 6450 6800
+Text Notes 11900 9200 0    50   ~ 0
+take LDO to header, not through mux (resistance too high)
+Text Notes 15900 8150 0    50   ~ 0
+use LDO like \nhttps://www.diodes.com/assets/Datasheets/AP2127.pdf\ninstead
 $EndSCHEMATC
