@@ -313,8 +313,6 @@ Text HLabel 4450 2950 2    50   Input ~ 0
 DAC3
 Text HLabel 4450 3050 2    50   Input ~ 0
 COMP1
-Text HLabel 4450 3150 2    50   Input ~ 0
-COMP2
 $Comp
 L Device:R R?
 U 1 1 5CB0C423
@@ -324,7 +322,7 @@ AR Path="/5D1A4654/5CB0C423" Ref="R?"  Part="1"
 AR Path="/5D1A4680/5CB0C423" Ref="R?"  Part="1" 
 AR Path="/5D1A4696/5CB0C423" Ref="R?"  Part="1" 
 F 0 "R?" V 2593 3700 50  0000 C CNN
-F 1 "100" V 2684 3700 50  0000 C CNN
+F 1 "0" V 2684 3700 50  0000 C CNN
 F 2 "" V 2730 3700 50  0001 C CNN
 F 3 "~" H 2800 3700 50  0001 C CNN
 	1    2800 3700
@@ -332,8 +330,6 @@ F 3 "~" H 2800 3700 50  0001 C CNN
 $EndComp
 Text HLabel 3250 3950 3    50   Input ~ 0
 A_FPGA
-Wire Wire Line
-	2950 3700 3100 3700
 Wire Wire Line
 	3250 3700 3250 2450
 Wire Wire Line
@@ -479,11 +475,6 @@ F 3 "" H 3050 5250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3100 3700 3100 5000
-Connection ~ 3100 3700
-Wire Wire Line
-	3100 3700 3250 3700
-Wire Wire Line
 	3650 5300 3700 5300
 Wire Wire Line
 	3700 5300 3700 5350
@@ -563,4 +554,14 @@ F 3 "" H 3000 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 4700 3000 4750
+Wire Wire Line
+	2950 3700 3250 3700
+Text HLabel 3150 4650 2    50   Input ~ 0
+ADC
+Wire Wire Line
+	3150 4650 3100 4650
+Wire Wire Line
+	3100 4650 3100 5000
+Text Notes 4900 2800 0    50   ~ 0
+add direct\nconnections to gnd and vcc
 $EndSCHEMATC

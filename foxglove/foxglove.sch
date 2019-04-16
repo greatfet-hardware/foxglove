@@ -3380,4 +3380,6 @@ Wire Bus Line
 	2300 3350 6200 3350
 Wire Bus Line
 	3150 6800 6450 6800
+Text Notes 11600 4200 0    50   ~ 0
+need to compare between pins?
 $EndSCHEMATC
