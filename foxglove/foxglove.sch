@@ -3364,6 +3364,10 @@ Wire Wire Line
 	1900 9150 1950 9150
 Text Notes 9200 1850 0    50   ~ 0
 keep separate direction signals
+Text Notes 11900 9200 0    50   ~ 0
+take LDO to header, not through mux (resistance too high)
+Text Notes 15900 8150 0    50   ~ 0
+use LDO like \nhttps://www.diodes.com/assets/Datasheets/AP2127.pdf\ninstead
 Wire Bus Line
 	2600 1900 4600 1900
 Wire Bus Line
@@ -3376,8 +3380,4 @@ Wire Bus Line
 	2300 3350 6200 3350
 Wire Bus Line
 	3150 6800 6450 6800
-Text Notes 11900 9200 0    50   ~ 0
-take LDO to header, not through mux (resistance too high)
-Text Notes 15900 8150 0    50   ~ 0
-use LDO like \nhttps://www.diodes.com/assets/Datasheets/AP2127.pdf\ninstead
 $EndSCHEMATC

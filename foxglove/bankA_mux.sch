@@ -167,7 +167,7 @@ $EndComp
 $Comp
 L gsg-symbols:74LVC1T45 U?
 U 1 1 5CF3E28C
-P 5500 2550
+P 4100 4150
 AR Path="/5CF3E28C" Ref="U?"  Part="1" 
 AR Path="/5C7E37E4/5CF3E28C" Ref="U?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CF3E28C" Ref="U?"  Part="1" 
@@ -179,20 +179,20 @@ AR Path="/5D1A4654/5CF3E28C" Ref="U18"  Part="1"
 AR Path="/5D1A466A/5CF3E28C" Ref="U20"  Part="1" 
 AR Path="/5D1A4680/5CF3E28C" Ref="U22"  Part="1" 
 AR Path="/5D1A4696/5CF3E28C" Ref="U24"  Part="1" 
-F 0 "U10" H 5500 2750 60  0000 C CNN
-F 1 "SHIFTER" H 5500 2350 60  0000 C CNN
-F 2 "gsg-modules:SOT363" H 5500 2550 60  0001 C CNN
-F 3 "" H 5500 2550 60  0000 C CNN
-F 4 "NXP" H 5500 2550 60  0001 C CNN "Manufacturer"
-F 5 "74LVCH1T45GW,125" H 5500 2550 60  0001 C CNN "Part Number"
-F 6 "TXRX XLATING DUAL 3ST 6TSSOP" H 5500 2550 60  0001 C CNN "Description"
-	1    5500 2550
+F 0 "U10" H 4100 4350 60  0000 C CNN
+F 1 "SHIFTER" H 4100 3950 60  0000 C CNN
+F 2 "gsg-modules:SOT363" H 4100 4150 60  0001 C CNN
+F 3 "" H 4100 4150 60  0000 C CNN
+F 4 "NXP" H 4100 4150 60  0001 C CNN "Manufacturer"
+F 5 "74LVCH1T45GW,125" H 4100 4150 60  0001 C CNN "Part Number"
+F 6 "TXRX XLATING DUAL 3ST 6TSSOP" H 4100 4150 60  0001 C CNN "Description"
+	1    4100 4150
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CF3E293
-P 5900 2550
+P 4500 4150
 AR Path="/5CF3E293" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF3E293" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CF3E293" Ref="#PWR?"  Part="1" 
@@ -204,23 +204,17 @@ AR Path="/5D1A4654/5CF3E293" Ref="#PWR0171"  Part="1"
 AR Path="/5D1A466A/5CF3E293" Ref="#PWR0177"  Part="1" 
 AR Path="/5D1A4680/5CF3E293" Ref="#PWR0183"  Part="1" 
 AR Path="/5D1A4696/5CF3E293" Ref="#PWR0189"  Part="1" 
-F 0 "#PWR0147" H 5900 2300 50  0001 C CNN
-F 1 "GND" H 5900 2400 50  0000 C CNN
-F 2 "" H 5900 2550 60  0000 C CNN
-F 3 "" H 5900 2550 60  0000 C CNN
-	1    5900 2550
+F 0 "#PWR0147" H 4500 3900 50  0001 C CNN
+F 1 "GND" H 4500 4000 50  0000 C CNN
+F 2 "" H 4500 4150 60  0000 C CNN
+F 3 "" H 4500 4150 60  0000 C CNN
+	1    4500 4150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4450 2650 4850 2650
+	4450 4250 4500 4250
 Wire Wire Line
-	4850 2650 4850 2450
-Wire Wire Line
-	4850 2450 5150 2450
-Wire Wire Line
-	5850 2650 5900 2650
-Wire Wire Line
-	5850 2550 5900 2550
+	4450 4150 4500 4150
 $Comp
 L Device:R R?
 U 1 1 5CF3E2A6
@@ -275,7 +269,7 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5CF3E2B8
-P 5900 2650
+P 4500 4250
 AR Path="/5C7E37E4/5CF3E2B8" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CF3E2B8" Ref="#PWR?"  Part="1" 
 AR Path="/5CF421CD/5CF3E2B8" Ref="#PWR0149"  Part="1" 
@@ -286,11 +280,11 @@ AR Path="/5D1A4654/5CF3E2B8" Ref="#PWR0173"  Part="1"
 AR Path="/5D1A466A/5CF3E2B8" Ref="#PWR0179"  Part="1" 
 AR Path="/5D1A4680/5CF3E2B8" Ref="#PWR0185"  Part="1" 
 AR Path="/5D1A4696/5CF3E2B8" Ref="#PWR0191"  Part="1" 
-F 0 "#PWR0149" H 5900 2500 50  0001 C CNN
-F 1 "VCC" V 5917 2778 50  0000 L CNN
-F 2 "" H 5900 2650 50  0001 C CNN
-F 3 "" H 5900 2650 50  0001 C CNN
-	1    5900 2650
+F 0 "#PWR0149" H 4500 4100 50  0001 C CNN
+F 1 "VCC" V 4517 4378 50  0000 L CNN
+F 2 "" H 4500 4250 50  0001 C CNN
+F 3 "" H 4500 4250 50  0001 C CNN
+	1    4500 4250
 	0    1    1    0   
 $EndComp
 Text HLabel 3750 2650 0    50   Input ~ 0
@@ -303,13 +297,13 @@ Text HLabel 3650 3050 0    50   Input ~ 0
 ~E~
 Text HLabel 4750 2050 1    50   Input ~ 0
 VCCA
-Text HLabel 5150 2650 0    50   Input ~ 0
+Text HLabel 3750 4250 0    50   Input ~ 0
 VCCA
-Text HLabel 5150 2550 0    50   Input ~ 0
+Text HLabel 3750 4150 0    50   Input ~ 0
 DIR
-Text HLabel 3250 2450 0    50   Input ~ 0
+Text HLabel 2550 3700 0    50   Input ~ 0
 A
-Text HLabel 5850 2450 2    50   Input ~ 0
+Text HLabel 4450 4050 2    50   Input ~ 0
 A_shift
 Text HLabel 4450 2750 2    50   Input ~ 0
 ADC
@@ -324,44 +318,249 @@ COMP2
 $Comp
 L Device:R R?
 U 1 1 5CB0C423
-P 3400 2450
+P 2800 3700
 AR Path="/5CF421CD/5CB0C423" Ref="R?"  Part="1" 
 AR Path="/5D1A4654/5CB0C423" Ref="R?"  Part="1" 
 AR Path="/5D1A4680/5CB0C423" Ref="R?"  Part="1" 
 AR Path="/5D1A4696/5CB0C423" Ref="R?"  Part="1" 
-F 0 "R?" V 3193 2450 50  0000 C CNN
-F 1 "100" V 3284 2450 50  0000 C CNN
-F 2 "" V 3330 2450 50  0001 C CNN
-F 3 "~" H 3400 2450 50  0001 C CNN
-	1    3400 2450
+F 0 "R?" V 2593 3700 50  0000 C CNN
+F 1 "100" V 2684 3700 50  0000 C CNN
+F 2 "" V 2730 3700 50  0001 C CNN
+F 3 "~" H 2800 3700 50  0001 C CNN
+	1    2800 3700
 	0    1    1    0   
 $EndComp
+Text HLabel 3250 3950 3    50   Input ~ 0
+A_FPGA
 Wire Wire Line
-	3550 2450 3650 2450
+	2950 3700 3100 3700
 Wire Wire Line
-	3650 2450 3650 1700
+	3250 3700 3250 2450
 Wire Wire Line
-	3650 1700 3800 1700
-Connection ~ 3650 2450
+	3250 2450 3750 2450
 Wire Wire Line
-	3650 2450 3750 2450
+	3250 3700 3450 3700
+Wire Wire Line
+	3450 3700 3450 4050
+Wire Wire Line
+	3450 4050 3750 4050
+Connection ~ 3250 3700
+Wire Wire Line
+	3250 3700 3250 3950
+Wire Wire Line
+	2550 3700 2600 3700
+Wire Wire Line
+	2600 3700 2600 3750
+Connection ~ 2600 3700
+Wire Wire Line
+	2600 3700 2650 3700
+Text HLabel 2600 3750 3    50   Input ~ 0
+DAC2
+$Comp
+L gsg-symbols:74LVC1G53 U?
+U 1 1 5CBA5199
+P 3350 5100
+F 0 "U?" H 3375 5425 50  0000 C CNN
+F 1 "74LVC1G53" H 3375 5334 50  0000 C CNN
+F 2 "" H 3350 5100 50  0001 C CNN
+F 3 "" H 3350 5100 50  0001 C CNN
+	1    3350 5100
+	1    0    0    -1  
+$EndComp
 $Comp
 L Device:R R?
-U 1 1 5CB1040C
-P 3950 1700
-AR Path="/5CF421CD/5CB1040C" Ref="R?"  Part="1" 
-AR Path="/5D1A4654/5CB1040C" Ref="R?"  Part="1" 
-AR Path="/5D1A4680/5CB1040C" Ref="R?"  Part="1" 
-AR Path="/5D1A4696/5CB1040C" Ref="R?"  Part="1" 
-F 0 "R?" V 3743 1700 50  0000 C CNN
-F 1 "100" V 3834 1700 50  0000 C CNN
-F 2 "" V 3880 1700 50  0001 C CNN
-F 3 "~" H 3950 1700 50  0001 C CNN
-	1    3950 1700
+U 1 1 5CBA522C
+P 4000 5250
+AR Path="/5C7E37E4/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D17D622/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D190D0C/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D190D22/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D1A4654/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D1A466A/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D1A4680/5CBA522C" Ref="R?"  Part="1" 
+AR Path="/5D1A4696/5CBA522C" Ref="R?"  Part="1" 
+F 0 "R?" H 3930 5204 50  0000 R CNN
+F 1 "R" H 3930 5295 50  0000 R CNN
+F 2 "gsg-modules:0402" V 3930 5250 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CBA549C
+P 4000 5050
+AR Path="/5C7E37E4/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D17D622/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D190D0C/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D190D22/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D1A4654/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D1A466A/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D1A4680/5CBA549C" Ref="R?"  Part="1" 
+AR Path="/5D1A4696/5CBA549C" Ref="R?"  Part="1" 
+F 0 "R?" H 3930 5004 50  0000 R CNN
+F 1 "R" H 3930 5095 50  0000 R CNN
+F 2 "gsg-modules:0402" V 3930 5050 50  0001 C CNN
+F 3 "~" H 4000 5050 50  0001 C CNN
+	1    4000 5050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4100 1700 4200 1700
-Text HLabel 4200 1700 2    50   Input ~ 0
-A_FPGA
+	3650 5100 3850 5100
+Wire Wire Line
+	3850 5100 3850 5050
+Wire Wire Line
+	3650 5200 3850 5200
+Wire Wire Line
+	3850 5200 3850 5250
+Wire Wire Line
+	4150 5050 4200 5050
+Wire Wire Line
+	4150 5250 4200 5250
+Wire Wire Line
+	3100 5300 3100 5250
+Wire Wire Line
+	3100 5250 3050 5250
+Connection ~ 3100 5250
+Wire Wire Line
+	3100 5250 3100 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5CBA7804
+P 4200 5050
+AR Path="/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5CF421CD/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D17D622/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D0C/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D22/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4654/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A466A/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4680/5CBA7804" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4696/5CBA7804" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4200 4800 50  0001 C CNN
+F 1 "GND" H 4200 4900 50  0000 C CNN
+F 2 "" H 4200 5050 60  0000 C CNN
+F 3 "" H 4200 5050 60  0000 C CNN
+	1    4200 5050
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4200 5250 2    50   Input ~ 0
+VCCA
+Wire Wire Line
+	3650 5000 3700 5000
+Wire Wire Line
+	3700 5000 3700 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5CBA8036
+P 3050 5250
+AR Path="/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5CF421CD/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D17D622/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D0C/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D22/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4654/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A466A/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4680/5CBA8036" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4696/5CBA8036" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 5000 50  0001 C CNN
+F 1 "GND" H 3050 5100 50  0000 C CNN
+F 2 "" H 3050 5250 60  0000 C CNN
+F 3 "" H 3050 5250 60  0000 C CNN
+	1    3050 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3700 3100 5000
+Connection ~ 3100 3700
+Wire Wire Line
+	3100 3700 3250 3700
+Wire Wire Line
+	3650 5300 3700 5300
+Wire Wire Line
+	3700 5300 3700 5350
+Text HLabel 3700 5350 3    50   Input ~ 0
+s_pull
+Text HLabel 2900 5100 0    50   Input ~ 0
+en_pull
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBAA874
+P 3700 4950
+AR Path="/5C7E37E4/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5CF421CD/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D17D622/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D0C/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D22/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4654/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A466A/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4680/5CBAA874" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4696/5CBAA874" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 4800 50  0001 C CNN
+F 1 "+5V" V 3715 5078 50  0000 L CNN
+F 2 "" H 3700 4950 50  0001 C CNN
+F 3 "" H 3700 4950 50  0001 C CNN
+	1    3700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CBAAA16
+P 3000 4900
+AR Path="/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D17D622/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D190D0C/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D190D22/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D1A4654/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D1A466A/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D1A4680/5CBAAA16" Ref="R?"  Part="1" 
+AR Path="/5D1A4696/5CBAAA16" Ref="R?"  Part="1" 
+F 0 "R?" V 3080 4900 50  0000 C CNN
+F 1 "10k" V 3000 4900 50  0000 C CNN
+F 2 "gsg-modules:0402" V 2930 4900 50  0001 C CNN
+F 3 "" H 3000 4900 50  0001 C CNN
+	1    3000 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 5050 3000 5100
+Wire Wire Line
+	3000 5100 3100 5100
+Wire Wire Line
+	3000 5100 2900 5100
+Connection ~ 3000 5100
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBABDF4
+P 3000 4700
+AR Path="/5C7E37E4/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5CF421CD/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D17D622/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D0C/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D22/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4654/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A466A/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4680/5CBABDF4" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4696/5CBABDF4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 4550 50  0001 C CNN
+F 1 "+5V" V 3015 4828 50  0000 L CNN
+F 2 "" H 3000 4700 50  0001 C CNN
+F 3 "" H 3000 4700 50  0001 C CNN
+	1    3000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4700 3000 4750
 $EndSCHEMATC
