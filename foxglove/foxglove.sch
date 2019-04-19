@@ -3368,6 +3368,8 @@ Text Notes 11900 9200 0    50   ~ 0
 take LDO to header, not through mux (resistance too high)
 Text Notes 15900 8150 0    50   ~ 0
 use LDO like \nhttps://www.diodes.com/assets/Datasheets/AP2127.pdf\ninstead
+Text Notes 11600 4200 0    50   ~ 0
+need to compare between pins?
 Wire Bus Line
 	2600 1900 4600 1900
 Wire Bus Line
@@ -3380,6 +3382,21 @@ Wire Bus Line
 	2300 3350 6200 3350
 Wire Bus Line
 	3150 6800 6450 6800
-Text Notes 11600 4200 0    50   ~ 0
-need to compare between pins?
+$Comp
+L gsg-symbols:LFE5U-12F-6BG256C IC?
+U 1 1 5CBE08F5
+P -1600 5850
+F 0 "IC?" V -896 -6977 50  0000 R CNN
+F 1 "LFE5U-12F-6BG256C" V -805 -6977 50  0000 R CNN
+F 2 "BGA256C80P16X16_1400X1400X170" H -250 5950 50  0001 L CNN
+F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461" H -250 5850 50  0001 L CNN
+F 4 "FPGA - Field Programmable Gate Array ECP5; 12k LUTs; 1.1V" H -250 5750 50  0001 L CNN "Description"
+F 5 "1.7" H -250 5650 50  0001 L CNN "Height"
+F 6 "Lattice" H -250 5550 50  0001 L CNN "Manufacturer_Name"
+F 7 "LFE5U-12F-6BG256C" H -250 5450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "842-LFE5U12F6BG256C" H -250 5350 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=842-LFE5U12F6BG256C" H -250 5250 50  0001 L CNN "Mouser Price/Stock"
+	1    -1600 5850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
