@@ -318,7 +318,7 @@ J1.03
 Wire Wire Line
 	-13450 10000 -13500 10000
 Text Label -13250 9950 3    50   ~ 0
-J1.05
+DONE
 Text Label -13150 9950 3    50   ~ 0
 J1.07
 Text Label -13050 9950 3    50   ~ 0
@@ -326,7 +326,7 @@ J1.09
 Text Label -12950 9950 3    50   ~ 0
 J1.11
 Text Label -12850 9950 3    50   ~ 0
-J1.13
+CFG_0
 Text Label -12750 9950 3    50   ~ 0
 J1.15
 Text Label -12650 9950 3    50   ~ 0
@@ -337,10 +337,6 @@ Text Label -12450 9950 3    50   ~ 0
 J1.21
 Text Label -12350 9950 3    50   ~ 0
 J1.23
-Text Label -12250 9950 3    50   ~ 0
-J1.25
-Text Label -12150 9950 3    50   ~ 0
-J1.27
 Text Label -12050 9950 3    50   ~ 0
 J1.29
 Text Label -11950 9950 3    50   ~ 0
@@ -359,8 +355,6 @@ Text Label -13150 9450 1    50   ~ 0
 J1.08
 Text Label -13050 9450 1    50   ~ 0
 J1.10
-Text Label -12950 9450 1    50   ~ 0
-J1.12
 Text Label -12850 9450 1    50   ~ 0
 J1.14
 Text Label -12750 9450 1    50   ~ 0
@@ -375,8 +369,6 @@ Text Label -12350 9450 1    50   ~ 0
 J1.24
 Text Label -12250 9450 1    50   ~ 0
 J1.26
-Text Label -12150 9450 1    50   ~ 0
-J1.28
 Text Label -12050 9450 1    50   ~ 0
 J1.30
 Text Label -11950 9450 1    50   ~ 0
@@ -453,8 +445,6 @@ Entry Wire Line
 	-11950 9150 -11850 9250
 Entry Wire Line
 	-11850 9150 -11750 9250
-Wire Bus Line
-	-11450 10250 -11450 9150
 Wire Wire Line
 	-13350 9950 -13350 10150
 Wire Wire Line
@@ -2736,16 +2726,14 @@ $EndComp
 $Comp
 L power:GND #PWR0211
 U 1 1 5D1496A8
-P -6500 5800
-F 0 "#PWR0211" H -6500 5550 50  0001 C CNN
-F 1 "GND" H -6495 5627 50  0000 C CNN
-F 2 "" H -6500 5800 50  0001 C CNN
-F 3 "" H -6500 5800 50  0001 C CNN
-	1    -6500 5800
+P -6500 5650
+F 0 "#PWR0211" H -6500 5400 50  0001 C CNN
+F 1 "GND" H -6495 5477 50  0000 C CNN
+F 2 "" H -6500 5650 50  0001 C CNN
+F 3 "" H -6500 5650 50  0001 C CNN
+	1    -6500 5650
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	-6500 5850 -6500 5800
 $Comp
 L power:GND #PWR0212
 U 1 1 5D16E447
@@ -3691,22 +3679,12 @@ Text Label -4900 5850 1    50   ~ 0
 J2.12
 Text Label -4800 5850 1    50   ~ 0
 J2.10
-Text Label -14200 7350 3    50   ~ 0
-J1.36
 Wire Wire Line
 	-14300 7350 -14300 7500
-Text Label -14100 7350 3    50   ~ 0
+Text Label -14200 7350 3    50   ~ 0
 J1.34
-Text Label -14000 7350 3    50   ~ 0
+Text Label -14100 7350 3    50   ~ 0
 J1.32
-Text Label -13300 7350 3    50   ~ 0
-J1.30
-Text Label -13100 7350 3    50   ~ 0
-J1.28
-Text Label -13000 7350 3    50   ~ 0
-J1.26
-Text Label -12900 7350 3    50   ~ 0
-J1.24
 Wire Wire Line
 	-13200 7350 -13200 7500
 Wire Wire Line
@@ -3720,7 +3698,7 @@ J1.31
 Text Label -12400 7350 3    50   ~ 0
 J1.29
 Text Label -12300 7350 3    50   ~ 0
-J1.27
+J1.26
 Text Label -11900 7350 3    50   ~ 0
 SSEL
 Text Label -11700 7350 3    50   ~ 0
@@ -3734,9 +3712,9 @@ J1.17
 Text Label -11300 7350 3    50   ~ 0
 J1.15
 Text Label -11200 7350 3    50   ~ 0
-J1.13
+J1.14
 Text Label -11800 7350 3    50   ~ 0
-J1.25
+J1.24
 Text Label -11200 5850 1    50   ~ 0
 B2
 Text Label -11300 5850 1    50   ~ 0
@@ -3761,6 +3739,36 @@ Wire Wire Line
 	-9050 8300 -9050 7800
 Text Notes -10750 5100 0    50   ~ 0
 Do we want all banks \nto be at VCCI0x = 3.3V?
+Text Label -13500 7350 3    50   ~ 0
+MOSI
+Text Label -13400 7350 3    50   ~ 0
+MISO
+Text Label -12900 7350 3    50   ~ 0
+J1.16
+Text Label -13000 7350 3    50   ~ 0
+J1.18
+Text Label -13100 7350 3    50   ~ 0
+J1.20
+Text Label -13300 7350 3    50   ~ 0
+J1.22
+Text Label -12250 9950 3    50   ~ 0
+PROGRAMN
+Wire Bus Line
+	-11450 10250 -11450 9150
+Text Label -12150 9450 1    50   ~ 0
+INITN
+Text Label -12150 9950 3    50   ~ 0
+CFG_2
+Text Label -14000 7350 3    50   ~ 0
+J1.30
+Text Label -11000 7350 3    50   ~ 0
+J1.36
+Text Label -6600 5850 1    50   ~ 0
+J7.04
+Text Label -6400 5850 1    50   ~ 0
+J2.07
+Wire Wire Line
+	-6500 5650 -6500 5850
 Wire Bus Line
 	-5950 3850 -3950 3850
 Wire Bus Line
@@ -3771,8 +3779,36 @@ Wire Bus Line
 	-13250 10250 -11450 10250
 Wire Bus Line
 	-2700 5300 -950 5300
-Text Label -13500 7350 3    50   ~ 0
-MOSI
-Text Label -13400 7350 3    50   ~ 0
-MISO
+Text Label -8100 5850 1    50   ~ 0
+J2.08
+Text Label -8000 5850 1    50   ~ 0
+J7.03
+Text Label -6700 5850 1    50   ~ 0
+J2.06
+Text Label -6800 5850 1    50   ~ 0
+J2.04
+Text Label -9700 5850 1    50   ~ 0
+J7.02
+Text Label -9600 5850 1    50   ~ 0
+J2.03
+Text Label -12950 9450 1    50   ~ 0
+CFG_1
+Text Label -9700 7350 3    50   ~ 0
+J1.10
+Text Label -9600 7350 3    50   ~ 0
+J1.11
+Text Label -8200 7350 3    50   ~ 0
+J1.08
+Text Label -8000 7350 3    50   ~ 0
+J1.09
+Text Label -6500 7350 3    50   ~ 0
+J1.06
+Text Label -6400 7350 3    50   ~ 0
+J1.07
+Text Label -10400 7350 3    50   ~ 0
+DONE
+Text Label -4800 7350 3    50   ~ 0
+J1.04
+Text Label -3200 7350 3    50   ~ 0
+J1.03
 $EndSCHEMATC
