@@ -3848,6 +3848,8 @@ F 3 "" H 17450 7400 50  0001 C CNN
 	1    17450 7400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	17450 7150 17450 7400
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
@@ -3858,17 +3860,10 @@ Wire Bus Line
 	-12700 9100 -10900 9100
 Wire Bus Line
 	-2150 4150 -400 4150
-Wire Wire Line
-	17450 7150 17450 7400
-$Comp
-L Jumper:Jumper_3_Bridged12 JP?
-U 1 1 5CE7E7ED
-P 18800 8050
-F 0 "JP?" H 18800 8254 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 18800 8163 50  0000 C CNN
-F 2 "" H 18800 8050 50  0001 C CNN
-F 3 "~" H 18800 8050 50  0001 C CNN
-	1    18800 8050
-	1    0    0    -1  
-$EndComp
+Text Notes -10100 9050 0    50   ~ 0
+TODO: standard JTAG header?
+Text Notes -9950 9200 0    50   ~ 0
+https://github.com/tinyfpga/TinyFPGA-EX/tree/master/board\n
+Text Notes 14700 4100 0    50   ~ 0
+bank B: add DAC/LDO to use\nfull range of FPGA
 $EndSCHEMATC
