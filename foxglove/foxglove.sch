@@ -779,7 +779,7 @@ F14 "COMP2" I R 10750 2650 50
 F15 "A_FPGA" I L 10100 2700 50 
 $EndSheet
 Text Notes 16400 4200 1    50   ~ 0
-bank A: ADC, DAC, level shifter, pull-up, pull-down, comparator\nbank B: FPGA
+bank A: ADC, DAC, level shifter, pull-up, pull-down, comparator\nbank B: FPGA (VCCIO bank 7)
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J?
 U 1 1 5CF682F7
@@ -862,8 +862,6 @@ F 3 "" H 15900 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15850 3700 15900 3700
-Wire Wire Line
-	15350 3700 15300 3700
 Text Label 15350 3300 2    50   ~ 0
 B1
 Text Label 15850 3300 0    50   ~ 0
@@ -880,19 +878,6 @@ Text Label 15350 3600 2    50   ~ 0
 B7
 Text Label 15850 3600 0    50   ~ 0
 B8
-$Comp
-L power:VCC #PWR?
-U 1 1 5CF68329
-P 15300 3700
-AR Path="/5C7E37E4/5CF68329" Ref="#PWR?"  Part="1" 
-AR Path="/5CF68329" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 15300 3550 50  0001 C CNN
-F 1 "VCC" V 15318 3827 50  0000 L CNN
-F 2 "" H 15300 3700 50  0001 C CNN
-F 3 "" H 15300 3700 50  0001 C CNN
-	1    15300 3700
-	0    -1   -1   0   
-$EndComp
 Text Label -5200 3500 3    50   ~ 0
 ADC
 $Comp
@@ -1026,104 +1011,8 @@ Wire Wire Line
 Wire Wire Line
 	12700 1950 12750 1950
 Connection ~ 12700 1950
-$Comp
-L gsg-symbols:LM339 U?
-U 1 1 5D14191B
-P 13250 5300
-AR Path="/5C7E37E4/5D14191B" Ref="U?"  Part="1" 
-AR Path="/5D14191B" Ref="U5"  Part="1" 
-F 0 "U5" H 13275 5865 50  0000 C CNN
-F 1 "LM339" H 13275 5774 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13550 5500 50  0001 C CNN
-F 3 "" H 13550 5500 50  0001 C CNN
-F 4 "Texas Instruments" H 13250 5300 50  0001 C CNN "Manufacturer"
-F 5 "LM339DR " H 13250 5300 50  0001 C CNN "Part Number"
-F 6 "IC QUAD DIFF COMP 14-SOIC " H 13250 5300 50  0001 C CNN "Description"
-	1    13250 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D141922
-P 13900 5250
-AR Path="/5C7E37E4/5D141922" Ref="#PWR?"  Part="1" 
-AR Path="/5D141922" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 13900 5000 50  0001 C CNN
-F 1 "GND" V 13905 5122 50  0000 R CNN
-F 2 "" H 13900 5250 50  0001 C CNN
-F 3 "" H 13900 5250 50  0001 C CNN
-	1    13900 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5D141928
-P 12500 5050
-AR Path="/5C7E37E4/5D141928" Ref="C?"  Part="1" 
-AR Path="/5D141928" Ref="C8"  Part="1" 
-F 0 "C8" H 12615 5096 50  0000 L CNN
-F 1 "0.1uF" H 12615 5005 50  0000 L CNN
-F 2 "gsg-modules:0402" H 12538 4900 50  0001 C CNN
-F 3 "~" H 12500 5050 50  0001 C CNN
-	1    12500 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D14192F
-P 12500 4850
-AR Path="/5C7E37E4/5D14192F" Ref="#PWR?"  Part="1" 
-AR Path="/5D14192F" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 12500 4600 50  0001 C CNN
-F 1 "GND" H 12505 4677 50  0000 C CNN
-F 2 "" H 12500 4850 50  0001 C CNN
-F 3 "" H 12500 4850 50  0001 C CNN
-	1    12500 4850
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D141935
-P 12450 5250
-AR Path="/5C7E37E4/5D141935" Ref="#PWR?"  Part="1" 
-AR Path="/5D141935" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 12450 5100 50  0001 C CNN
-F 1 "+5V" V 12465 5378 50  0000 L CNN
-F 2 "" H 12450 5250 50  0001 C CNN
-F 3 "" H 12450 5250 50  0001 C CNN
-	1    12450 5250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	12500 4850 12500 4900
-Wire Wire Line
-	13650 5250 13900 5250
-Text Label 12900 5550 2    50   ~ 0
-COMP1
-Text Label 12900 5650 2    50   ~ 0
-COMP2
-Text Label 12900 5050 2    50   ~ 0
-COUT1
-Text Label 12900 5150 2    50   ~ 0
-COUT2
-Text Label 13650 5050 0    50   ~ 0
-COUT3
-Text Label 13650 5150 0    50   ~ 0
-COUT4
-Text Label 12900 5350 2    50   ~ 0
-DAC2
-Text Label 13650 5650 0    50   ~ 0
-DAC3
-Text Label 13650 5450 0    50   ~ 0
-DAC4
-Text Label 12900 5450 2    50   ~ 0
-COMP1
-Text Label 13650 5550 0    50   ~ 0
-COMP1
-Text Label 13650 5350 0    50   ~ 0
-COMP2
-Text Notes 13000 4650 0    50   ~ 0
-comparator bank
+Text Notes 13200 5450 0    50   ~ 0
+comparators
 Text Label 10750 2550 0    50   ~ 0
 COMP1
 Text Label 10750 2650 0    50   ~ 0
@@ -1470,107 +1359,6 @@ Text Label 10100 8850 2    50   ~ 0
 A8_shift
 Text Notes 10100 9350 0    50   ~ 0
 check digital levels\nfor mux (5V)
-Text Notes 13000 5900 0    50   ~ 0
-check digital levels\nfor comp (5V)
-Text Label 11950 8100 2    50   ~ 0
-DAC3
-Text Label 12850 8200 0    50   ~ 0
-DAC4
-$Comp
-L gsg-symbols:MC4558CPT U?
-U 1 1 5D7BE9AE
-P 12400 8200
-AR Path="/5C842523/5D7BE9AE" Ref="U?"  Part="1" 
-AR Path="/5D7BE9AE" Ref="U3"  Part="1" 
-F 0 "U3" H 12400 8665 50  0000 C CNN
-F 1 "MC4558CPT" H 12400 8574 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 12400 8300 50  0001 C CNN
-F 3 "" H 12400 8300 50  0001 C CNN
-F 4 "STMicroelectronics" H 12400 8200 50  0001 C CNN "Manufacturer"
-F 5 "MC4558CPT" H 12400 8200 50  0001 C CNN "Part Number"
-F 6 "IC OP AMP DUAL BIPOLAR 8-TSSOP" H 12400 8200 50  0001 C CNN "Description"
-	1    12400 8200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12050 8350 12000 8350
-Wire Wire Line
-	12000 8350 12000 8400
-$Comp
-L power:GND #PWR?
-U 1 1 5D7BE9B7
-P 12000 8400
-AR Path="/5C842523/5D7BE9B7" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BE9B7" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 12000 8150 50  0001 C CNN
-F 1 "GND" H 12005 8227 50  0000 C CNN
-F 2 "" H 12000 8400 50  0001 C CNN
-F 3 "" H 12000 8400 50  0001 C CNN
-	1    12000 8400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5D7BE9BD
-P 12800 7850
-AR Path="/5C842523/5D7BE9BD" Ref="C?"  Part="1" 
-AR Path="/5D7BE9BD" Ref="C9"  Part="1" 
-F 0 "C9" H 12915 7896 50  0000 L CNN
-F 1 "0.1uF" H 12915 7805 50  0000 L CNN
-F 2 "gsg-modules:0402" H 12838 7700 50  0001 C CNN
-F 3 "~" H 12800 7850 50  0001 C CNN
-	1    12800 7850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12750 8050 12800 8050
-Wire Wire Line
-	12800 8050 12800 8000
-Wire Wire Line
-	12800 8050 12850 8050
-Connection ~ 12800 8050
-$Comp
-L power:+5V #PWR?
-U 1 1 5D7BE9C8
-P 12850 8050
-AR Path="/5C842523/5D7BE9C8" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BE9C8" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0130" H 12850 7900 50  0001 C CNN
-F 1 "+5V" V 12865 8178 50  0000 L CNN
-F 2 "" H 12850 8050 50  0001 C CNN
-F 3 "" H 12850 8050 50  0001 C CNN
-	1    12850 8050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D7BE9CE
-P 12800 7650
-AR Path="/5C842523/5D7BE9CE" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BE9CE" Ref="#PWR0131"  Part="1" 
-F 0 "#PWR0131" H 12800 7400 50  0001 C CNN
-F 1 "GND" H 12805 7477 50  0000 C CNN
-F 2 "" H 12800 7650 50  0001 C CNN
-F 3 "" H 12800 7650 50  0001 C CNN
-	1    12800 7650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	12800 7650 12800 7700
-Wire Wire Line
-	12050 8150 12050 8100
-Wire Wire Line
-	12750 8150 12750 8200
-Wire Wire Line
-	12050 8100 11950 8100
-Connection ~ 12050 8100
-Wire Wire Line
-	12050 8100 12050 8050
-Wire Wire Line
-	12750 8200 12850 8200
-Connection ~ 12750 8200
-Wire Wire Line
-	12750 8200 12750 8250
 $Comp
 L gsg-symbols:DAC084S085 U?
 U 1 1 5D7BE9E0
@@ -1641,47 +1429,35 @@ F 3 "" H 14900 7600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14850 7600 14900 7600
-Wire Wire Line
-	11700 8250 12050 8250
-Wire Wire Line
-	13250 7600 13250 8350
-Wire Wire Line
-	13250 8350 12750 8350
-Wire Wire Line
-	12950 7500 12950 7400
-Wire Wire Line
-	12950 7400 11700 7400
-Wire Wire Line
-	11700 7400 11700 8250
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5D7BEA18
-P 15850 6450
+P 15850 4900
 AR Path="/5C842523/5D7BEA18" Ref="J?"  Part="1" 
 AR Path="/5D7BEA18" Ref="J5"  Part="1" 
-F 0 "J5" H 15744 6125 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 15744 6216 50  0000 C CNN
-F 2 "gsg-modules:HEADER-1x2" H 15850 6450 50  0001 C CNN
-F 3 "~" H 15850 6450 50  0001 C CNN
-	1    15850 6450
+F 0 "J5" H 15744 4575 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 15744 4666 50  0000 C CNN
+F 2 "gsg-modules:HEADER-1x2" H 15850 4900 50  0001 C CNN
+F 3 "~" H 15850 4900 50  0001 C CNN
+	1    15850 4900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	16050 6450 16100 6450
+	16050 4900 16100 4900
 $Comp
 L power:GND #PWR?
 U 1 1 5D7BEA20
-P 16100 6450
+P 16100 4900
 AR Path="/5C842523/5D7BEA20" Ref="#PWR?"  Part="1" 
 AR Path="/5D7BEA20" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 16100 6200 50  0001 C CNN
-F 1 "GND" H 16105 6277 50  0000 C CNN
-F 2 "" H 16100 6450 50  0001 C CNN
-F 3 "" H 16100 6450 50  0001 C CNN
-	1    16100 6450
+F 0 "#PWR0135" H 16100 4650 50  0001 C CNN
+F 1 "GND" H 16105 4727 50  0000 C CNN
+F 2 "" H 16100 4900 50  0001 C CNN
+F 3 "" H 16100 4900 50  0001 C CNN
+	1    16100 4900
 	0    -1   -1   0   
 $EndComp
-Text Notes 15550 6700 0    50   ~ 0
+Text Notes 15550 5150 0    50   ~ 0
 optional external \nsupply input
 $Comp
 L power:+5V #PWR?
@@ -1697,16 +1473,9 @@ F 3 "" H 15100 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	16050 6350 16100 6350
-Text Label 16100 6350 0    50   ~ 0
+	16050 4800 16100 4800
+Text Label 16100 4800 0    50   ~ 0
 VCCA
-Wire Wire Line
-	12500 5250 12500 5200
-Wire Wire Line
-	12500 5250 12900 5250
-Wire Wire Line
-	12500 5250 12450 5250
-Connection ~ 12500 5250
 $Comp
 L gsg-symbols:ADP225 U6
 U 1 1 5D8A0B00
@@ -1969,55 +1738,11 @@ Wire Wire Line
 	13550 8850 13550 8800
 Wire Wire Line
 	13550 8850 13950 8850
-Text Notes 11850 7600 0    50   ~ 0
-add another LDO\nfor DAC3 and DAC4?
 Text Label 14850 7200 0    50   ~ 0
 SCK
 Text Label 14850 7400 0    50   ~ 0
 MOSI
-$Comp
-L gsg-symbols:74AHC1G04 U8
-U 1 1 5DD34267
-P 15850 7400
-AR Path="/5DD34267" Ref="U8"  Part="1" 
-AR Path="/5CF421CD/5DD34267" Ref="U8"  Part="1" 
-F 0 "U8" H 15850 7725 50  0000 C CNN
-F 1 "74AHC1G04" H 15850 7634 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-886" H 16050 7350 50  0001 C CNN
-F 3 "" H 16050 7350 50  0001 C CNN
-F 4 "Texas Instruments" H 15850 7400 50  0001 C CNN "Manufacturer"
-F 5 "SN74AHC1G04QDBVRQ1" H 15850 7400 50  0001 C CNN "Part Number"
-F 6 " IC INVERTER 1CH 1-INP SOT23-5 " H 15850 7400 50  0001 C CNN "Description"
-	1    15850 7400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR0142
-U 1 1 5DD34570
-P 15500 7500
-F 0 "#PWR0142" H 15500 7350 50  0001 C CNN
-F 1 "VCC" V 15517 7628 50  0000 L CNN
-F 2 "" H 15500 7500 50  0001 C CNN
-F 3 "" H 15500 7500 50  0001 C CNN
-	1    15500 7500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	15550 7500 15500 7500
-$Comp
-L power:GND #PWR0143
-U 1 1 5DD4E94B
-P 16200 7300
-F 0 "#PWR0143" H 16200 7050 50  0001 C CNN
-F 1 "GND" V 16205 7172 50  0000 R CNN
-F 2 "" H 16200 7300 50  0001 C CNN
-F 3 "" H 16200 7300 50  0001 C CNN
-	1    16200 7300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	16200 7300 16150 7300
-Text Label 16150 7400 0    50   ~ 0
+Text Label 15350 7300 0    50   ~ 0
 SSEL
 Wire Wire Line
 	15350 6850 15350 6900
@@ -2039,10 +1764,6 @@ Wire Wire Line
 	13700 7300 13900 7300
 Wire Wire Line
 	13550 7400 13900 7400
-Wire Wire Line
-	12950 7500 13900 7500
-Wire Wire Line
-	13250 7600 13900 7600
 $Comp
 L power:GND #PWR?
 U 1 1 5CA86F7A
@@ -2158,9 +1879,6 @@ Wire Wire Line
 	14850 7300 15350 7300
 Wire Wire Line
 	15350 7200 15350 7300
-Connection ~ 15350 7300
-Wire Wire Line
-	15350 7300 15550 7300
 Wire Wire Line
 	14800 6900 15050 6900
 Wire Wire Line
@@ -2175,12 +1893,8 @@ Wire Wire Line
 Connection ~ 15050 7500
 Text Label 12650 1950 2    50   ~ 0
 ADC_sel
-Text Notes 11900 9200 0    50   ~ 0
-take LDO to header, not through mux (resistance too high)
-Text Notes 15900 8150 0    50   ~ 0
+Text Notes 16750 6400 0    50   ~ 0
 use LDO like \nhttps://www.diodes.com/assets/Datasheets/AP2127.pdf\ninstead
-Text Notes 11500 5750 0    50   ~ 0
-need to compare between pins?
 $Comp
 L gsg-symbols:LFE5U-12F-6BG256C IC1
 U 1 1 5CBE08F5
@@ -2210,50 +1924,6 @@ F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 13350 3100 50  0001 C CNN
 F 3 "" H 13350 3100 50  0001 C CNN
 	1    13350 3100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CC6C067
-P 14000 3250
-AR Path="/5C7E37E4/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D17D622/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D190D0C/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D190D22/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D1A4654/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D1A466A/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D1A4680/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5D1A4696/5CC6C067" Ref="R?"  Part="1" 
-AR Path="/5CC6C067" Ref="R47"  Part="1" 
-F 0 "R47" H 13930 3204 50  0000 R CNN
-F 1 "R" H 13930 3295 50  0000 R CNN
-F 2 "gsg-modules:0402" V 13930 3250 50  0001 C CNN
-F 3 "~" H 14000 3250 50  0001 C CNN
-	1    14000 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CC6C06E
-P 14000 3050
-AR Path="/5C7E37E4/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D17D622/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D190D0C/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D190D22/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D1A4654/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D1A466A/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D1A4680/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5D1A4696/5CC6C06E" Ref="R?"  Part="1" 
-AR Path="/5CC6C06E" Ref="R46"  Part="1" 
-F 0 "R46" H 13930 3004 50  0000 R CNN
-F 1 "R" H 13930 3095 50  0000 R CNN
-F 2 "gsg-modules:0402" V 13930 3050 50  0001 C CNN
-F 3 "~" H 14000 3050 50  0001 C CNN
-	1    14000 3050
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	13650 3100 13850 3100
@@ -3643,9 +3313,9 @@ Text Label -2950 4700 1    50   ~ 0
 J2.15
 Text Label -2850 4700 1    50   ~ 0
 J2.13
-Text Label -2750 4700 1    50   ~ 0
+Text Label -6650 4700 1    50   ~ 0
 J2.11
-Text Label -2650 4700 1    50   ~ 0
+Text Label -6550 4700 1    50   ~ 0
 J2.09
 Text Label -5750 4700 1    50   ~ 0
 J2.40
@@ -3673,11 +3343,11 @@ Text Label -4650 4700 1    50   ~ 0
 J2.18
 Text Label -4550 4700 1    50   ~ 0
 J2.16
-Text Label -4450 4700 1    50   ~ 0
+Text Label -8350 4700 1    50   ~ 0
 J2.14
-Text Label -4350 4700 1    50   ~ 0
+Text Label -8250 4700 1    50   ~ 0
 J2.12
-Text Label -4250 4700 1    50   ~ 0
+Text Label -8150 4700 1    50   ~ 0
 J2.10
 Wire Wire Line
 	-13750 6200 -13750 6350
@@ -3727,9 +3397,9 @@ Text Label -1050 6200 3    50   ~ 0
 B6
 Text Label -1150 6200 3    50   ~ 0
 B5
-Text Label -2950 6200 3    50   ~ 0
+Text Label -2650 6200 3    50   ~ 0
 B8
-Text Label -3050 6200 3    50   ~ 0
+Text Label -2750 6200 3    50   ~ 0
 B7
 Wire Wire Line
 	-4750 6200 -4750 6400
@@ -3737,8 +3407,6 @@ Wire Wire Line
 	-8350 6650 -8500 6650
 Wire Wire Line
 	-8500 7150 -8500 6650
-Text Notes -10200 3950 0    50   ~ 0
-Do we want all banks \nto be at VCCI0x = 3.3V?
 Text Label -12950 6200 3    50   ~ 0
 MOSI
 Text Label -12850 6200 3    50   ~ 0
@@ -3763,23 +3431,23 @@ Text Label -13450 6200 3    50   ~ 0
 J1.30
 Text Label -10450 6200 3    50   ~ 0
 J1.36
-Text Label -6050 4700 1    50   ~ 0
+Text Label -6250 4700 1    50   ~ 0
 J7.04
-Text Label -5850 4700 1    50   ~ 0
+Text Label -6150 4700 1    50   ~ 0
 J2.07
 Wire Wire Line
 	-5950 4500 -5950 4700
-Text Label -7550 4700 1    50   ~ 0
+Text Label -7850 4700 1    50   ~ 0
 J2.08
-Text Label -7450 4700 1    50   ~ 0
+Text Label -7750 4700 1    50   ~ 0
 J7.03
-Text Label -6150 4700 1    50   ~ 0
+Text Label -6350 4700 1    50   ~ 0
 J2.06
-Text Label -6250 4700 1    50   ~ 0
+Text Label -6450 4700 1    50   ~ 0
 J2.04
-Text Label -9150 4700 1    50   ~ 0
+Text Label -8050 4700 1    50   ~ 0
 J7.02
-Text Label -9050 4700 1    50   ~ 0
+Text Label -7950 4700 1    50   ~ 0
 J2.03
 Text Label -12400 8300 1    50   ~ 0
 CFG_1
@@ -3799,15 +3467,15 @@ Text Label -9850 6200 3    50   ~ 0
 DONE
 Text Label -4250 6200 3    50   ~ 0
 J1.04
-Text Label -2650 6200 3    50   ~ 0
+Text Label -2950 6200 3    50   ~ 0
 J1.03
 $Comp
-L gsg-symbols:AP2127 U?
+L gsg-symbols:AP2127 U3
 U 1 1 5CDE1936
 P 17850 7150
-F 0 "U?" H 17875 7475 50  0000 C CNN
+F 0 "U3" H 17875 7475 50  0000 C CNN
 F 1 "AP2127" H 17875 7384 50  0000 C CNN
-F 2 "" H 17900 7200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 17900 7200 50  0001 C CNN
 F 3 "" H 17900 7200 50  0001 C CNN
 F 4 "Diodes Incorporated" H 17850 7150 50  0001 C CNN "Manufacturer"
 F 5 "AP2127K-ADJTRG1" H 17850 7150 50  0001 C CNN "Part Number"
@@ -3816,10 +3484,10 @@ F 6 "IC REG LIN POS ADJ 300MA SOT23-5" H 17850 7150 50  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5CDE3C56
 P 17300 7200
-F 0 "C?" H 17415 7246 50  0000 L CNN
+F 0 "C1" H 17415 7246 50  0000 L CNN
 F 1 "1uF" H 17415 7155 50  0000 L CNN
 F 2 "gsg-modules:0402" H 17338 7050 50  0001 C CNN
 F 3 "~" H 17300 7200 50  0001 C CNN
@@ -3830,18 +3498,14 @@ F 6 "CAP CER 1UF 25V X5R 0402" H 17300 7200 50  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	17550 7250 17500 7250
-Wire Wire Line
-	17500 7250 17500 7300
-Wire Wire Line
 	17550 7150 17450 7150
 Wire Wire Line
 	17450 7350 17300 7350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR030
 U 1 1 5CE56FB6
 P 17450 7400
-F 0 "#PWR?" H 17450 7150 50  0001 C CNN
+F 0 "#PWR030" H 17450 7150 50  0001 C CNN
 F 1 "GND" H 17455 7227 50  0000 C CNN
 F 2 "" H 17450 7400 50  0001 C CNN
 F 3 "" H 17450 7400 50  0001 C CNN
@@ -3849,7 +3513,319 @@ F 3 "" H 17450 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17450 7150 17450 7400
+	17450 7150 17450 7350
+Text Notes -10100 9050 0    50   ~ 0
+TODO: standard JTAG header?
+Text Notes -9950 9200 0    50   ~ 0
+https://github.com/tinyfpga/TinyFPGA-EX/tree/master/board\n
+Text Notes 14700 4100 0    50   ~ 0
+bank B: add DAC/LDO to use\nfull range of FPGA
+$Comp
+L Device:R R18
+U 1 1 5CDE8538
+P 14000 3050
+AR Path="/5CDE8538" Ref="R18"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D17D622/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D190D0C/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D190D22/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D1A4654/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D1A466A/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D1A4680/5CDE8538" Ref="R?"  Part="1" 
+AR Path="/5D1A4696/5CDE8538" Ref="R?"  Part="1" 
+F 0 "R18" V 14080 3050 50  0000 C CNN
+F 1 "10k" V 14000 3050 50  0000 C CNN
+F 2 "gsg-modules:0402" V 13930 3050 50  0001 C CNN
+F 3 "" H 14000 3050 50  0001 C CNN
+	1    14000 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5CDE85EC
+P 14000 3250
+AR Path="/5CDE85EC" Ref="R19"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D17D622/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D190D0C/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D190D22/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D1A4654/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D1A466A/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D1A4680/5CDE85EC" Ref="R?"  Part="1" 
+AR Path="/5D1A4696/5CDE85EC" Ref="R?"  Part="1" 
+F 0 "R19" V 14080 3250 50  0000 C CNN
+F 1 "10k" V 14000 3250 50  0000 C CNN
+F 2 "gsg-modules:0402" V 13930 3250 50  0001 C CNN
+F 3 "" H 14000 3250 50  0001 C CNN
+	1    14000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L gsg-symbols:LM393 U1
+U 1 1 5CE133A4
+P 13450 5150
+F 0 "U1" H 13450 5525 50  0000 C CNN
+F 1 "LM393" H 13450 5434 50  0000 C CNN
+F 2 "" H 13350 5250 50  0001 C CNN
+F 3 "" H 13350 5250 50  0001 C CNN
+F 4 "ON Semiconductor" H 13450 5150 50  0001 C CNN "Manufacturer"
+F 5 "LM393EDR2G" H 13450 5150 50  0001 C CNN "Part Number"
+F 6 "IC COMP DUAL OFFSET LV 8SOIC " H 13450 5150 50  0001 C CNN "Description"
+	1    13450 5150
+	1    0    0    -1  
+$EndComp
+Text Label 13900 7500 2    50   ~ 0
+DAC3
+Text Label 13900 7600 2    50   ~ 0
+DAC4
+Text Label 13100 5100 2    50   ~ 0
+DAC3
+Text Label 13800 5200 0    50   ~ 0
+DAC4
+$Comp
+L power:GND #PWR027
+U 1 1 5CE382AE
+P 13050 5350
+F 0 "#PWR027" H 13050 5100 50  0001 C CNN
+F 1 "GND" H 13055 5177 50  0000 C CNN
+F 2 "" H 13050 5350 50  0001 C CNN
+F 3 "" H 13050 5350 50  0001 C CNN
+	1    13050 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 5350 13050 5300
+Wire Wire Line
+	13050 5300 13100 5300
+Wire Wire Line
+	13800 5000 13850 5000
+Wire Wire Line
+	13850 5000 13850 4950
+Text Label 13100 5200 2    50   ~ 0
+COMP1
+Text Label 13800 5300 0    50   ~ 0
+COMP2
+Text Label 13100 5000 2    50   ~ 0
+COUT1
+Text Label 13800 5100 0    50   ~ 0
+COUT2
+$Comp
+L power:+5V #PWR?
+U 1 1 5CEC6DB0
+P 13850 4950
+AR Path="/5C7E37E4/5CEC6DB0" Ref="#PWR?"  Part="1" 
+AR Path="/5CEC6DB0" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 13850 4800 50  0001 C CNN
+F 1 "+5V" V 13865 5078 50  0000 L CNN
+F 2 "" H 13850 4950 50  0001 C CNN
+F 3 "" H 13850 4950 50  0001 C CNN
+	1    13850 4950
+	1    0    0    -1  
+$EndComp
+Text Notes -2750 5700 1    50   ~ 0
+bank 7
+Text Notes -2650 5700 1    50   ~ 0
+bank 7
+Text Notes -1150 5650 1    50   ~ 0
+bank 7
+Text Notes -1050 5650 1    50   ~ 0
+bank 7
+Text Notes -2850 5700 1    50   ~ 0
+bank 7
+Text Notes -1250 5650 1    50   ~ 0
+bank 7
+Text Notes -12350 5200 3    50   ~ 0
+bank 7
+Text Notes -10650 5200 3    50   ~ 0
+bank 7
+Text Notes -1450 5650 1    50   ~ 0
+bank 7
+Text Notes -1350 5650 1    50   ~ 0
+bank 7
+Text Notes -12550 5200 3    50   ~ 0
+bank 7
+Text Notes -12650 5200 3    50   ~ 0
+bank 7
+Text Notes -12450 5200 3    50   ~ 0
+bank 7
+Text Notes -10750 5200 3    50   ~ 0
+bank 7
+Text Notes -10850 5200 3    50   ~ 0
+bank 7
+Text Notes -9050 5250 3    50   ~ 0
+bank 7
+Text Notes -7450 5250 3    50   ~ 0
+bank 7
+Text Notes -10950 5200 3    50   ~ 0
+bank 7
+Text Notes -9150 5250 3    50   ~ 0
+bank 7
+Text Notes -9450 5250 3    50   ~ 0
+bank 7
+Text Notes -11050 5200 3    50   ~ 0
+bank 7
+Text Notes -9350 5250 3    50   ~ 0
+bank 7
+Text Notes -7550 5250 3    50   ~ 0
+bank 7
+Text Notes -5850 5250 3    50   ~ 0
+bank 7
+Text Notes -9250 5250 3    50   ~ 0
+bank 7
+Text Notes -4350 5200 3    50   ~ 0
+bank 7
+Text Notes -7650 5250 3    50   ~ 0
+bank 7
+Text Notes -4250 5200 3    50   ~ 0
+bank 7
+Text Notes -6050 5250 3    50   ~ 0
+bank 7
+Text Notes -4450 5200 3    50   ~ 0
+bank 7
+Text Notes -2650 5150 3    50   ~ 0
+bank 7
+Text Notes -2750 5150 3    50   ~ 0
+bank 7
+Wire Wire Line
+	-12750 4700 -12800 4700
+Wire Wire Line
+	-12800 4700 -12800 4500
+Wire Wire Line
+	-12850 4700 -12800 4700
+Connection ~ -12800 4700
+Text Label -12800 4500 1    50   ~ 0
+VCCB
+Text Label 15350 3700 2    50   ~ 0
+VCCB
+Text Notes -13200 4250 0    50   ~ 0
+1.14 <VCCIO < 3.465
+$Comp
+L power:+5V #PWR029
+U 1 1 5D1C6750
+P 17400 7000
+F 0 "#PWR029" H 17400 6850 50  0001 C CNN
+F 1 "+5V" H 17415 7173 50  0000 C CNN
+F 2 "" H 17400 7000 50  0001 C CNN
+F 3 "" H 17400 7000 50  0001 C CNN
+	1    17400 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17300 7050 17400 7050
+Wire Wire Line
+	17400 7050 17400 7000
+Connection ~ 17400 7050
+Connection ~ 17450 7350
+Wire Wire Line
+	17450 7350 17450 7400
+Text Label 17650 7400 0    50   ~ 0
+VCCA_EN
+Wire Wire Line
+	17400 7050 17550 7050
+Wire Wire Line
+	17550 7250 17550 7400
+Wire Wire Line
+	17550 7400 17650 7400
+$Comp
+L Device:R R21
+U 1 1 5D277A1D
+P 18400 7400
+F 0 "R21" V 18607 7400 50  0000 C CNN
+F 1 "R" V 18516 7400 50  0000 C CNN
+F 2 "" V 18330 7400 50  0001 C CNN
+F 3 "~" H 18400 7400 50  0001 C CNN
+	1    18400 7400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5D277B9D
+P 18600 7200
+F 0 "R22" H 18530 7154 50  0000 R CNN
+F 1 "R" H 18530 7245 50  0000 R CNN
+F 2 "" V 18530 7200 50  0001 C CNN
+F 3 "~" H 18600 7200 50  0001 C CNN
+	1    18600 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18250 7150 18250 7400
+Wire Wire Line
+	18550 7400 18600 7400
+Wire Wire Line
+	18600 7400 18600 7350
+Wire Wire Line
+	18600 7400 18600 7450
+Connection ~ 18600 7400
+$Comp
+L power:GND #PWR032
+U 1 1 5D2E2C8E
+P 18600 7450
+F 0 "#PWR032" H 18600 7200 50  0001 C CNN
+F 1 "GND" H 18605 7277 50  0000 C CNN
+F 2 "" H 18600 7450 50  0001 C CNN
+F 3 "" H 18600 7450 50  0001 C CNN
+	1    18600 7450
+	1    0    0    -1  
+$EndComp
+Text Label 18850 7050 0    50   ~ 0
+VCCA
+Wire Wire Line
+	18200 7150 18250 7150
+$Comp
+L Device:C C3
+U 1 1 5D3C0927
+P 18800 7200
+F 0 "C3" H 18915 7246 50  0000 L CNN
+F 1 "2.7nF" H 18915 7155 50  0000 L CNN
+F 2 "" H 18838 7050 50  0001 C CNN
+F 3 "~" H 18800 7200 50  0001 C CNN
+	1    18800 7200
+	1    0    0    -1  
+$EndComp
+Connection ~ 18800 7050
+Wire Wire Line
+	18800 7050 18850 7050
+Wire Wire Line
+	18800 7350 18800 7400
+Wire Wire Line
+	18800 7400 18600 7400
+Wire Wire Line
+	18200 7050 18350 7050
+Connection ~ 18600 7050
+Wire Wire Line
+	18600 7050 18800 7050
+$Comp
+L Device:C C2
+U 1 1 5D451812
+P 18350 6850
+F 0 "C2" H 18465 6896 50  0000 L CNN
+F 1 "4.7uF" H 18465 6805 50  0000 L CNN
+F 2 "" H 18388 6700 50  0001 C CNN
+F 3 "~" H 18350 6850 50  0001 C CNN
+	1    18350 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18350 7050 18350 7000
+Connection ~ 18350 7050
+Wire Wire Line
+	18350 7050 18600 7050
+$Comp
+L power:GND #PWR031
+U 1 1 5D475E47
+P 18350 6650
+F 0 "#PWR031" H 18350 6400 50  0001 C CNN
+F 1 "GND" H 18355 6477 50  0000 C CNN
+F 2 "" H 18350 6650 50  0001 C CNN
+F 3 "" H 18350 6650 50  0001 C CNN
+	1    18350 6650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18350 6700 18350 6650
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
@@ -3860,10 +3836,6 @@ Wire Bus Line
 	-12700 9100 -10900 9100
 Wire Bus Line
 	-2150 4150 -400 4150
-Text Notes -10100 9050 0    50   ~ 0
-TODO: standard JTAG header?
-Text Notes -9950 9200 0    50   ~ 0
-https://github.com/tinyfpga/TinyFPGA-EX/tree/master/board\n
-Text Notes 14700 4100 0    50   ~ 0
-bank B: add DAC/LDO to use\nfull range of FPGA
+Text Notes 17350 7850 0    50   ~ 0
+TODO: calculate resistances,\nadd regulator for DAC2 and VCCB
 $EndSCHEMATC

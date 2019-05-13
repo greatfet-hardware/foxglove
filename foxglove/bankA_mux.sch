@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -89,48 +89,6 @@ Wire Wire Line
 Connection ~ 4100 3350
 Wire Wire Line
 	4100 3350 4150 3350
-$Comp
-L Device:R R?
-U 1 1 5CF3E26E
-P 4500 2250
-AR Path="/5C7E37E4/5CF3E26E" Ref="R?"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CF3E26E" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CF3E26E" Ref="R18"  Part="1" 
-AR Path="/5D17D622/5CF3E26E" Ref="R21"  Part="1" 
-AR Path="/5D190D0C/5CF3E26E" Ref="R24"  Part="1" 
-AR Path="/5D190D22/5CF3E26E" Ref="R27"  Part="1" 
-AR Path="/5D1A4654/5CF3E26E" Ref="R30"  Part="1" 
-AR Path="/5D1A466A/5CF3E26E" Ref="R33"  Part="1" 
-AR Path="/5D1A4680/5CF3E26E" Ref="R36"  Part="1" 
-AR Path="/5D1A4696/5CF3E26E" Ref="R39"  Part="1" 
-F 0 "R39" H 4430 2204 50  0000 R CNN
-F 1 "R" H 4430 2295 50  0000 R CNN
-F 2 "gsg-modules:0402" V 4430 2250 50  0001 C CNN
-F 3 "~" H 4500 2250 50  0001 C CNN
-	1    4500 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CF3E275
-P 4750 2250
-AR Path="/5C7E37E4/5CF3E275" Ref="R?"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CF3E275" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CF3E275" Ref="R19"  Part="1" 
-AR Path="/5D17D622/5CF3E275" Ref="R22"  Part="1" 
-AR Path="/5D190D0C/5CF3E275" Ref="R25"  Part="1" 
-AR Path="/5D190D22/5CF3E275" Ref="R28"  Part="1" 
-AR Path="/5D1A4654/5CF3E275" Ref="R31"  Part="1" 
-AR Path="/5D1A466A/5CF3E275" Ref="R34"  Part="1" 
-AR Path="/5D1A4680/5CF3E275" Ref="R37"  Part="1" 
-AR Path="/5D1A4696/5CF3E275" Ref="R40"  Part="1" 
-F 0 "R40" H 4680 2204 50  0000 R CNN
-F 1 "R" H 4680 2295 50  0000 R CNN
-F 2 "gsg-modules:0402" V 4680 2250 50  0001 C CNN
-F 3 "~" H 4750 2250 50  0001 C CNN
-	1    4750 2250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4450 2450 4500 2450
 Wire Wire Line
@@ -305,11 +263,11 @@ Text HLabel 2550 3700 0    50   Input ~ 0
 A
 Text HLabel 4450 4050 2    50   Input ~ 0
 A_shift
-Text HLabel 4450 2750 2    50   Input ~ 0
+Text HLabel 4450 2650 2    50   Input ~ 0
 ADC
-Text HLabel 4450 2850 2    50   Input ~ 0
+Text HLabel 4450 2750 2    50   Input ~ 0
 DAC2
-Text HLabel 4450 3050 2    50   Input ~ 0
+Text HLabel 4450 2850 2    50   Input ~ 0
 COMP1
 $Comp
 L Device:R R48
@@ -343,10 +301,52 @@ Wire Wire Line
 Connection ~ 3250 3700
 Wire Wire Line
 	2950 3700 3250 3700
-Text Notes 3450 4550 0    50   ~ 0
-added clarifying note on VCCA/VCCB
-Text HLabel 4450 3150 2    50   Input ~ 0
+Text Notes 3750 4600 0    50   ~ 0
+DIR is controlled in \nthe VCC domain
+Text HLabel 4450 2950 2    50   Input ~ 0
 COMP2
 Wire Wire Line
 	2550 3700 2650 3700
+$Comp
+L Device:R R?
+U 1 1 5CDC112C
+P 4750 2250
+AR Path="/5CDC112C" Ref="R?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CDC112C" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CDC112C" Ref="R25"  Part="1" 
+AR Path="/5D17D622/5CDC112C" Ref="R28"  Part="1" 
+AR Path="/5D190D0C/5CDC112C" Ref="R31"  Part="1" 
+AR Path="/5D190D22/5CDC112C" Ref="R34"  Part="1" 
+AR Path="/5D1A4654/5CDC112C" Ref="R37"  Part="1" 
+AR Path="/5D1A466A/5CDC112C" Ref="R40"  Part="1" 
+AR Path="/5D1A4680/5CDC112C" Ref="R47"  Part="1" 
+AR Path="/5D1A4696/5CDC112C" Ref="R62"  Part="1" 
+F 0 "R62" V 4830 2250 50  0000 C CNN
+F 1 "10k" V 4750 2250 50  0000 C CNN
+F 2 "gsg-modules:0402" V 4680 2250 50  0001 C CNN
+F 3 "" H 4750 2250 50  0001 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDC1279
+P 4500 2250
+AR Path="/5CDC1279" Ref="R?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5CDC1279" Ref="R?"  Part="1" 
+AR Path="/5CF421CD/5CDC1279" Ref="R24"  Part="1" 
+AR Path="/5D17D622/5CDC1279" Ref="R27"  Part="1" 
+AR Path="/5D190D0C/5CDC1279" Ref="R30"  Part="1" 
+AR Path="/5D190D22/5CDC1279" Ref="R33"  Part="1" 
+AR Path="/5D1A4654/5CDC1279" Ref="R36"  Part="1" 
+AR Path="/5D1A466A/5CDC1279" Ref="R39"  Part="1" 
+AR Path="/5D1A4680/5CDC1279" Ref="R46"  Part="1" 
+AR Path="/5D1A4696/5CDC1279" Ref="R61"  Part="1" 
+F 0 "R61" V 4580 2250 50  0000 C CNN
+F 1 "10k" V 4500 2250 50  0000 C CNN
+F 2 "gsg-modules:0402" V 4430 2250 50  0001 C CNN
+F 3 "" H 4500 2250 50  0001 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
