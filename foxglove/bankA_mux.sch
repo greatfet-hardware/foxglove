@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -266,7 +266,7 @@ A_shift
 Text HLabel 4450 2650 2    50   Input ~ 0
 ADC
 Text HLabel 4450 2750 2    50   Input ~ 0
-DAC2
+DAC
 Text HLabel 4450 2850 2    50   Input ~ 0
 COMP1
 $Comp
