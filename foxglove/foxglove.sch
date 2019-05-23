@@ -755,22 +755,22 @@ Wire Wire Line
 Wire Bus Line
 	-3400 2700 -3400 3800
 $Sheet
-S 1750 1550 650  750 
+S 7250 2150 650  750 
 U 5CF421CD
 F0 "sheet5CF421BE" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 1600 50 
-F3 "S1" I L 1750 1700 50 
-F4 "S2" I L 1750 1800 50 
-F5 "~E~" I L 1750 1900 50 
-F6 "VCCA" I R 2400 1800 50 
-F7 "DIR" I L 1750 2000 50 
-F8 "A" I R 2400 1600 50 
-F9 "A_shift" I L 1750 2100 50 
-F10 "ADC" I R 2400 1700 50 
-F11 "COMP1" I R 2400 2100 50 
-F12 "COMP2" I R 2400 2200 50 
-F13 "DAC" I R 2400 1900 50 
+F2 "S0" I L 7250 2200 50 
+F3 "S1" I L 7250 2300 50 
+F4 "S2" I L 7250 2400 50 
+F5 "~E~" I L 7250 2500 50 
+F6 "VCCA" I R 7900 2400 50 
+F7 "DIR" I L 7250 2600 50 
+F8 "A" I R 7900 2200 50 
+F9 "A_shift" I L 7250 2700 50 
+F10 "ADC" I R 7900 2300 50 
+F11 "COMP1" I R 7900 2700 50 
+F12 "COMP2" I R 7900 2800 50 
+F13 "DAC" I R 7900 2500 50 
 $EndSheet
 Text Notes 16400 4200 1    50   ~ 0
 bank A: ADC, DAC, level shifter, pull-up, pull-down, comparator\nbank B: FPGA (VCCIO bank 7)
@@ -1007,327 +1007,327 @@ Wire Wire Line
 Connection ~ 13550 2000
 Text Notes 15300 5400 0    50   ~ 0
 comparators
-Text Label 2400 2100 0    50   ~ 0
+Text Label 7900 2700 0    50   ~ 0
 COMP1
-Text Label 2400 2200 0    50   ~ 0
+Text Label 7900 2800 0    50   ~ 0
 COMP2
-Text Label 2400 1800 0    50   ~ 0
+Text Label 7900 2400 0    50   ~ 0
 VCCA
 Text Label 13600 1800 2    50   ~ 0
 ADC_A
-Text Label 2400 1700 0    50   ~ 0
+Text Label 7900 2300 0    50   ~ 0
 ADC_A
-Text Label 2400 1600 0    50   ~ 0
+Text Label 7900 2200 0    50   ~ 0
 A1
-Text Label 2400 1900 0    50   ~ 0
+Text Label 7900 2500 0    50   ~ 0
 DAC
 $Sheet
-S 1750 2450 650  750 
+S 7250 3050 650  750 
 U 5D17D622
 F0 "sheet5D17D613" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 2500 50 
-F3 "S1" I L 1750 2600 50 
-F4 "S2" I L 1750 2700 50 
-F5 "~E~" I L 1750 2800 50 
-F6 "VCCA" I R 2400 2700 50 
-F7 "DIR" I L 1750 2900 50 
-F8 "A" I R 2400 2500 50 
-F9 "A_shift" I L 1750 3000 50 
-F10 "ADC" I R 2400 2600 50 
-F11 "COMP1" I R 2400 3000 50 
-F12 "COMP2" I R 2400 3100 50 
-F13 "DAC" I R 2400 2800 50 
+F2 "S0" I L 7250 3100 50 
+F3 "S1" I L 7250 3200 50 
+F4 "S2" I L 7250 3300 50 
+F5 "~E~" I L 7250 3400 50 
+F6 "VCCA" I R 7900 3300 50 
+F7 "DIR" I L 7250 3500 50 
+F8 "A" I R 7900 3100 50 
+F9 "A_shift" I L 7250 3600 50 
+F10 "ADC" I R 7900 3200 50 
+F11 "COMP1" I R 7900 3600 50 
+F12 "COMP2" I R 7900 3700 50 
+F13 "DAC" I R 7900 3400 50 
 $EndSheet
-Text Label 2400 3000 0    50   ~ 0
+Text Label 7900 3600 0    50   ~ 0
 COMP1
-Text Label 2400 3100 0    50   ~ 0
+Text Label 7900 3700 0    50   ~ 0
 COMP2
-Text Label 2400 2700 0    50   ~ 0
+Text Label 7900 3300 0    50   ~ 0
 VCCA
-Text Label 2400 2600 0    50   ~ 0
+Text Label 7900 3200 0    50   ~ 0
 ADC_A
-Text Label 2400 2500 0    50   ~ 0
+Text Label 7900 3100 0    50   ~ 0
 A2
-Text Label 2400 2800 0    50   ~ 0
+Text Label 7900 3400 0    50   ~ 0
 DAC
 $Sheet
-S 1750 3350 650  750 
+S 7250 3950 650  750 
 U 5D190D0C
 F0 "sheet5D190CFC" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 3400 50 
-F3 "S1" I L 1750 3500 50 
-F4 "S2" I L 1750 3600 50 
-F5 "~E~" I L 1750 3700 50 
-F6 "VCCA" I R 2400 3600 50 
-F7 "DIR" I L 1750 3800 50 
-F8 "A" I R 2400 3400 50 
-F9 "A_shift" I L 1750 3900 50 
-F10 "ADC" I R 2400 3500 50 
-F11 "COMP1" I R 2400 3900 50 
-F12 "COMP2" I R 2400 4000 50 
-F13 "DAC" I R 2400 3700 50 
+F2 "S0" I L 7250 4000 50 
+F3 "S1" I L 7250 4100 50 
+F4 "S2" I L 7250 4200 50 
+F5 "~E~" I L 7250 4300 50 
+F6 "VCCA" I R 7900 4200 50 
+F7 "DIR" I L 7250 4400 50 
+F8 "A" I R 7900 4000 50 
+F9 "A_shift" I L 7250 4500 50 
+F10 "ADC" I R 7900 4100 50 
+F11 "COMP1" I R 7900 4500 50 
+F12 "COMP2" I R 7900 4600 50 
+F13 "DAC" I R 7900 4300 50 
 $EndSheet
-Text Label 2400 3900 0    50   ~ 0
+Text Label 7900 4500 0    50   ~ 0
 COMP1
-Text Label 2400 4000 0    50   ~ 0
+Text Label 7900 4600 0    50   ~ 0
 COMP2
-Text Label 2400 3600 0    50   ~ 0
+Text Label 7900 4200 0    50   ~ 0
 VCCA
-Text Label 2400 3500 0    50   ~ 0
+Text Label 7900 4100 0    50   ~ 0
 ADC_A
-Text Label 2400 3400 0    50   ~ 0
+Text Label 7900 4000 0    50   ~ 0
 A3
-Text Label 2400 3700 0    50   ~ 0
+Text Label 7900 4300 0    50   ~ 0
 DAC
 $Sheet
-S 1750 4250 650  750 
+S 7250 4850 650  750 
 U 5D190D22
 F0 "sheet5D190CFD" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 4300 50 
-F3 "S1" I L 1750 4400 50 
-F4 "S2" I L 1750 4500 50 
-F5 "~E~" I L 1750 4600 50 
-F6 "VCCA" I R 2400 4500 50 
-F7 "DIR" I L 1750 4700 50 
-F8 "A" I R 2400 4300 50 
-F9 "A_shift" I L 1750 4800 50 
-F10 "ADC" I R 2400 4400 50 
-F11 "COMP1" I R 2400 4800 50 
-F12 "COMP2" I R 2400 4900 50 
-F13 "DAC" I R 2400 4600 50 
+F2 "S0" I L 7250 4900 50 
+F3 "S1" I L 7250 5000 50 
+F4 "S2" I L 7250 5100 50 
+F5 "~E~" I L 7250 5200 50 
+F6 "VCCA" I R 7900 5100 50 
+F7 "DIR" I L 7250 5300 50 
+F8 "A" I R 7900 4900 50 
+F9 "A_shift" I L 7250 5400 50 
+F10 "ADC" I R 7900 5000 50 
+F11 "COMP1" I R 7900 5400 50 
+F12 "COMP2" I R 7900 5500 50 
+F13 "DAC" I R 7900 5200 50 
 $EndSheet
-Text Label 2400 4800 0    50   ~ 0
+Text Label 7900 5400 0    50   ~ 0
 COMP1
-Text Label 2400 4900 0    50   ~ 0
+Text Label 7900 5500 0    50   ~ 0
 COMP2
-Text Label 2400 4500 0    50   ~ 0
+Text Label 7900 5100 0    50   ~ 0
 VCCA
-Text Label 2400 4400 0    50   ~ 0
+Text Label 7900 5000 0    50   ~ 0
 ADC_A
-Text Label 2400 4300 0    50   ~ 0
+Text Label 7900 4900 0    50   ~ 0
 A4
-Text Label 2400 4600 0    50   ~ 0
+Text Label 7900 5200 0    50   ~ 0
 DAC
 $Sheet
-S 1750 5150 650  750 
+S 7250 5750 650  750 
 U 5D1A4654
 F0 "sheet5D1A4642" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 5200 50 
-F3 "S1" I L 1750 5300 50 
-F4 "S2" I L 1750 5400 50 
-F5 "~E~" I L 1750 5500 50 
-F6 "VCCA" I R 2400 5400 50 
-F7 "DIR" I L 1750 5600 50 
-F8 "A" I R 2400 5200 50 
-F9 "A_shift" I L 1750 5700 50 
-F10 "ADC" I R 2400 5300 50 
-F11 "COMP1" I R 2400 5700 50 
-F12 "COMP2" I R 2400 5800 50 
-F13 "DAC" I R 2400 5500 50 
+F2 "S0" I L 7250 5800 50 
+F3 "S1" I L 7250 5900 50 
+F4 "S2" I L 7250 6000 50 
+F5 "~E~" I L 7250 6100 50 
+F6 "VCCA" I R 7900 6000 50 
+F7 "DIR" I L 7250 6200 50 
+F8 "A" I R 7900 5800 50 
+F9 "A_shift" I L 7250 6300 50 
+F10 "ADC" I R 7900 5900 50 
+F11 "COMP1" I R 7900 6300 50 
+F12 "COMP2" I R 7900 6400 50 
+F13 "DAC" I R 7900 6100 50 
 $EndSheet
-Text Label 2400 5700 0    50   ~ 0
+Text Label 7900 6300 0    50   ~ 0
 COMP1
-Text Label 2400 5800 0    50   ~ 0
+Text Label 7900 6400 0    50   ~ 0
 COMP2
-Text Label 2400 5400 0    50   ~ 0
+Text Label 7900 6000 0    50   ~ 0
 VCCA
-Text Label 2400 5300 0    50   ~ 0
+Text Label 7900 5900 0    50   ~ 0
 ADC_A
-Text Label 2400 5200 0    50   ~ 0
+Text Label 7900 5800 0    50   ~ 0
 A5
-Text Label 2400 5500 0    50   ~ 0
+Text Label 7900 6100 0    50   ~ 0
 DAC
 $Sheet
-S 1750 6050 650  750 
+S 7250 6650 650  750 
 U 5D1A466A
 F0 "sheet5D1A4643" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 6100 50 
-F3 "S1" I L 1750 6200 50 
-F4 "S2" I L 1750 6300 50 
-F5 "~E~" I L 1750 6400 50 
-F6 "VCCA" I R 2400 6300 50 
-F7 "DIR" I L 1750 6500 50 
-F8 "A" I R 2400 6100 50 
-F9 "A_shift" I L 1750 6600 50 
-F10 "ADC" I R 2400 6200 50 
-F11 "COMP1" I R 2400 6600 50 
-F12 "COMP2" I R 2400 6700 50 
-F13 "DAC" I R 2400 6400 50 
+F2 "S0" I L 7250 6700 50 
+F3 "S1" I L 7250 6800 50 
+F4 "S2" I L 7250 6900 50 
+F5 "~E~" I L 7250 7000 50 
+F6 "VCCA" I R 7900 6900 50 
+F7 "DIR" I L 7250 7100 50 
+F8 "A" I R 7900 6700 50 
+F9 "A_shift" I L 7250 7200 50 
+F10 "ADC" I R 7900 6800 50 
+F11 "COMP1" I R 7900 7200 50 
+F12 "COMP2" I R 7900 7300 50 
+F13 "DAC" I R 7900 7000 50 
 $EndSheet
-Text Label 2400 6600 0    50   ~ 0
+Text Label 7900 7200 0    50   ~ 0
 COMP1
-Text Label 2400 6700 0    50   ~ 0
+Text Label 7900 7300 0    50   ~ 0
 COMP2
-Text Label 2400 6300 0    50   ~ 0
+Text Label 7900 6900 0    50   ~ 0
 VCCA
-Text Label 2400 6200 0    50   ~ 0
+Text Label 7900 6800 0    50   ~ 0
 ADC_A
-Text Label 2400 6100 0    50   ~ 0
+Text Label 7900 6700 0    50   ~ 0
 A6
-Text Label 2400 6400 0    50   ~ 0
+Text Label 7900 7000 0    50   ~ 0
 DAC
 $Sheet
-S 1750 6950 650  750 
+S 7250 7550 650  750 
 U 5D1A4680
 F0 "sheet5D1A4644" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 7000 50 
-F3 "S1" I L 1750 7100 50 
-F4 "S2" I L 1750 7200 50 
-F5 "~E~" I L 1750 7300 50 
-F6 "VCCA" I R 2400 7200 50 
-F7 "DIR" I L 1750 7400 50 
-F8 "A" I R 2400 7000 50 
-F9 "A_shift" I L 1750 7500 50 
-F10 "ADC" I R 2400 7100 50 
-F11 "COMP1" I R 2400 7500 50 
-F12 "COMP2" I R 2400 7600 50 
-F13 "DAC" I R 2400 7300 50 
+F2 "S0" I L 7250 7600 50 
+F3 "S1" I L 7250 7700 50 
+F4 "S2" I L 7250 7800 50 
+F5 "~E~" I L 7250 7900 50 
+F6 "VCCA" I R 7900 7800 50 
+F7 "DIR" I L 7250 8000 50 
+F8 "A" I R 7900 7600 50 
+F9 "A_shift" I L 7250 8100 50 
+F10 "ADC" I R 7900 7700 50 
+F11 "COMP1" I R 7900 8100 50 
+F12 "COMP2" I R 7900 8200 50 
+F13 "DAC" I R 7900 7900 50 
 $EndSheet
-Text Label 2400 7500 0    50   ~ 0
+Text Label 7900 8100 0    50   ~ 0
 COMP1
-Text Label 2400 7600 0    50   ~ 0
+Text Label 7900 8200 0    50   ~ 0
 COMP2
-Text Label 2400 7200 0    50   ~ 0
+Text Label 7900 7800 0    50   ~ 0
 VCCA
-Text Label 2400 7100 0    50   ~ 0
+Text Label 7900 7700 0    50   ~ 0
 ADC_A
-Text Label 2400 7000 0    50   ~ 0
+Text Label 7900 7600 0    50   ~ 0
 A7
-Text Label 2400 7300 0    50   ~ 0
+Text Label 7900 7900 0    50   ~ 0
 DAC
 $Sheet
-S 1750 7850 650  750 
+S 7250 8450 650  750 
 U 5D1A4696
 F0 "sheet5D1A4645" 50
 F1 "bankA_mux.sch" 50
-F2 "S0" I L 1750 7900 50 
-F3 "S1" I L 1750 8000 50 
-F4 "S2" I L 1750 8100 50 
-F5 "~E~" I L 1750 8200 50 
-F6 "VCCA" I R 2400 8100 50 
-F7 "DIR" I L 1750 8300 50 
-F8 "A" I R 2400 7900 50 
-F9 "A_shift" I L 1750 8400 50 
-F10 "ADC" I R 2400 8000 50 
-F11 "COMP1" I R 2400 8400 50 
-F12 "COMP2" I R 2400 8500 50 
-F13 "DAC" I R 2400 8200 50 
+F2 "S0" I L 7250 8500 50 
+F3 "S1" I L 7250 8600 50 
+F4 "S2" I L 7250 8700 50 
+F5 "~E~" I L 7250 8800 50 
+F6 "VCCA" I R 7900 8700 50 
+F7 "DIR" I L 7250 8900 50 
+F8 "A" I R 7900 8500 50 
+F9 "A_shift" I L 7250 9000 50 
+F10 "ADC" I R 7900 8600 50 
+F11 "COMP1" I R 7900 9000 50 
+F12 "COMP2" I R 7900 9100 50 
+F13 "DAC" I R 7900 8800 50 
 $EndSheet
-Text Label 2400 8400 0    50   ~ 0
+Text Label 7900 9000 0    50   ~ 0
 COMP1
-Text Label 2400 8500 0    50   ~ 0
+Text Label 7900 9100 0    50   ~ 0
 COMP2
-Text Label 2400 8100 0    50   ~ 0
+Text Label 7900 8700 0    50   ~ 0
 VCCA
-Text Label 2400 8000 0    50   ~ 0
+Text Label 7900 8600 0    50   ~ 0
 ADC_A
-Text Label 2400 7900 0    50   ~ 0
+Text Label 7900 8500 0    50   ~ 0
 A8
-Text Label 2400 8200 0    50   ~ 0
+Text Label 7900 8800 0    50   ~ 0
 DAC
-Text Label 1750 1600 2    50   ~ 0
+Text Label 7250 2200 2    50   ~ 0
 S0_1
-Text Label 1750 2500 2    50   ~ 0
+Text Label 7250 3100 2    50   ~ 0
 S0_2
-Text Label 1750 3400 2    50   ~ 0
+Text Label 7250 4000 2    50   ~ 0
 S0_3
-Text Label 1750 4300 2    50   ~ 0
+Text Label 7250 4900 2    50   ~ 0
 S0_4
-Text Label 1750 5200 2    50   ~ 0
+Text Label 7250 5800 2    50   ~ 0
 S0_5
-Text Label 1750 6100 2    50   ~ 0
+Text Label 7250 6700 2    50   ~ 0
 S0_6
-Text Label 1750 7000 2    50   ~ 0
+Text Label 7250 7600 2    50   ~ 0
 S0_7
-Text Label 1750 7900 2    50   ~ 0
+Text Label 7250 8500 2    50   ~ 0
 S0_8
-Text Label 1750 1700 2    50   ~ 0
+Text Label 7250 2300 2    50   ~ 0
 S1_1
-Text Label 1750 2600 2    50   ~ 0
+Text Label 7250 3200 2    50   ~ 0
 S1_2
-Text Label 1750 3500 2    50   ~ 0
+Text Label 7250 4100 2    50   ~ 0
 S1_3
-Text Label 1750 4400 2    50   ~ 0
+Text Label 7250 5000 2    50   ~ 0
 S1_4
-Text Label 1750 5300 2    50   ~ 0
+Text Label 7250 5900 2    50   ~ 0
 S1_5
-Text Label 1750 6200 2    50   ~ 0
+Text Label 7250 6800 2    50   ~ 0
 S1_6
-Text Label 1750 7100 2    50   ~ 0
+Text Label 7250 7700 2    50   ~ 0
 S1_7
-Text Label 1750 8000 2    50   ~ 0
+Text Label 7250 8600 2    50   ~ 0
 S1_8
-Text Label 1750 1800 2    50   ~ 0
+Text Label 7250 2400 2    50   ~ 0
 S2_1
-Text Label 1750 2700 2    50   ~ 0
+Text Label 7250 3300 2    50   ~ 0
 S2_2
-Text Label 1750 3600 2    50   ~ 0
+Text Label 7250 4200 2    50   ~ 0
 S2_3
-Text Label 1750 4500 2    50   ~ 0
+Text Label 7250 5100 2    50   ~ 0
 S2_4
-Text Label 1750 5400 2    50   ~ 0
+Text Label 7250 6000 2    50   ~ 0
 S2_5
-Text Label 1750 6300 2    50   ~ 0
+Text Label 7250 6900 2    50   ~ 0
 S2_6
-Text Label 1750 7200 2    50   ~ 0
+Text Label 7250 7800 2    50   ~ 0
 S2_7
-Text Label 1750 8100 2    50   ~ 0
+Text Label 7250 8700 2    50   ~ 0
 S2_8
-Text Label 1750 1900 2    50   ~ 0
+Text Label 7250 2500 2    50   ~ 0
 ~E~_1
-Text Label 1750 2800 2    50   ~ 0
+Text Label 7250 3400 2    50   ~ 0
 ~E~_2
-Text Label 1750 3700 2    50   ~ 0
+Text Label 7250 4300 2    50   ~ 0
 ~E~_3
-Text Label 1750 4600 2    50   ~ 0
+Text Label 7250 5200 2    50   ~ 0
 ~E~_4
-Text Label 1750 5500 2    50   ~ 0
+Text Label 7250 6100 2    50   ~ 0
 ~E~_5
-Text Label 1750 6400 2    50   ~ 0
+Text Label 7250 7000 2    50   ~ 0
 ~E~_6
-Text Label 1750 7300 2    50   ~ 0
+Text Label 7250 7900 2    50   ~ 0
 ~E~_7
-Text Label 1750 8200 2    50   ~ 0
+Text Label 7250 8800 2    50   ~ 0
 ~E~_8
-Text Label 1750 2000 2    50   ~ 0
+Text Label 7250 2600 2    50   ~ 0
 DIR_1
-Text Label 1750 2900 2    50   ~ 0
+Text Label 7250 3500 2    50   ~ 0
 DIR_2
-Text Label 1750 3800 2    50   ~ 0
+Text Label 7250 4400 2    50   ~ 0
 DIR_3
-Text Label 1750 4700 2    50   ~ 0
+Text Label 7250 5300 2    50   ~ 0
 DIR_4
-Text Label 1750 5600 2    50   ~ 0
+Text Label 7250 6200 2    50   ~ 0
 DIR_5
-Text Label 1750 6500 2    50   ~ 0
+Text Label 7250 7100 2    50   ~ 0
 DIR_6
-Text Label 1750 7400 2    50   ~ 0
+Text Label 7250 8000 2    50   ~ 0
 DIR_7
-Text Label 1750 8300 2    50   ~ 0
+Text Label 7250 8900 2    50   ~ 0
 DIR_8
-Text Label 1750 2100 2    50   ~ 0
+Text Label 7250 2700 2    50   ~ 0
 A1_shift
-Text Label 1750 3000 2    50   ~ 0
+Text Label 7250 3600 2    50   ~ 0
 A2_shift
-Text Label 1750 3900 2    50   ~ 0
+Text Label 7250 4500 2    50   ~ 0
 A3_shift
-Text Label 1750 4800 2    50   ~ 0
+Text Label 7250 5400 2    50   ~ 0
 A4_shift
-Text Label 1750 5700 2    50   ~ 0
+Text Label 7250 6300 2    50   ~ 0
 A5_shift
-Text Label 1750 6600 2    50   ~ 0
+Text Label 7250 7200 2    50   ~ 0
 A6_shift
-Text Label 1750 7500 2    50   ~ 0
+Text Label 7250 8100 2    50   ~ 0
 A7_shift
-Text Label 1750 8400 2    50   ~ 0
+Text Label 7250 9000 2    50   ~ 0
 A8_shift
-Text Notes 1750 8900 0    50   ~ 0
+Text Notes 7250 9500 0    50   ~ 0
 check digital levels\nfor mux (5V)
 $Comp
 L gsg-symbols:DAC084S085 U?
@@ -1460,11 +1460,11 @@ U 1 1 5CA1CB44
 P 10050 6700
 F 0 "C13" H 9935 6654 50  0000 R CNN
 F 1 "10uF" H 9935 6745 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 10088 6550 50  0001 C CNN
+F 2 "gsg-modules:0603" H 10088 6550 50  0001 C CNN
 F 3 "~" H 10050 6700 50  0001 C CNN
 F 4 "AVX Corporation" H 10050 6700 50  0001 C CNN "Manufacturer"
-F 5 "TAJA106K010TNJ" H 10050 6700 50  0001 C CNN "Part Number"
-F 6 "CAP TANT 10UF 10% 10V 1206 " H 10050 6700 50  0001 C CNN "Description"
+F 5 "F981A106MMA" H 10050 6700 50  0001 C CNN "Part Number"
+F 6 "CAP TANT 10UF 20% 10V 0603  " H 10050 6700 50  0001 C CNN "Description"
 	1    10050 6700
 	-1   0    0    1   
 $EndComp
@@ -1489,11 +1489,11 @@ U 1 1 5CAA1802
 P 10350 6700
 F 0 "C14" H 10465 6746 50  0000 L CNN
 F 1 "0.1uF" H 10465 6655 50  0000 L CNN
-F 2 "gsg-modules:0805" H 10388 6550 50  0001 C CNN
+F 2 "gsg-modules:0402" H 10388 6550 50  0001 C CNN
 F 3 "~" H 10350 6700 50  0001 C CNN
-F 4 "Murata Electronics North America" H 10350 6700 50  0001 C CNN "Manufacturer"
-F 5 "LLL216R71E104MA01L" H 10350 6700 50  0001 C CNN "Part Number"
-F 6 "CAP CER 0.1UF 25V X7R 0508 " H 10350 6700 50  0001 C CNN "Description"
+F 4 "Taiyo Yuden" H 10350 6700 50  0001 C CNN "Manufacturer"
+F 5 "EMK105BJ104KV-F" H 10350 6700 50  0001 C CNN "Part Number"
+F 6 "CAP CER 0.1UF 16V X5R 0402 " H 10350 6700 50  0001 C CNN "Description"
 	1    10350 6700
 	1    0    0    -1  
 $EndComp
@@ -1528,34 +1528,6 @@ F 2 "" H 10200 6500 50  0001 C CNN
 F 3 "" H 10200 6500 50  0001 C CNN
 	1    10200 6500
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5CB5F3F3
-P 11350 6450
-F 0 "C15" H 11235 6404 50  0000 R CNN
-F 1 "10uF" H 11235 6495 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 11388 6300 50  0001 C CNN
-F 3 "~" H 11350 6450 50  0001 C CNN
-F 4 "AVX Corporation" H 11350 6450 50  0001 C CNN "Manufacturer"
-F 5 "TAJA106K010TNJ" H 11350 6450 50  0001 C CNN "Part Number"
-F 6 "CAP TANT 10UF 10% 10V 1206 " H 11350 6450 50  0001 C CNN "Description"
-	1    11350 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 5CB5F3FD
-P 11650 6450
-F 0 "C16" H 11765 6496 50  0000 L CNN
-F 1 "0.1uF" H 11765 6405 50  0000 L CNN
-F 2 "gsg-modules:0805" H 11688 6300 50  0001 C CNN
-F 3 "~" H 11650 6450 50  0001 C CNN
-F 4 "Murata Electronics North America" H 11650 6450 50  0001 C CNN "Manufacturer"
-F 5 "LLL216R71E104MA01L" H 11650 6450 50  0001 C CNN "Part Number"
-F 6 "CAP CER 0.1UF 25V X7R 0508 " H 11650 6450 50  0001 C CNN "Description"
-	1    11650 6450
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	11350 6300 11500 6300
@@ -3581,8 +3553,6 @@ F 3 "~" H 14100 6750 50  0001 C CNN
 $EndComp
 Connection ~ 14100 6600
 Wire Wire Line
-	14100 6600 14150 6600
-Wire Wire Line
 	14100 6900 14100 6950
 Wire Wire Line
 	14100 6950 13900 6950
@@ -4517,6 +4487,101 @@ F 3 "" H 12250 1400 50  0001 C CNN
 	1    12250 1400
 	-1   0    0    1   
 $EndComp
+Text Label -11800 8300 1    50   ~ 0
+CSSPIN
+$Comp
+L Device:C C15
+U 1 1 5CEA10BC
+P 11350 6450
+F 0 "C15" H 11235 6404 50  0000 R CNN
+F 1 "10uF" H 11235 6495 50  0000 R CNN
+F 2 "gsg-modules:0603" H 11388 6300 50  0001 C CNN
+F 3 "~" H 11350 6450 50  0001 C CNN
+F 4 "AVX Corporation" H 11350 6450 50  0001 C CNN "Manufacturer"
+F 5 "F981A106MMA" H 11350 6450 50  0001 C CNN "Part Number"
+F 6 "CAP TANT 10UF 20% 10V 0603  " H 11350 6450 50  0001 C CNN "Description"
+	1    11350 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5CEA2AF7
+P 11650 6450
+F 0 "C16" H 11765 6496 50  0000 L CNN
+F 1 "0.1uF" H 11765 6405 50  0000 L CNN
+F 2 "gsg-modules:0402" H 11688 6300 50  0001 C CNN
+F 3 "~" H 11650 6450 50  0001 C CNN
+F 4 "Taiyo Yuden" H 11650 6450 50  0001 C CNN "Manufacturer"
+F 5 "EMK105BJ104KV-F" H 11650 6450 50  0001 C CNN "Part Number"
+F 6 "CAP CER 0.1UF 16V X5R 0402 " H 11650 6450 50  0001 C CNN "Description"
+	1    11650 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CF0AA62
+P 9650 7000
+F 0 "TP3" H 9708 7120 50  0000 L CNN
+F 1 "TestPoint" H 9708 7029 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 9850 7000 50  0001 C CNN
+F 3 "~" H 9850 7000 50  0001 C CNN
+	1    9650 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CF0B7AE
+P 9650 7100
+F 0 "TP4" H 9708 7220 50  0000 L CNN
+F 1 "TestPoint" H 9708 7129 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 9850 7100 50  0001 C CNN
+F 3 "~" H 9850 7100 50  0001 C CNN
+	1    9650 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CF0B870
+P 9650 7200
+F 0 "TP5" H 9708 7320 50  0000 L CNN
+F 1 "TestPoint" H 9708 7229 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 9850 7200 50  0001 C CNN
+F 3 "~" H 9850 7200 50  0001 C CNN
+	1    9650 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CF0B934
+P 9650 7300
+F 0 "TP6" H 9708 7420 50  0000 L CNN
+F 1 "TestPoint" H 9708 7329 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 9850 7300 50  0001 C CNN
+F 3 "~" H 9850 7300 50  0001 C CNN
+	1    9650 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 7000 10450 7000
+Wire Wire Line
+	9650 7100 10450 7100
+Wire Wire Line
+	9650 7200 10450 7200
+Wire Wire Line
+	9650 7300 10450 7300
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CFD8134
+P 14400 6600
+F 0 "TP7" H 14458 6720 50  0000 L CNN
+F 1 "TestPoint" H 14458 6629 50  0000 L CNN
+F 2 "gsg-modules:TESTPOINT-50MIL" H 14600 6600 50  0001 C CNN
+F 3 "~" H 14600 6600 50  0001 C CNN
+	1    14400 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 6600 14400 6600
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
@@ -4527,6 +4592,4 @@ Wire Bus Line
 	-12700 9100 -10900 9100
 Wire Bus Line
 	-2150 4150 -400 4150
-Text Label -11800 8300 1    50   ~ 0
-CSSPIN
 $EndSCHEMATC
