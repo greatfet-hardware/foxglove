@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 5 10
 Title ""
 Date ""
 Rev ""
@@ -281,10 +281,13 @@ AR Path="/5D17D622/5CB0C423" Ref="R49"  Part="1"
 AR Path="/5D190D0C/5CB0C423" Ref="R50"  Part="1" 
 AR Path="/5D190D22/5CB0C423" Ref="R51"  Part="1" 
 AR Path="/5D1A466A/5CB0C423" Ref="R53"  Part="1" 
-F 0 "R55" V 2593 3700 50  0000 C CNN
-F 1 "0" V 2684 3700 50  0000 C CNN
+F 0 "R55" V 2700 3700 50  0000 C CNN
+F 1 "100" V 2800 3700 50  0000 C CNN
 F 2 "gsg-modules:0402" V 2730 3700 50  0001 C CNN
 F 3 "~" H 2800 3700 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 2800 3700 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT100R" H 2800 3700 50  0001 C CNN "Part Number"
+F 6 "RES 100 OHM 5% 1/16W 0402" H 2800 3700 50  0001 C CNN "Description"
 	1    2800 3700
 	0    1    1    0   
 $EndComp
@@ -349,4 +352,34 @@ F 3 "" H 4500 2250 50  0001 C CNN
 	1    4500 2250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4450 3050
+NoConn ~ 4450 3150
+$Comp
+L Device:C C39
+U 1 1 5D112AA5
+P 2800 3350
+AR Path="/5D190D22/5D112AA5" Ref="C39"  Part="1" 
+AR Path="/5D1A466A/5D112AA5" Ref="C41"  Part="1" 
+AR Path="/5D190D0C/5D112AA5" Ref="C38"  Part="1" 
+AR Path="/5CF421CD/5D112AA5" Ref="C20"  Part="1" 
+AR Path="/5D17D622/5D112AA5" Ref="C37"  Part="1" 
+AR Path="/5D1A4654/5D112AA5" Ref="C40"  Part="1" 
+AR Path="/5D1A4680/5D112AA5" Ref="C42"  Part="1" 
+AR Path="/5D1A4696/5D112AA5" Ref="C43"  Part="1" 
+F 0 "C43" V 3052 3350 50  0000 C CNN
+F 1 "0.1uF" V 2961 3350 50  0000 C CNN
+F 2 "gsg-modules:0402" H 2838 3200 50  0001 C CNN
+F 3 "~" H 2800 3350 50  0001 C CNN
+F 4 "Taiyo Yuden" H 2800 3350 50  0001 C CNN "Manufacturer"
+F 5 "EMK105BJ104KV-F" H 2800 3350 50  0001 C CNN "Part Number"
+F 6 "CAP CER 0.1UF 16V X5R 0402 " H 2800 3350 50  0001 C CNN "Description"
+	1    2800 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 3700 2650 3350
+Connection ~ 2650 3700
+Wire Wire Line
+	2950 3350 2950 3700
+Connection ~ 2950 3700
 $EndSCHEMATC
