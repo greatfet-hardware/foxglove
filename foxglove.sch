@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 1 10
+Sheet 1 17
 Title "GreatFET Neighbor Template"
 Date "2019-03-01"
 Rev ""
@@ -805,21 +805,21 @@ F 3 "" H 15300 2500 50  0001 C CNN
 $EndComp
 Text Label 15850 2500 0    50   ~ 0
 VCCA
-Text Label 15350 2600 2    50   ~ 0
-A1
-Text Label 15850 2600 0    50   ~ 0
-A2
-Text Label 15350 2700 2    50   ~ 0
-A3
-Text Label 15850 2700 0    50   ~ 0
-A4
-Text Label 15350 2800 2    50   ~ 0
-A5
-Text Label 15850 2800 0    50   ~ 0
-A6
 Text Label 15350 2900 2    50   ~ 0
-A7
+A1
 Text Label 15850 2900 0    50   ~ 0
+A2
+Text Label 15350 2800 2    50   ~ 0
+A3
+Text Label 15850 2800 0    50   ~ 0
+A4
+Text Label 15350 2700 2    50   ~ 0
+A5
+Text Label 15850 2700 0    50   ~ 0
+A6
+Text Label 15850 2600 0    50   ~ 0
+A7
+Text Label 15350 2600 2    50   ~ 0
 A8
 Text Label 17700 200  2    50   ~ 0
 B1_P
@@ -2336,6 +2336,7 @@ F 0 "J6" H -9700 8917 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H -9700 8826 50  0000 C CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD" H -9750 8600 50  0001 C CNN
 F 3 "~" H -9750 8600 50  0001 C CNN
+F 4 "DNP" H -9500 8400 50  0000 C CNN "Note"
 	1    -9750 8600
 	1    0    0    -1  
 $EndComp
@@ -2439,8 +2440,8 @@ $Comp
 L Device:R R58
 U 1 1 5CF0406A
 P -8250 6750
-F 0 "R58" V -8043 6750 50  0000 C CNN
-F 1 "1k" V -8134 6750 50  0000 C CNN
+F 0 "R58" V -8150 6750 50  0000 C CNN
+F 1 "1k" V -8250 6750 50  0000 C CNN
 F 2 "gsg-modules:0402" V -8320 6750 50  0001 C CNN
 F 3 "~" H -8250 6750 50  0001 C CNN
 	1    -8250 6750
@@ -2467,8 +2468,8 @@ $Comp
 L Device:R R59
 U 1 1 5CF8052D
 P -8150 7300
-F 0 "R59" V -7943 7300 50  0000 C CNN
-F 1 "4.7k" V -8034 7300 50  0000 C CNN
+F 0 "R59" V -8050 7300 50  0000 C CNN
+F 1 "4.7k" V -8150 7300 50  0000 C CNN
 F 2 "gsg-modules:0402" V -8220 7300 50  0001 C CNN
 F 3 "~" H -8150 7300 50  0001 C CNN
 	1    -8150 7300
@@ -2491,14 +2492,14 @@ Wire Wire Line
 	-8150 7150 -8150 6200
 Text Label -8350 6200 3    50   ~ 0
 CFG_0
-Text Notes -8850 8000 0    50   ~ 0
-check ordering of CFG pins\nfor default setup\nSSPI: CFG[2:0] = 001
+Text Notes -8700 8000 0    50   ~ 0
+SSPI: CFG[2:0] = [001] (default)\nMSPI: CFG[2:0] = [010]
 $Comp
 L Device:R R57
 U 1 1 5D071140
 P -8500 7300
-F 0 "R57" V -8293 7300 50  0000 C CNN
-F 1 "4.7k" V -8384 7300 50  0000 C CNN
+F 0 "R57" V -8400 7300 50  0000 C CNN
+F 1 "4.7k" V -8500 7300 50  0000 C CNN
 F 2 "gsg-modules:0402" V -8570 7300 50  0001 C CNN
 F 3 "~" H -8500 7300 50  0001 C CNN
 	1    -8500 7300
@@ -4552,14 +4553,14 @@ B3_N
 Text Label -10650 4700 1    50   ~ 0
 B2_P
 Text Label -12350 4700 1    50   ~ 0
-B2_P
+B2_N
 Wire Wire Line
 	15300 2500 15350 2500
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J?
+L Connector_Generic:Conn_02x10_Odd_Even J4
 U 1 1 5D4FD960
 P 19350 1450
-F 0 "J?" H 19400 2067 50  0000 C CNN
+F 0 "J4" H 19400 2067 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 19400 1976 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19350 1450 50  0001 C CNN
 F 3 "~" H 19350 1450 50  0001 C CNN
@@ -4575,8 +4576,8 @@ L power:GND #PWR?
 U 1 1 5D4FE67E
 P 19700 1550
 AR Path="/5C7E37E4/5D4FE67E" Ref="#PWR?"  Part="1" 
-AR Path="/5D4FE67E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 19700 1300 50  0001 C CNN
+AR Path="/5D4FE67E" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 19700 1300 50  0001 C CNN
 F 1 "GND" V 19705 1422 50  0000 R CNN
 F 2 "" H 19700 1550 50  0001 C CNN
 F 3 "" H 19700 1550 50  0001 C CNN
@@ -4613,8 +4614,8 @@ L power:GND #PWR?
 U 1 1 5D5989DD
 P 19100 1950
 AR Path="/5C7E37E4/5D5989DD" Ref="#PWR?"  Part="1" 
-AR Path="/5D5989DD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 19100 1700 50  0001 C CNN
+AR Path="/5D5989DD" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 19100 1700 50  0001 C CNN
 F 1 "GND" V 19105 1822 50  0000 R CNN
 F 2 "" H 19100 1950 50  0001 C CNN
 F 3 "" H 19100 1950 50  0001 C CNN
@@ -4733,6 +4734,74 @@ Wire Wire Line
 	18700 1950 18700 1650
 Wire Wire Line
 	18700 1650 19150 1650
+$Comp
+L Memory_EEPROM:AT25xxx U8
+U 1 1 5D0F2A29
+P -9700 9600
+F 0 "U8" H -9850 9350 50  0000 C CNN
+F 1 "AT25xxx" H -9850 9250 50  0000 C CNN
+F 2 "gsg-modules:SOIC8-154" H -9700 9600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H -9700 9600 50  0001 C CNN
+F 4 "DNP" H -9900 9850 50  0000 C CNN "Note"
+	1    -9700 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-9700 9300 -9650 9300
+Wire Wire Line
+	-9700 9900 -9650 9900
+$Comp
+L power:GND #PWR0118
+U 1 1 5D161379
+P -9650 9900
+F 0 "#PWR0118" H -9650 9650 50  0001 C CNN
+F 1 "GND" V -9645 9772 50  0000 R CNN
+F 2 "" H -9650 9900 50  0001 C CNN
+F 3 "" H -9650 9900 50  0001 C CNN
+	1    -9650 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0119
+U 1 1 5D161602
+P -9650 9300
+F 0 "#PWR0119" H -9650 9150 50  0001 C CNN
+F 1 "VCC" V -9633 9428 50  0000 L CNN
+F 2 "" H -9650 9300 50  0001 C CNN
+F 3 "" H -9650 9300 50  0001 C CNN
+	1    -9650 9300
+	0    1    1    0   
+$EndComp
+Text Notes -10000 10100 0    50   ~ 0
+optional SPI flash
+Text Label -9300 9500 0    50   ~ 0
+SCK
+Text Label -10100 9700 2    50   ~ 0
+CSSPIN
+Text Label -9300 9600 0    50   ~ 0
+MOSI
+Text Label -9300 9700 0    50   ~ 0
+MISO
+$Comp
+L power:VCC #PWR0120
+U 1 1 5D16C39C
+P -10150 9550
+F 0 "#PWR0120" H -10150 9400 50  0001 C CNN
+F 1 "VCC" V -10132 9677 50  0000 L CNN
+F 2 "" H -10150 9550 50  0001 C CNN
+F 3 "" H -10150 9550 50  0001 C CNN
+	1    -10150 9550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-10150 9500 -10100 9500
+Wire Wire Line
+	-10100 9600 -10150 9600
+Wire Wire Line
+	-10150 9600 -10150 9550
+Connection ~ -10150 9550
+Wire Wire Line
+	-10150 9550 -10150 9500
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
