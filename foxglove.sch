@@ -600,8 +600,6 @@ Text Label -3800 3000 1    50   ~ 0
 J2.34
 Text Label -3700 3000 1    50   ~ 0
 J2.36
-Text Label -3600 3000 1    50   ~ 0
-J2.38
 Text Label -3500 3000 1    50   ~ 0
 J2.40
 Entry Wire Line
@@ -1283,19 +1281,6 @@ F 3 "~" H 11900 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5D7BE9FA
-P 11900 6550
-AR Path="/5C842523/5D7BE9FA" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BE9FA" Ref="#PWR0133"  Part="1" 
-F 0 "#PWR0133" H 11900 6400 50  0001 C CNN
-F 1 "+5V" V 11915 6678 50  0000 L CNN
-F 2 "" H 11900 6550 50  0001 C CNN
-F 3 "" H 11900 6550 50  0001 C CNN
-	1    11900 6550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D7BEA01
 P 11450 7300
@@ -1363,8 +1348,6 @@ Text Label 11400 7100 0    50   ~ 0
 MOSI
 Text Label 11900 7000 0    50   ~ 0
 SSEL
-Wire Wire Line
-	11900 6550 11900 6600
 $Comp
 L Device:C C13
 U 1 1 5CA1CB44
@@ -1477,7 +1460,7 @@ Wire Wire Line
 	11650 7200 11600 7200
 Connection ~ 11600 7200
 Text Label 11950 3100 2    50   ~ 0
-div_sel
+div_en
 $Comp
 L gsg-symbols:LFE5U-12F-6BG256C IC1
 U 1 1 5CBE08F5
@@ -2801,8 +2784,6 @@ Text Label -6550 4700 1    50   ~ 0
 J2.09
 Text Label -5750 4700 1    50   ~ 0
 J2.40
-Text Label -5650 4700 1    50   ~ 0
-J2.38
 Text Label -5550 4700 1    50   ~ 0
 J2.36
 Text Label -5450 4700 1    50   ~ 0
@@ -4467,35 +4448,35 @@ $EndComp
 Wire Wire Line
 	14100 6600 14400 6600
 Text Label -10150 6200 3    50   ~ 0
-DIR_1
+DIR_7
 Text Label -10250 6200 3    50   ~ 0
-A1_shift
+A7_shift
 Text Label -10350 6200 3    50   ~ 0
-S2_1
+S0_7
 Text Label -10550 6200 3    50   ~ 0
-S1_1
+S1_7
 Text Label -8450 6200 3    50   ~ 0
-S0_1
+S2_7
 Text Label -8750 6200 3    50   ~ 0
-DIR_2
+DIR_8
 Text Label -8950 6200 3    50   ~ 0
-A2_shift
+A8_shift
 Text Label -7050 6200 3    50   ~ 0
-S2_2
+S0_8
 Text Label -7250 6200 3    50   ~ 0
-S1_2
+S1_8
 Text Label -7350 6200 3    50   ~ 0
-S0_2
+S2_8
 Text Label -5650 6200 3    50   ~ 0
 DIR_3
 Text Label -5750 6200 3    50   ~ 0
-A3_shift
-Text Label -7150 6200 3    50   ~ 0
-S2_3
-Text Label -5450 6200 3    50   ~ 0
-S1_3
-Text Label -3850 6200 3    50   ~ 0
 S0_3
+Text Label -7150 6200 3    50   ~ 0
+S1_3
+Text Label -5450 6200 3    50   ~ 0
+S2_3
+Text Label -3850 6200 3    50   ~ 0
+A3_shift
 Wire Wire Line
 	12650 2900 12700 2900
 Wire Wire Line
@@ -4802,6 +4783,70 @@ Wire Wire Line
 Connection ~ -10150 9550
 Wire Wire Line
 	-10150 9550 -10150 9500
+Text Label -5550 6200 3    50   ~ 0
+DIR_1
+Text Label -4150 6200 3    50   ~ 0
+A1_shift
+Text Label -3950 6200 3    50   ~ 0
+S0_1
+Text Label -4050 6200 3    50   ~ 0
+S1_1
+Text Label -2550 6200 3    50   ~ 0
+S2_1
+Text Label -2450 6200 3    50   ~ 0
+S2_2
+Text Label -13650 4700 1    50   ~ 0
+S1_2
+Text Label -2250 6200 3    50   ~ 0
+DIR_2
+Text Label -2350 6200 3    50   ~ 0
+A2_shift
+Text Label -12150 4700 1    50   ~ 0
+S0_2
+Text Label -13550 4700 1    50   ~ 0
+DIR_4
+Text Label -11850 4700 1    50   ~ 0
+A4_shift
+Text Label -11950 4700 1    50   ~ 0
+S0_4
+Text Label -12050 4700 1    50   ~ 0
+S1_4
+Text Label -10550 4700 1    50   ~ 0
+S2_4
+Text Label -7350 4700 1    50   ~ 0
+S0_6
+Text Label -8850 4700 1    50   ~ 0
+S1_6
+Text Label -8950 4700 1    50   ~ 0
+S2_6
+Text Label -8650 4700 1    50   ~ 0
+A6_shift
+Text Label -8750 4700 1    50   ~ 0
+DIR_6
+Text Label -5650 4700 1    50   ~ 0
+S0_5
+Text Label -6950 4700 1    50   ~ 0
+S1_5
+Text Label -8550 4700 1    50   ~ 0
+S2_5
+Text Label -10350 4700 1    50   ~ 0
+DIR_5
+Text Label -10450 4700 1    50   ~ 0
+A5_shift
+$Comp
+L power:VCC #PWR0129
+U 1 1 5D150A98
+P 11900 6300
+F 0 "#PWR0129" H 11900 6150 50  0001 C CNN
+F 1 "VCC" H 11917 6473 50  0000 C CNN
+F 2 "" H 11900 6300 50  0001 C CNN
+F 3 "" H 11900 6300 50  0001 C CNN
+	1    11900 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 6300 11900 6600
+NoConn ~ -3600 3000
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
