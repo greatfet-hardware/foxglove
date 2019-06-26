@@ -3719,7 +3719,7 @@ F 3 "" H -13250 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	-13250 4700 -13250 4650
-Text Label -11100 1150 2    50   ~ 0
+Text Label -11000 1150 2    50   ~ 0
 VCCIO1
 $Comp
 L power:VCC #PWR039
@@ -4835,13 +4835,12 @@ Text Label -10450 4700 1    50   ~ 0
 A5_shift
 Wire Wire Line
 	11900 6300 11900 6600
-NoConn ~ -3600 3000
 Text Label -9350 6200 3    50   ~ 0
 pull_sel
 Text Label -9250 6200 3    50   ~ 0
 pull_en
 Text Label -6050 6200 3    50   ~ 0
-div_en
+J2.38
 $Comp
 L gsg-symbols:PCA6408A U26
 U 1 1 5D21CE35
@@ -4996,7 +4995,6 @@ COUT2
 Text Notes 10300 9200 0    50   ~ 0
 also comes in smaller/cheaper packages
 NoConn ~ 10700 8750
-NoConn ~ 10700 8850
 Wire Wire Line
 	11400 8650 11700 8650
 Wire Bus Line
@@ -5009,4 +5007,10 @@ Wire Bus Line
 	-12700 9100 -10900 9100
 Wire Bus Line
 	-2150 4150 -400 4150
+Text Label 10700 8850 2    50   ~ 0
+div_en
+Text Label -3600 3000 1    50   ~ 0
+J2.38
+Text Label -11350 1150 2    50   ~ 0
+VCCIO0
 $EndSCHEMATC
