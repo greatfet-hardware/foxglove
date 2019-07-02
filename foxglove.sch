@@ -4550,8 +4550,6 @@ F 3 "~" H 19350 1450 50  0001 C CNN
 $EndComp
 Text Label 19150 1050 2    50   ~ 0
 VCCB
-Text Label 19650 1050 0    50   ~ 0
-VCCB
 $Comp
 L power:GND #PWR?
 U 1 1 5D4FE67E
@@ -4997,6 +4995,12 @@ also comes in smaller/cheaper packages
 NoConn ~ 10700 8750
 Wire Wire Line
 	11400 8650 11700 8650
+Text Label 10700 8850 2    50   ~ 0
+div_en
+Text Label -3600 3000 1    50   ~ 0
+J2.38
+Text Label -11350 1150 2    50   ~ 0
+VCCIO0
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
@@ -5007,10 +5011,24 @@ Wire Bus Line
 	-12700 9100 -10900 9100
 Wire Bus Line
 	-2150 4150 -400 4150
-Text Label 10700 8850 2    50   ~ 0
-div_en
-Text Label -3600 3000 1    50   ~ 0
-J2.38
-Text Label -11350 1150 2    50   ~ 0
-VCCIO0
+Text Label 18800 200  2    50   ~ 0
+B1T_P
+Text Label 18800 550  2    50   ~ 0
+B1T_N
+Text Label 18750 900  2    50   ~ 0
+B2T_P
+Text Label 18700 1250 2    50   ~ 0
+B2T_N
+Text Label 18700 1600 2    50   ~ 0
+B3T_P
+Text Label 18600 1950 2    50   ~ 0
+B3T_N
+Text Label 18600 2300 2    50   ~ 0
+B4T_P
+Text Label 18600 2650 2    50   ~ 0
+B4T_N
+Text Label 19650 1050 0    50   ~ 0
+Vtarget
+Text Notes 19950 1050 0    50   ~ 0
+to ADC? DNP?
 $EndSCHEMATC
