@@ -780,11 +780,11 @@ AR Path="/5C7E37E4/5CF682F7" Ref="J?"  Part="1"
 AR Path="/5CF682F7" Ref="J3"  Part="1" 
 F 0 "J3" H 15600 3117 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 15600 3026 50  0000 C CNN
-F 2 "gsg-modules:2X5-SHROUDED" H 15550 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 15550 2700 50  0001 C CNN
 F 3 "~" H 15550 2700 50  0001 C CNN
-F 4 "SparkFun Electronics" H 15550 2700 50  0001 C CNN "Manufacturer"
-F 5 "PRT-08506" H 15550 2700 50  0001 C CNN "Part Number"
-F 6 "Conn Shrouded Header F 10 POS 2.54mm Solder ST Thru-Hole" H 15550 2700 50  0001 C CNN "Description"
+F 4 "Sullins Connector Solutions" H 15550 2700 50  0001 C CNN "Manufacturer"
+F 5 "SBH11-PBPC-D05-RA-BK" H 15550 2700 50  0001 C CNN "Part Number"
+F 6 "CONN HEADER R/A 10POS 2.54MM" H 15550 2700 50  0001 C CNN "Description"
 	1    15550 2700
 	1    0    0    -1  
 $EndComp
@@ -4545,6 +4545,9 @@ F 0 "J4" H 19400 2067 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 19400 1976 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19350 1450 50  0001 C CNN
 F 3 "~" H 19350 1450 50  0001 C CNN
+F 4 "Sullins Connector Solutions" H 19350 1450 50  0001 C CNN "Manufacturer"
+F 5 "SBH11-PBPC-D10-RA-BK" H 19350 1450 50  0001 C CNN "Part Number"
+F 6 "CONN HEADER R/A 20POS 2.54MM" H 19350 1450 50  0001 C CNN "Description"
 	1    19350 1450
 	1    0    0    -1  
 $EndComp
@@ -5001,16 +5004,6 @@ Text Label -3600 3000 1    50   ~ 0
 J2.38
 Text Label -11350 1150 2    50   ~ 0
 VCCIO0
-Wire Bus Line
-	-5400 2700 -3400 2700
-Wire Bus Line
-	-5700 3800 -3400 3800
-Wire Bus Line
-	-13800 8000 -10900 8000
-Wire Bus Line
-	-12700 9100 -10900 9100
-Wire Bus Line
-	-2150 4150 -400 4150
 Text Label 18800 200  2    50   ~ 0
 B1T_P
 Text Label 18800 550  2    50   ~ 0
@@ -5029,6 +5022,32 @@ Text Label 18600 2650 2    50   ~ 0
 B4T_N
 Text Label 19650 1050 0    50   ~ 0
 Vtarget
-Text Notes 19950 1050 0    50   ~ 0
-to ADC? DNP?
+Wire Wire Line
+	19650 1050 19950 1050
+Wire Bus Line
+	-5400 2700 -3400 2700
+Wire Bus Line
+	-5700 3800 -3400 3800
+Wire Bus Line
+	-13800 8000 -10900 8000
+Wire Bus Line
+	-12700 9100 -10900 9100
+Wire Bus Line
+	-2150 4150 -400 4150
+$Comp
+L Device:R R?
+U 1 1 5D235AE1
+P 20100 1050
+AR Path="/5C7E37E4/5D235AE1" Ref="R?"  Part="1" 
+AR Path="/5D235AE1" Ref="R73"  Part="1" 
+F 0 "R73" V 20200 1050 50  0000 C CNN
+F 1 "0" V 20100 1050 50  0000 C CNN
+F 2 "gsg-modules:0402" V 20030 1050 50  0001 C CNN
+F 3 "~" H 20100 1050 50  0001 C CNN
+F 4 "DNP" V 20000 1050 50  0000 C CNN "Note"
+	1    20100 1050
+	0    1    1    0   
+$EndComp
+Text Label 20250 1050 0    50   ~ 0
+ADC_A
 $EndSCHEMATC
