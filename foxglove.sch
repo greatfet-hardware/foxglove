@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 1 9
+Sheet 1 17
 Title "GreatFET Neighbor Template"
 Date "2019-03-01"
 Rev ""
@@ -600,8 +600,6 @@ Text Label -3800 3000 1    50   ~ 0
 J2.34
 Text Label -3700 3000 1    50   ~ 0
 J2.36
-Text Label -3600 3000 1    50   ~ 0
-J2.38
 Text Label -3500 3000 1    50   ~ 0
 J2.40
 Entry Wire Line
@@ -782,229 +780,146 @@ AR Path="/5C7E37E4/5CF682F7" Ref="J?"  Part="1"
 AR Path="/5CF682F7" Ref="J3"  Part="1" 
 F 0 "J3" H 15600 3117 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 15600 3026 50  0000 C CNN
-F 2 "gsg-modules:HEADER-2x5" H 15550 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 15550 2700 50  0001 C CNN
 F 3 "~" H 15550 2700 50  0001 C CNN
-F 4 "Samtec Inc." H 15550 2700 50  0001 C CNN "Manufacturer"
-F 5 "TSW-105-22-T-D-RA" H 15550 2700 50  0001 C CNN "Part Number"
-F 6 "CONN HEADER R/A 10POS 2.54MM " H 15550 2700 50  0001 C CNN "Description"
+F 4 "Sullins Connector Solutions" H 15550 2700 50  0001 C CNN "Manufacturer"
+F 5 "SBH11-PBPC-D05-RA-BK" H 15550 2700 50  0001 C CNN "Part Number"
+F 6 "CONN HEADER R/A 10POS 2.54MM" H 15550 2700 50  0001 C CNN "Description"
 	1    15550 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CF682FE
-P 15900 2900
+P 15300 2500
 AR Path="/5C7E37E4/5CF682FE" Ref="#PWR?"  Part="1" 
 AR Path="/5CF682FE" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 15900 2650 50  0001 C CNN
-F 1 "GND" V 15905 2772 50  0000 R CNN
-F 2 "" H 15900 2900 50  0001 C CNN
-F 3 "" H 15900 2900 50  0001 C CNN
-	1    15900 2900
-	0    -1   -1   0   
+F 0 "#PWR0111" H 15300 2250 50  0001 C CNN
+F 1 "GND" V 15305 2372 50  0000 R CNN
+F 2 "" H 15300 2500 50  0001 C CNN
+F 3 "" H 15300 2500 50  0001 C CNN
+	1    15300 2500
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	15850 2900 15900 2900
-Wire Wire Line
-	15350 2900 15300 2900
-Text Label 15300 2900 2    50   ~ 0
-VCCA
-Text Label 15350 2500 2    50   ~ 0
-A1
 Text Label 15850 2500 0    50   ~ 0
+VCCA
+Text Label 15350 2900 2    50   ~ 0
+A1
+Text Label 15850 2900 0    50   ~ 0
 A2
-Text Label 15350 2600 2    50   ~ 0
+Text Label 15350 2800 2    50   ~ 0
 A3
-Text Label 15850 2600 0    50   ~ 0
+Text Label 15850 2800 0    50   ~ 0
 A4
 Text Label 15350 2700 2    50   ~ 0
 A5
 Text Label 15850 2700 0    50   ~ 0
 A6
-Text Label 15350 2800 2    50   ~ 0
+Text Label 15850 2600 0    50   ~ 0
 A7
-Text Label 15850 2800 0    50   ~ 0
+Text Label 15350 2600 2    50   ~ 0
 A8
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
-U 1 1 5CF68312
-P 15550 3500
-AR Path="/5C7E37E4/5CF68312" Ref="J?"  Part="1" 
-AR Path="/5CF68312" Ref="J4"  Part="1" 
-F 0 "J4" H 15600 3917 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 15600 3826 50  0000 C CNN
-F 2 "gsg-modules:HEADER-2x5" H 15550 3500 50  0001 C CNN
-F 3 "~" H 15550 3500 50  0001 C CNN
-F 4 "Samtec Inc." H 15550 3500 50  0001 C CNN "Manufacturer"
-F 5 "TSW-105-22-T-D-RA" H 15550 3500 50  0001 C CNN "Part Number"
-F 6 "CONN HEADER R/A 10POS 2.54MM " H 15550 3500 50  0001 C CNN "Description"
-	1    15550 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CF68319
-P 15900 3700
-AR Path="/5C7E37E4/5CF68319" Ref="#PWR?"  Part="1" 
-AR Path="/5CF68319" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 15900 3450 50  0001 C CNN
-F 1 "GND" V 15905 3572 50  0000 R CNN
-F 2 "" H 15900 3700 50  0001 C CNN
-F 3 "" H 15900 3700 50  0001 C CNN
-	1    15900 3700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	15850 3700 15900 3700
-Text Label 15350 3300 2    50   ~ 0
-B1
-Text Label 15850 3300 0    50   ~ 0
-B2
-Text Label 15350 3400 2    50   ~ 0
-B3
-Text Label 15850 3400 0    50   ~ 0
-B4
-Text Label 15350 3500 2    50   ~ 0
-B5
-Text Label 15850 3500 0    50   ~ 0
-B6
-Text Label 15350 3600 2    50   ~ 0
-B7
-Text Label 15850 3600 0    50   ~ 0
-B8
+Text Label 17700 200  2    50   ~ 0
+B1_P
+Text Label 17700 550  2    50   ~ 0
+B1_N
+Text Label 17700 900  2    50   ~ 0
+B2_P
+Text Label 17700 1250 2    50   ~ 0
+B2_N
+Text Label 17700 1600 2    50   ~ 0
+B3_P
+Text Label 17700 1950 2    50   ~ 0
+B3_N
+Text Label 17700 2300 2    50   ~ 0
+B4_P
+Text Label 17700 2650 2    50   ~ 0
+B4_N
 Text Label -5200 3500 3    50   ~ 0
 ADC
 $Comp
 L Device:R R?
 U 1 1 5CF96A35
-P 14550 1800
+P 12850 2900
 AR Path="/5C7E37E4/5CF96A35" Ref="R?"  Part="1" 
 AR Path="/5CF96A35" Ref="R9"  Part="1" 
-F 0 "R9" V 14343 1800 50  0000 C CNN
-F 1 "5k" V 14434 1800 50  0000 C CNN
-F 2 "gsg-modules:0402" V 14480 1800 50  0001 C CNN
-F 3 "~" H 14550 1800 50  0001 C CNN
-	1    14550 1800
-	0    -1   -1   0   
+F 0 "R9" V 12750 2900 50  0000 C CNN
+F 1 "5k" V 12850 2900 50  0000 C CNN
+F 2 "gsg-modules:0402" V 12780 2900 50  0001 C CNN
+F 3 "~" H 12850 2900 50  0001 C CNN
+F 4 "Vishay Dale" H 12850 2900 50  0001 C CNN "Manufacturer"
+F 5 "PNM0402E5001BST1" H 12850 2900 50  0001 C CNN "Part Number"
+F 6 "RES SMD 5K OHM 0.1% 1/20W 0402" H 12850 2900 50  0001 C CNN "Description"
+	1    12850 2900
+	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5CF96A3C
-P 14750 2000
-AR Path="/5C7E37E4/5CF96A3C" Ref="R?"  Part="1" 
-AR Path="/5CF96A3C" Ref="R10"  Part="1" 
-F 0 "R10" H 14680 1954 50  0000 R CNN
-F 1 "10k" H 14680 2045 50  0000 R CNN
-F 2 "gsg-modules:0402" V 14680 2000 50  0001 C CNN
-F 3 "~" H 14750 2000 50  0001 C CNN
-	1    14750 2000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	14700 1800 14750 1800
-Wire Wire Line
-	14750 1800 14750 1850
-Wire Wire Line
-	14750 2150 14750 2200
-$Comp
-L power:GND #PWR?
-U 1 1 5CF96A46
-P 14750 2200
-AR Path="/5C7E37E4/5CF96A46" Ref="#PWR?"  Part="1" 
-AR Path="/5CF96A46" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 14750 1950 50  0001 C CNN
-F 1 "GND" H 14755 2027 50  0000 C CNN
-F 2 "" H 14750 2200 50  0001 C CNN
-F 3 "" H 14750 2200 50  0001 C CNN
-	1    14750 2200
-	1    0    0    -1  
-$EndComp
-Text Label 14800 1800 0    50   ~ 0
+Text Label 13350 2900 0    50   ~ 0
 ADC
-Wire Wire Line
-	14750 1800 14800 1800
-Connection ~ 14750 1800
 $Comp
 L gsg-symbols:74LVC1G3157 U4
 U 1 1 5CFA999E
-P 13900 1900
-F 0 "U4" H 13900 2225 50  0000 C CNN
-F 1 "74LVC1G3157" H 13900 2134 50  0000 C CNN
-F 2 "gsg-modules:SOT363" H 13900 1900 50  0001 C CNN
-F 3 "" H 13900 1900 50  0001 C CNN
-F 4 "Diodes Incorporated " H 13900 1900 50  0001 C CNN "Manufacturer"
-F 5 "74LVC1G3157DW-7 " H 13900 1900 50  0001 C CNN "Part Number"
-F 6 "IC SWITCH SPDT 6 OHM SOT363 " H 13900 1900 50  0001 C CNN "Description"
-	1    13900 1900
+P 12350 3000
+F 0 "U4" H 12350 2700 50  0000 C CNN
+F 1 "74LVC1G3157" H 12350 2800 50  0000 C CNN
+F 2 "gsg-modules:SOT363" H 12350 3000 50  0001 C CNN
+F 3 "" H 12350 3000 50  0001 C CNN
+F 4 "Diodes Incorporated " H 12350 3000 50  0001 C CNN "Manufacturer"
+F 5 "74LVC1G3157DW-7 " H 12350 3000 50  0001 C CNN "Part Number"
+F 6 "IC SWITCH SPDT 6 OHM SOT363 " H 12350 3000 50  0001 C CNN "Description"
+	1    12350 3000
 	-1   0    0    1   
 $EndComp
-Text Notes 13900 2400 0    50   ~ 0
-add ext clipper?
 Wire Wire Line
-	13600 1900 13550 1900
-$Comp
-L power:VCC #PWR0115
-U 1 1 5CFF4A34
-P 13550 1900
-F 0 "#PWR0115" H 13550 1750 50  0001 C CNN
-F 1 "VCC" V 13568 2027 50  0000 L CNN
-F 2 "" H 13550 1900 50  0001 C CNN
-F 3 "" H 13550 1900 50  0001 C CNN
-	1    13550 1900
-	0    -1   -1   0   
-$EndComp
+	12050 3000 12000 3000
 $Comp
 L power:GND #PWR0116
 U 1 1 5CFF4D3E
-P 14400 1900
-F 0 "#PWR0116" H 14400 1650 50  0001 C CNN
-F 1 "GND" V 14405 1772 50  0000 R CNN
-F 2 "" H 14400 1900 50  0001 C CNN
-F 3 "" H 14400 1900 50  0001 C CNN
-	1    14400 1900
-	1    0    0    -1  
+P 12700 3000
+F 0 "#PWR0116" H 12700 2750 50  0001 C CNN
+F 1 "GND" V 12705 2872 50  0000 R CNN
+F 2 "" H 12700 3000 50  0001 C CNN
+F 3 "" H 12700 3000 50  0001 C CNN
+	1    12700 3000
+	0    -1   -1   0   
 $EndComp
-Text Label 14200 2000 0    50   ~ 0
-ADC
-Wire Wire Line
-	14200 1900 14400 1900
-Wire Wire Line
-	14200 1800 14400 1800
 $Comp
 L Device:R R?
 U 1 1 5D09D4DF
-P 13550 2200
+P 12000 3300
 AR Path="/5C7E37E4/5D09D4DF" Ref="R?"  Part="1" 
 AR Path="/5D09D4DF" Ref="R7"  Part="1" 
-F 0 "R7" H 13480 2154 50  0000 R CNN
-F 1 "10k" H 13480 2245 50  0000 R CNN
-F 2 "gsg-modules:0402" V 13480 2200 50  0001 C CNN
-F 3 "~" H 13550 2200 50  0001 C CNN
-	1    13550 2200
+F 0 "R7" V 11900 3350 50  0000 R CNN
+F 1 "10k" V 12000 3350 50  0000 R CNN
+F 2 "gsg-modules:0402" V 11930 3300 50  0001 C CNN
+F 3 "~" H 12000 3300 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 12000 3300 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 12000 3300 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 12000 3300 50  0001 C CNN "Description"
+	1    12000 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13550 2350 13550 2400
+	12000 3450 12000 3500
 $Comp
 L power:GND #PWR?
 U 1 1 5D0D5B30
-P 13550 2400
+P 12000 3500
 AR Path="/5C7E37E4/5D0D5B30" Ref="#PWR?"  Part="1" 
 AR Path="/5D0D5B30" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 13550 2150 50  0001 C CNN
-F 1 "GND" H 13555 2227 50  0000 C CNN
-F 2 "" H 13550 2400 50  0001 C CNN
-F 3 "" H 13550 2400 50  0001 C CNN
-	1    13550 2400
+F 0 "#PWR0117" H 12000 3250 50  0001 C CNN
+F 1 "GND" H 12005 3327 50  0000 C CNN
+F 2 "" H 12000 3500 50  0001 C CNN
+F 3 "" H 12000 3500 50  0001 C CNN
+	1    12000 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13500 2000 13550 2000
+	11950 3100 12000 3100
 Wire Wire Line
-	13550 2000 13550 2050
+	12000 3100 12000 3150
 Wire Wire Line
-	13550 2000 13600 2000
-Connection ~ 13550 2000
+	12000 3100 12050 3100
+Connection ~ 12000 3100
 Text Notes 15300 5400 0    50   ~ 0
 comparators
 Text Label 7900 2700 0    50   ~ 0
@@ -1013,7 +928,7 @@ Text Label 7900 2800 0    50   ~ 0
 COMP2
 Text Label 7900 2400 0    50   ~ 0
 VCCA
-Text Label 13600 1800 2    50   ~ 0
+Text Label 12050 2900 2    50   ~ 0
 ADC_A
 Text Label 7900 2300 0    50   ~ 0
 ADC_A
@@ -1359,32 +1274,6 @@ F 3 "" H 10000 6900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5D7BE9F0
-P 11900 6750
-AR Path="/5C842523/5D7BE9F0" Ref="R?"  Part="1" 
-AR Path="/5D7BE9F0" Ref="R15"  Part="1" 
-F 0 "R15" H 11970 6796 50  0000 L CNN
-F 1 "10k" H 11970 6705 50  0000 L CNN
-F 2 "gsg-modules:0402" V 11830 6750 50  0001 C CNN
-F 3 "~" H 11900 6750 50  0001 C CNN
-	1    11900 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D7BE9FA
-P 11900 6550
-AR Path="/5C842523/5D7BE9FA" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BE9FA" Ref="#PWR0133"  Part="1" 
-F 0 "#PWR0133" H 11900 6400 50  0001 C CNN
-F 1 "+5V" V 11915 6678 50  0000 L CNN
-F 2 "" H 11900 6550 50  0001 C CNN
-F 3 "" H 11900 6550 50  0001 C CNN
-	1    11900 6550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D7BEA01
 P 11450 7300
@@ -1451,9 +1340,7 @@ SCK
 Text Label 11400 7100 0    50   ~ 0
 MOSI
 Text Label 11900 7000 0    50   ~ 0
-SSEL
-Wire Wire Line
-	11900 6550 11900 6600
+DAC~SYNC~
 $Comp
 L Device:C C13
 U 1 1 5CA1CB44
@@ -1565,8 +1452,8 @@ Wire Wire Line
 Wire Wire Line
 	11650 7200 11600 7200
 Connection ~ 11600 7200
-Text Label 13500 2000 2    50   ~ 0
-ADC_sel
+Text Label 11950 3100 2    50   ~ 0
+div_en
 $Comp
 L gsg-symbols:LFE5U-12F-6BG256C IC1
 U 1 1 5CBE08F5
@@ -1575,51 +1462,56 @@ F 0 "IC1" V -1000 4750 50  0000 R CNN
 F 1 "LFE5U-12F-6BG256C" V -255 -8127 50  0000 R CNN
 F 2 "gsg-modules:BGA256C80P16X16_1400X1400X170" H 300 4800 50  0001 L CNN
 F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012.pdf?document_id=50461" H 300 4700 50  0001 L CNN
-F 4 "FPGA - Field Programmable Gate Array ECP5; 12k LUTs; 1.1V" H 300 4600 50  0001 L CNN "Description"
-F 5 "1.7" H 300 4500 50  0001 L CNN "Height"
-F 6 "Lattice" H 300 4400 50  0001 L CNN "Manufacturer_Name"
-F 7 "LFE5U-12F-6BG256C" H 300 4300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "842-LFE5U12F6BG256C" H 300 4200 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=842-LFE5U12F6BG256C" H 300 4100 50  0001 L CNN "Mouser Price/Stock"
+F 4 "Lattice" H -1050 4700 50  0001 C CNN "Manufacturer"
+F 5 "LFE5U-12F-6BG256C" H -1050 4700 50  0001 C CNN "Part Number"
+F 6 "FPGA - Field Programmable Gate Array ECP5; 12k LUTs; 1.1V" H 300 4600 50  0001 L CNN "Description"
+F 7 "1.7" H 300 4500 50  0001 L CNN "Height"
+F 8 "Lattice" H 300 4400 50  0001 L CNN "Manufacturer_Name"
+F 9 "LFE5U-12F-6BG256C" H 300 4300 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "842-LFE5U12F6BG256C" H 300 4200 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=842-LFE5U12F6BG256C" H 300 4100 50  0001 L CNN "Mouser Price/Stock"
 	1    -1050 4700
 	0    1    1    0   
 $EndComp
 $Comp
 L gsg-symbols:74LVC1G53 U?
 U 1 1 5CC6C060
-P 13900 3500
+P 13550 3450
 AR Path="/5CF421CD/5CC6C060" Ref="U?"  Part="1" 
 AR Path="/5CC6C060" Ref="U25"  Part="1" 
-F 0 "U25" H 13925 3825 50  0000 C CNN
-F 1 "74LVC1G53" H 13925 3734 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 13900 3500 50  0001 C CNN
-F 3 "" H 13900 3500 50  0001 C CNN
-	1    13900 3500
+F 0 "U25" H 13575 3775 50  0000 C CNN
+F 1 "74LVC1G53" H 13575 3684 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 13550 3450 50  0001 C CNN
+F 3 "" H 13550 3450 50  0001 C CNN
+F 4 "Nexperia USA Inc." H 13550 3450 50  0001 C CNN "Manufacturer"
+F 5 "74LVC1G53DC,125" H 13550 3450 50  0001 C CNN "Part Number"
+F 6 "IC MUX/DEMUX 2X1 8VSSOP" H 13550 3450 50  0001 C CNN "Description"
+	1    13550 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14200 3500 14400 3500
+	13850 3450 14050 3450
 Wire Wire Line
-	14400 3500 14400 3450
+	14050 3450 14050 3400
 Wire Wire Line
-	14200 3600 14400 3600
+	13850 3550 14050 3550
 Wire Wire Line
-	14400 3600 14400 3650
+	14050 3550 14050 3600
 Wire Wire Line
-	14700 3450 14750 3450
+	14350 3400 14400 3400
 Wire Wire Line
-	14700 3650 14750 3650
+	14350 3600 14400 3600
 Wire Wire Line
-	13650 3700 13650 3650
+	13300 3650 13300 3600
 Wire Wire Line
-	13650 3650 13600 3650
-Connection ~ 13650 3650
+	13300 3600 13250 3600
+Connection ~ 13300 3600
 Wire Wire Line
-	13650 3650 13650 3600
+	13300 3600 13300 3550
 $Comp
 L power:GND #PWR0121
 U 1 1 5CC6C07F
-P 14750 3450
+P 14400 3400
 AR Path="/5CC6C07F" Ref="#PWR0121"  Part="1" 
 AR Path="/5C7E37E4/5CC6C07F" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CC6C07F" Ref="#PWR?"  Part="1" 
@@ -1631,21 +1523,21 @@ AR Path="/5D1A4654/5CC6C07F" Ref="#PWR?"  Part="1"
 AR Path="/5D1A466A/5CC6C07F" Ref="#PWR?"  Part="1" 
 AR Path="/5D1A4680/5CC6C07F" Ref="#PWR?"  Part="1" 
 AR Path="/5D1A4696/5CC6C07F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0121" H 14750 3200 50  0001 C CNN
-F 1 "GND" H 14750 3300 50  0000 C CNN
-F 2 "" H 14750 3450 60  0000 C CNN
-F 3 "" H 14750 3450 60  0000 C CNN
-	1    14750 3450
+F 0 "#PWR0121" H 14400 3150 50  0001 C CNN
+F 1 "GND" H 14400 3250 50  0000 C CNN
+F 2 "" H 14400 3400 60  0000 C CNN
+F 3 "" H 14400 3400 60  0000 C CNN
+	1    14400 3400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	14200 3400 14250 3400
+	13850 3350 13900 3350
 Wire Wire Line
-	14250 3400 14250 3350
+	13900 3350 13900 3300
 $Comp
 L power:GND #PWR0124
 U 1 1 5CC6C088
-P 13600 3650
+P 13250 3600
 AR Path="/5CC6C088" Ref="#PWR0124"  Part="1" 
 AR Path="/5C7E37E4/5CC6C088" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CC6C088" Ref="#PWR?"  Part="1" 
@@ -1657,21 +1549,19 @@ AR Path="/5D1A4654/5CC6C088" Ref="#PWR?"  Part="1"
 AR Path="/5D1A466A/5CC6C088" Ref="#PWR?"  Part="1" 
 AR Path="/5D1A4680/5CC6C088" Ref="#PWR?"  Part="1" 
 AR Path="/5D1A4696/5CC6C088" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0124" H 13600 3400 50  0001 C CNN
-F 1 "GND" H 13600 3500 50  0000 C CNN
-F 2 "" H 13600 3650 60  0000 C CNN
-F 3 "" H 13600 3650 60  0000 C CNN
-	1    13600 3650
+F 0 "#PWR0124" H 13250 3350 50  0001 C CNN
+F 1 "GND" H 13250 3450 50  0000 C CNN
+F 2 "" H 13250 3600 60  0000 C CNN
+F 3 "" H 13250 3600 60  0000 C CNN
+	1    13250 3600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	14200 3700 14250 3700
-Wire Wire Line
-	14250 3700 14250 3750
+	13850 3650 13900 3650
 $Comp
 L power:+5V #PWR?
 U 1 1 5CC6C092
-P 14250 3350
+P 13900 3300
 AR Path="/5C7E37E4/5CC6C092" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CC6C092" Ref="#PWR?"  Part="1" 
 AR Path="/5CF421CD/5CC6C092" Ref="#PWR?"  Part="1" 
@@ -1683,45 +1573,22 @@ AR Path="/5D1A466A/5CC6C092" Ref="#PWR?"  Part="1"
 AR Path="/5D1A4680/5CC6C092" Ref="#PWR?"  Part="1" 
 AR Path="/5D1A4696/5CC6C092" Ref="#PWR?"  Part="1" 
 AR Path="/5CC6C092" Ref="#PWR0126"  Part="1" 
-F 0 "#PWR0126" H 14250 3200 50  0001 C CNN
-F 1 "+5V" V 14265 3478 50  0000 L CNN
-F 2 "" H 14250 3350 50  0001 C CNN
-F 3 "" H 14250 3350 50  0001 C CNN
-	1    14250 3350
+F 0 "#PWR0126" H 13900 3150 50  0001 C CNN
+F 1 "+5V" V 13915 3428 50  0000 L CNN
+F 2 "" H 13900 3300 50  0001 C CNN
+F 3 "" H 13900 3300 50  0001 C CNN
+	1    13900 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R45
-U 1 1 5CC6C098
-P 13550 3300
-AR Path="/5CC6C098" Ref="R45"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D17D622/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D190D0C/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D190D22/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D1A4654/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D1A466A/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D1A4680/5CC6C098" Ref="R?"  Part="1" 
-AR Path="/5D1A4696/5CC6C098" Ref="R?"  Part="1" 
-F 0 "R45" V 13630 3300 50  0000 C CNN
-F 1 "10k" V 13550 3300 50  0000 C CNN
-F 2 "gsg-modules:0402" V 13480 3300 50  0001 C CNN
-F 3 "" H 13550 3300 50  0001 C CNN
-	1    13550 3300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	13550 3450 13550 3500
+	13200 3450 13300 3450
 Wire Wire Line
-	13550 3500 13650 3500
-Wire Wire Line
-	13550 3500 13450 3500
-Connection ~ 13550 3500
+	13200 3450 13100 3450
+Connection ~ 13200 3450
 $Comp
 L power:+5V #PWR?
 U 1 1 5CC6C0A3
-P 13550 3100
+P 12850 3300
 AR Path="/5C7E37E4/5CC6C0A3" Ref="#PWR?"  Part="1" 
 AR Path="/5C7E37E4/5CF37D46/5CC6C0A3" Ref="#PWR?"  Part="1" 
 AR Path="/5CF421CD/5CC6C0A3" Ref="#PWR?"  Part="1" 
@@ -1733,27 +1600,19 @@ AR Path="/5D1A466A/5CC6C0A3" Ref="#PWR?"  Part="1"
 AR Path="/5D1A4680/5CC6C0A3" Ref="#PWR?"  Part="1" 
 AR Path="/5D1A4696/5CC6C0A3" Ref="#PWR?"  Part="1" 
 AR Path="/5CC6C0A3" Ref="#PWR0127"  Part="1" 
-F 0 "#PWR0127" H 13550 2950 50  0001 C CNN
-F 1 "+5V" V 13565 3228 50  0000 L CNN
-F 2 "" H 13550 3100 50  0001 C CNN
-F 3 "" H 13550 3100 50  0001 C CNN
-	1    13550 3100
-	1    0    0    -1  
+F 0 "#PWR0127" H 12850 3150 50  0001 C CNN
+F 1 "+5V" V 12865 3428 50  0000 L CNN
+F 2 "" H 12850 3300 50  0001 C CNN
+F 3 "" H 12850 3300 50  0001 C CNN
+	1    12850 3300
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	13550 3100 13550 3150
-Text Label 13700 3250 1    50   ~ 0
-ADC_A
-Wire Wire Line
-	13700 3250 13650 3250
-Wire Wire Line
-	13650 3250 13650 3400
-Text Label 14750 3650 0    50   ~ 0
+Text Label 14400 3600 0    50   ~ 0
 VCCA
-Text Label 14250 3750 3    50   ~ 0
-ADC_pull
-Text Label 13450 3500 2    50   ~ 0
-EN_pull
+Text Label 13900 3750 0    50   ~ 0
+pull_sel
+Text Label 13100 3450 2    50   ~ 0
+pull_en
 $Comp
 L gsg-symbols:ADP225 U2
 U 1 1 5CCD2B79
@@ -1828,10 +1687,13 @@ $Comp
 L Device:R R44
 U 1 1 5CD9CF5E
 P 10950 1350
-F 0 "R44" V 11157 1350 50  0000 C CNN
-F 1 "120k" V 11066 1350 50  0000 C CNN
+F 0 "R44" V 11050 1350 50  0000 C CNN
+F 1 "120k" V 10950 1350 50  0000 C CNN
 F 2 "gsg-modules:0402" V 10880 1350 50  0001 C CNN
 F 3 "~" H 10950 1350 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 10950 1350 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT120K" H 10950 1350 50  0001 C CNN "Part Number"
+F 6 "RES 120K OHM 1% 1/16W 0402" H 10950 1350 50  0001 C CNN "Description"
 	1    10950 1350
 	1    0    0    -1  
 $EndComp
@@ -1846,17 +1708,6 @@ Wire Wire Line
 Wire Wire Line
 	10950 1550 11400 1550
 Connection ~ 10950 1550
-$Comp
-L Device:R R43
-U 1 1 5CE2681B
-P 10800 1000
-F 0 "R43" V 11007 1000 50  0000 C CNN
-F 1 "100k" V 10916 1000 50  0000 C CNN
-F 2 "gsg-modules:0402" V 10730 1000 50  0001 C CNN
-F 3 "~" H 10800 1000 50  0001 C CNN
-	1    10800 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10800 1200 10800 1150
 Connection ~ 10800 1200
@@ -1933,10 +1784,13 @@ $Comp
 L Device:R R42
 U 1 1 5CF1DBFB
 P 10250 2000
-F 0 "R42" V 10457 2000 50  0000 C CNN
-F 1 "100k" V 10366 2000 50  0000 C CNN
+F 0 "R42" V 10350 2000 50  0000 C CNN
+F 1 "100k" V 10250 2000 50  0000 C CNN
 F 2 "gsg-modules:0402" V 10180 2000 50  0001 C CNN
 F 3 "~" H 10250 2000 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 10250 2000 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT100K" H 10250 2000 50  0001 C CNN "Part Number"
+F 6 "RES 100K OHM 5% 1/16W 0402" H 10250 2000 50  0001 C CNN "Description"
 	1    10250 2000
 	0    1    1    0   
 $EndComp
@@ -1992,10 +1846,13 @@ $Comp
 L Device:R R41
 U 1 1 5CFF97C1
 P 9550 1900
-F 0 "R41" V 9757 1900 50  0000 C CNN
-F 1 "25k" V 9666 1900 50  0000 C CNN
+F 0 "R41" V 9650 1900 50  0000 C CNN
+F 1 "25k" V 9550 1900 50  0000 C CNN
 F 2 "gsg-modules:0402" V 9480 1900 50  0001 C CNN
 F 3 "~" H 9550 1900 50  0001 C CNN
+F 4 "Vishay Dale" H 9550 1900 50  0001 C CNN "Manufacturer"
+F 5 "PNM0402E2502BST1" H 9550 1900 50  0001 C CNN "Part Number"
+F 6 "RES SMD 25K OHM 0.1% 1/20W 0402" H 9550 1900 50  0001 C CNN "Description"
 	1    9550 1900
 	0    1    1    0   
 $EndComp
@@ -2321,10 +2178,13 @@ $Comp
 L Device:R R60
 U 1 1 5D7CF73C
 P -6750 6500
-F 0 "R60" V -6543 6500 50  0000 C CNN
-F 1 "4.7k" V -6634 6500 50  0000 C CNN
+F 0 "R60" V -6650 6500 50  0000 C CNN
+F 1 "4.7k" V -6750 6500 50  0000 C CNN
 F 2 "gsg-modules:0402" V -6820 6500 50  0001 C CNN
 F 3 "~" H -6750 6500 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -6750 6500 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -6750 6500 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -6750 6500 50  0001 C CNN "Description"
 	1    -6750 6500
 	-1   0    0    1   
 $EndComp
@@ -2345,17 +2205,6 @@ F 3 "" H -6750 6700 50  0001 C CNN
 	1    -6750 6700
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R4
-U 1 1 5D86FB8B
-P -11800 6700
-F 0 "R4" V -11593 6700 50  0000 C CNN
-F 1 "4.7k" V -11684 6700 50  0000 C CNN
-F 2 "gsg-modules:0402" V -11870 6700 50  0001 C CNN
-F 3 "~" H -11800 6700 50  0001 C CNN
-	1    -11800 6700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-11800 6850 -11800 6900
 $Comp
@@ -2373,17 +2222,6 @@ Text Label -11650 6350 1    50   ~ 0
 TDI
 Text Label -13150 6350 1    50   ~ 0
 TCK
-$Comp
-L Device:R R2
-U 1 1 5D9100D4
-P -13150 7250
-F 0 "R2" V -12943 7250 50  0000 C CNN
-F 1 "4.7k" V -13034 7250 50  0000 C CNN
-F 2 "gsg-modules:0402" V -13220 7250 50  0001 C CNN
-F 3 "~" H -13150 7250 50  0001 C CNN
-	1    -13150 7250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-13150 7400 -13150 7450
 $Comp
@@ -2399,17 +2237,6 @@ F 3 "" H -13150 7450 50  0001 C CNN
 $EndComp
 Text Label -13250 6350 1    50   ~ 0
 TMS
-$Comp
-L Device:R R1
-U 1 1 5D9B38D5
-P -13350 6750
-F 0 "R1" V -13143 6750 50  0000 C CNN
-F 1 "4.7k" V -13234 6750 50  0000 C CNN
-F 2 "gsg-modules:0402" V -13420 6750 50  0001 C CNN
-F 3 "~" H -13350 6750 50  0001 C CNN
-	1    -13350 6750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-13350 6900 -13350 6950
 $Comp
@@ -2437,6 +2264,7 @@ F 0 "J6" H -9700 8917 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H -9700 8826 50  0000 C CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD" H -9750 8600 50  0001 C CNN
 F 3 "~" H -9750 8600 50  0001 C CNN
+F 4 "DNP" H -9500 8400 50  0000 C CNN "Note"
 	1    -9750 8600
 	1    0    0    -1  
 $EndComp
@@ -2472,17 +2300,6 @@ Text Label -9950 8700 2    50   ~ 0
 TDO
 Text Label -9450 8500 0    50   ~ 0
 TCK
-$Comp
-L Device:R R6
-U 1 1 5CD6C713
-P -11450 6950
-F 0 "R6" V -11243 6950 50  0000 C CNN
-F 1 "4.7k" V -11334 6950 50  0000 C CNN
-F 2 "gsg-modules:0402" V -11520 6950 50  0001 C CNN
-F 3 "~" H -11450 6950 50  0001 C CNN
-	1    -11450 6950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-11450 7100 -11450 7150
 $Comp
@@ -2504,17 +2321,6 @@ Text Label -13050 6200 3    50   ~ 0
 INITN
 Wire Wire Line
 	-13150 6200 -13150 7100
-$Comp
-L Device:R R3
-U 1 1 5CE8886B
-P -12850 7250
-F 0 "R3" V -12643 7250 50  0000 C CNN
-F 1 "4.7k" V -12734 7250 50  0000 C CNN
-F 2 "gsg-modules:0402" V -12920 7250 50  0001 C CNN
-F 3 "~" H -12850 7250 50  0001 C CNN
-	1    -12850 7250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-12850 7400 -12850 7450
 $Comp
@@ -2540,10 +2346,13 @@ $Comp
 L Device:R R58
 U 1 1 5CF0406A
 P -8250 6750
-F 0 "R58" V -8043 6750 50  0000 C CNN
-F 1 "1k" V -8134 6750 50  0000 C CNN
+F 0 "R58" V -8150 6750 50  0000 C CNN
+F 1 "1k" V -8250 6750 50  0000 C CNN
 F 2 "gsg-modules:0402" V -8320 6750 50  0001 C CNN
 F 3 "~" H -8250 6750 50  0001 C CNN
+F 4 "KOA Speer Electronics, Inc." H -8250 6750 50  0001 C CNN "Manufacturer"
+F 5 "RK73B1ETTP102J" H -8250 6750 50  0001 C CNN "Part Number"
+F 6 "RES 1K OHM 5% 1/10W 0402" H -8250 6750 50  0001 C CNN "Description"
 	1    -8250 6750
 	-1   0    0    1   
 $EndComp
@@ -2564,17 +2373,6 @@ Wire Wire Line
 	-8250 6600 -8250 6200
 Text Label -8150 6200 3    50   ~ 0
 CSSPIN
-$Comp
-L Device:R R59
-U 1 1 5CF8052D
-P -8150 7300
-F 0 "R59" V -7943 7300 50  0000 C CNN
-F 1 "4.7k" V -8034 7300 50  0000 C CNN
-F 2 "gsg-modules:0402" V -8220 7300 50  0001 C CNN
-F 3 "~" H -8150 7300 50  0001 C CNN
-	1    -8150 7300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-8150 7450 -8150 7500
 $Comp
@@ -2592,19 +2390,8 @@ Wire Wire Line
 	-8150 7150 -8150 6200
 Text Label -8350 6200 3    50   ~ 0
 CFG_0
-Text Notes -8850 8000 0    50   ~ 0
-check ordering of CFG pins\nfor default setup\nSSPI: CFG[2:0] = 001
-$Comp
-L Device:R R57
-U 1 1 5D071140
-P -8500 7300
-F 0 "R57" V -8293 7300 50  0000 C CNN
-F 1 "4.7k" V -8384 7300 50  0000 C CNN
-F 2 "gsg-modules:0402" V -8570 7300 50  0001 C CNN
-F 3 "~" H -8500 7300 50  0001 C CNN
-	1    -8500 7300
-	-1   0    0    1   
-$EndComp
+Text Notes -8700 8000 0    50   ~ 0
+SSPI: CFG[2:0] = [001] (default)\nMSPI: CFG[2:0] = [010]
 Wire Wire Line
 	-8500 7450 -8500 7500
 $Comp
@@ -2622,17 +2409,6 @@ Wire Wire Line
 	-8350 6200 -8350 6650
 Text Label -9950 6200 3    50   ~ 0
 CFG_1
-$Comp
-L Device:R R56
-U 1 1 5D0EA2E4
-P -9950 6700
-F 0 "R56" V -9743 6700 50  0000 C CNN
-F 1 "4.7k" V -9834 6700 50  0000 C CNN
-F 2 "gsg-modules:0402" V -10020 6700 50  0001 C CNN
-F 3 "~" H -9950 6700 50  0001 C CNN
-	1    -9950 6700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	-9950 6850 -9950 6900
 Wire Wire Line
@@ -2647,17 +2423,6 @@ F 2 "" H -9950 6900 50  0001 C CNN
 F 3 "" H -9950 6900 50  0001 C CNN
 	1    -9950 6900
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5D166399
-P -11600 7250
-F 0 "R5" V -11393 7250 50  0000 C CNN
-F 1 "4.7k" V -11484 7250 50  0000 C CNN
-F 2 "gsg-modules:0402" V -11670 7250 50  0001 C CNN
-F 3 "~" H -11600 7250 50  0001 C CNN
-	1    -11600 7250
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	-11600 7400 -11600 7450
@@ -2901,8 +2666,6 @@ Text Label -6550 4700 1    50   ~ 0
 J2.09
 Text Label -5750 4700 1    50   ~ 0
 J2.40
-Text Label -5650 4700 1    50   ~ 0
-J2.38
 Text Label -5550 4700 1    50   ~ 0
 J2.36
 Text Label -5450 4700 1    50   ~ 0
@@ -2965,22 +2728,10 @@ Text Label -10750 6200 3    50   ~ 0
 J1.15
 Text Label -10650 6200 3    50   ~ 0
 J1.14
-Text Label -10650 4700 1    50   ~ 0
-B2
-Text Label -10750 4700 1    50   ~ 0
-B1
-Text Label -12550 4700 1    50   ~ 0
-B4
-Text Label -12650 4700 1    50   ~ 0
-B3
 Text Label -1050 6200 3    50   ~ 0
-B6
+B4_P
 Text Label -1150 6200 3    50   ~ 0
-B5
-Text Label -2650 6200 3    50   ~ 0
-B8
-Text Label -2750 6200 3    50   ~ 0
-B7
+B4_N
 Wire Wire Line
 	-8350 6650 -8500 6650
 Wire Wire Line
@@ -3092,48 +2843,6 @@ F 3 "" H 12800 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12800 5100 12800 5300
-$Comp
-L Device:R R18
-U 1 1 5CDE8538
-P 14550 3450
-AR Path="/5CDE8538" Ref="R18"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D17D622/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D190D0C/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D190D22/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D1A4654/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D1A466A/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D1A4680/5CDE8538" Ref="R?"  Part="1" 
-AR Path="/5D1A4696/5CDE8538" Ref="R?"  Part="1" 
-F 0 "R18" V 14630 3450 50  0000 C CNN
-F 1 "10k" V 14550 3450 50  0000 C CNN
-F 2 "gsg-modules:0402" V 14480 3450 50  0001 C CNN
-F 3 "" H 14550 3450 50  0001 C CNN
-	1    14550 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R19
-U 1 1 5CDE85EC
-P 14550 3650
-AR Path="/5CDE85EC" Ref="R19"  Part="1" 
-AR Path="/5C7E37E4/5CF37D46/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5CF421CD/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D17D622/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D190D0C/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D190D22/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D1A4654/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D1A466A/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D1A4680/5CDE85EC" Ref="R?"  Part="1" 
-AR Path="/5D1A4696/5CDE85EC" Ref="R?"  Part="1" 
-F 0 "R19" V 14630 3650 50  0000 C CNN
-F 1 "10k" V 14550 3650 50  0000 C CNN
-F 2 "gsg-modules:0402" V 14480 3650 50  0001 C CNN
-F 3 "" H 14550 3650 50  0001 C CNN
-	1    14550 3650
-	0    -1   -1   0   
-$EndComp
 $Comp
 L gsg-symbols:LM393 U1
 U 1 1 5CE133A4
@@ -3269,8 +2978,6 @@ Wire Wire Line
 Connection ~ -12800 4700
 Text Label -12800 4500 1    50   ~ 0
 VCCB
-Text Label 15350 3700 2    50   ~ 0
-VCCB
 Text Notes -13200 4250 0    50   ~ 0
 1.14 <VCCIO7 < 3.465
 $Comp
@@ -3308,6 +3015,9 @@ F 0 "R21" V 14107 5550 50  0000 C CNN
 F 1 "20k" V 14016 5550 50  0000 C CNN
 F 2 "gsg-modules:0402" V 13830 5550 50  0001 C CNN
 F 3 "~" H 13900 5550 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13900 5550 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT20K0" H 13900 5550 50  0001 C CNN "Part Number"
+F 6 "RES 20K OHM 5% 1/16W 0402" H 13900 5550 50  0001 C CNN "Description"
 	1    13900 5550
 	-1   0    0    1   
 $EndComp
@@ -3319,6 +3029,9 @@ F 0 "R22" H 13830 5104 50  0000 R CNN
 F 1 "89.8k" H 13830 5195 50  0000 R CNN
 F 2 "gsg-modules:0402" V 13830 5150 50  0001 C CNN
 F 3 "~" H 13900 5150 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13900 5150 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT88K7" H 13900 5150 50  0001 C CNN "Part Number"
+F 6 "RES 88.7K OHM 1% 1/16W 0402" H 13900 5150 50  0001 C CNN "Description"
 	1    13900 5150
 	1    0    0    -1  
 $EndComp
@@ -3352,6 +3065,9 @@ F 0 "C3" H 14215 5196 50  0000 L CNN
 F 1 "2.7nF" H 14215 5105 50  0000 L CNN
 F 2 "gsg-modules:0402" H 14138 5000 50  0001 C CNN
 F 3 "~" H 14100 5150 50  0001 C CNN
+F 4 "Yageo" H 14100 5150 50  0001 C CNN "Manufacturer"
+F 5 "CC0402KRX7R9BB272" H 14100 5150 50  0001 C CNN "Part Number"
+F 6 "CAP CER 2700PF 50V X7R 0402" H 14100 5150 50  0001 C CNN "Description"
 	1    14100 5150
 	1    0    0    -1  
 $EndComp
@@ -3372,6 +3088,9 @@ F 0 "C2" H 13815 4846 50  0000 L CNN
 F 1 "4.7uF" H 13815 4755 50  0000 L CNN
 F 2 "gsg-modules:0402" H 13738 4650 50  0001 C CNN
 F 3 "~" H 13700 4800 50  0001 C CNN
+F 4 "Murata Electronics North America" H 13700 4800 50  0001 C CNN "Manufacturer"
+F 5 "GRM155R61A475MEAAD" H 13700 4800 50  0001 C CNN "Part Number"
+F 6 "CAP CER 4.7UF 10V X5R 0402" H 13700 4800 50  0001 C CNN "Description"
 	1    13700 4800
 	1    0    0    -1  
 $EndComp
@@ -3401,9 +3120,12 @@ L Device:R R14
 U 1 1 5CDD62B9
 P 14300 5350
 F 0 "R14" V 14507 5350 50  0000 C CNN
-F 1 "118.1k" V 14416 5350 50  0000 C CNN
+F 1 "118.1k" V 14400 5350 50  0000 C CNN
 F 2 "gsg-modules:0402" V 14230 5350 50  0001 C CNN
 F 3 "~" H 14300 5350 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 14300 5350 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT118K" H 14300 5350 50  0001 C CNN "Part Number"
+F 6 "RES 118K OHM 1% 1/16W 0402" H 14300 5350 50  0001 C CNN "Description"
 	1    14300 5350
 	0    1    1    0   
 $EndComp
@@ -3496,28 +3218,6 @@ Wire Wire Line
 	12900 6800 12900 6950
 Wire Wire Line
 	12900 6950 13000 6950
-$Comp
-L Device:R R11
-U 1 1 5CFB88B3
-P 13900 7150
-F 0 "R11" V 14107 7150 50  0000 C CNN
-F 1 "20k" V 14016 7150 50  0000 C CNN
-F 2 "gsg-modules:0402" V 13830 7150 50  0001 C CNN
-F 3 "~" H 13900 7150 50  0001 C CNN
-	1    13900 7150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5CFB88BA
-P 13900 6750
-F 0 "R8" H 13830 6704 50  0000 R CNN
-F 1 "89.8k" H 13830 6795 50  0000 R CNN
-F 2 "gsg-modules:0402" V 13830 6750 50  0001 C CNN
-F 3 "~" H 13900 6750 50  0001 C CNN
-	1    13900 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13600 6700 13600 6950
 Wire Wire Line
@@ -3540,17 +3240,6 @@ Text Label 14150 6600 0    50   ~ 0
 DAC
 Wire Wire Line
 	13550 6700 13600 6700
-$Comp
-L Device:C C11
-U 1 1 5CFB88CD
-P 14100 6750
-F 0 "C11" H 14215 6796 50  0000 L CNN
-F 1 "2.7nF" H 14215 6705 50  0000 L CNN
-F 2 "gsg-modules:0402" H 14138 6600 50  0001 C CNN
-F 3 "~" H 14100 6750 50  0001 C CNN
-	1    14100 6750
-	1    0    0    -1  
-$EndComp
 Connection ~ 14100 6600
 Wire Wire Line
 	14100 6900 14100 6950
@@ -3558,17 +3247,6 @@ Wire Wire Line
 	14100 6950 13900 6950
 Wire Wire Line
 	13550 6600 13700 6600
-$Comp
-L Device:C C9
-U 1 1 5CFB88D9
-P 13700 6400
-F 0 "C9" H 13815 6446 50  0000 L CNN
-F 1 "4.7uF" H 13815 6355 50  0000 L CNN
-F 2 "gsg-modules:0402" H 13738 6250 50  0001 C CNN
-F 3 "~" H 13700 6400 50  0001 C CNN
-	1    13700 6400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13700 6600 13700 6550
 $Comp
@@ -3586,17 +3264,6 @@ Wire Wire Line
 	13700 6250 13700 6200
 Text Notes 12850 6250 0    50   ~ 0
 1.2 < DAC < 5
-$Comp
-L Device:R R16
-U 1 1 5CFB88E9
-P 14300 6950
-F 0 "R16" V 14507 6950 50  0000 C CNN
-F 1 "118.1k" V 14416 6950 50  0000 C CNN
-F 2 "gsg-modules:0402" V 14230 6950 50  0001 C CNN
-F 3 "~" H 14300 6950 50  0001 C CNN
-	1    14300 6950
-	0    1    1    0   
-$EndComp
 Connection ~ 14100 6950
 Wire Wire Line
 	14100 6950 14150 6950
@@ -3605,14 +3272,9 @@ Wire Wire Line
 Text Label 14500 6950 0    50   ~ 0
 DAC2
 Wire Wire Line
-	13900 6600 14100 6600
-Wire Wire Line
 	13900 7350 13900 7300
-Connection ~ 13900 6600
 Wire Wire Line
 	13600 6950 13900 6950
-Wire Wire Line
-	13700 6600 13900 6600
 Connection ~ 13700 6600
 $Comp
 L gsg-symbols:AP2127 U6
@@ -3676,17 +3338,6 @@ Wire Wire Line
 Wire Wire Line
 	12900 8550 13000 8550
 $Comp
-L Device:R R13
-U 1 1 5CDE3263
-P 13900 8750
-F 0 "R13" V 14107 8750 50  0000 C CNN
-F 1 "20k" V 14016 8750 50  0000 C CNN
-F 2 "gsg-modules:0402" V 13830 8750 50  0001 C CNN
-F 3 "~" H 13900 8750 50  0001 C CNN
-	1    13900 8750
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5CDE326A
 P 13900 8350
@@ -3694,6 +3345,9 @@ F 0 "R12" H 13830 8304 50  0000 R CNN
 F 1 "57.25k" H 13830 8395 50  0000 R CNN
 F 2 "gsg-modules:0402" V 13830 8350 50  0001 C CNN
 F 3 "~" H 13900 8350 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13900 8350 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT57K6" H 13900 8350 50  0001 C CNN "Part Number"
+F 6 "RES 57.6K OHM 1% 1/16W 0402" H 13900 8350 50  0001 C CNN "Description"
 	1    13900 8350
 	1    0    0    -1  
 $EndComp
@@ -3719,37 +3373,12 @@ Text Label 14150 8200 0    50   ~ 0
 VCCB
 Wire Wire Line
 	13550 8300 13600 8300
-$Comp
-L Device:C C12
-U 1 1 5CDE327D
-P 14100 8350
-F 0 "C12" H 14215 8396 50  0000 L CNN
-F 1 "2.7nF" H 14215 8305 50  0000 L CNN
-F 2 "gsg-modules:0402" H 14138 8200 50  0001 C CNN
-F 3 "~" H 14100 8350 50  0001 C CNN
-	1    14100 8350
-	1    0    0    -1  
-$EndComp
-Connection ~ 14100 8200
-Wire Wire Line
-	14100 8200 14150 8200
 Wire Wire Line
 	14100 8500 14100 8550
 Wire Wire Line
 	14100 8550 13900 8550
 Wire Wire Line
 	13550 8200 13700 8200
-$Comp
-L Device:C C10
-U 1 1 5CDE3289
-P 13700 8000
-F 0 "C10" H 13815 8046 50  0000 L CNN
-F 1 "4.7uF" H 13815 7955 50  0000 L CNN
-F 2 "gsg-modules:0402" H 13738 7850 50  0001 C CNN
-F 3 "~" H 13700 8000 50  0001 C CNN
-	1    13700 8000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13700 8200 13700 8150
 $Comp
@@ -3773,6 +3402,9 @@ F 0 "R63" V 14507 8550 50  0000 C CNN
 F 1 "127.2k" V 14416 8550 50  0000 C CNN
 F 2 "gsg-modules:0402" V 14230 8550 50  0001 C CNN
 F 3 "~" H 14300 8550 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 14300 8550 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT127K" H 14300 8550 50  0001 C CNN "Part Number"
+F 6 "RES 127K OHM 1% 1/16W 0402" H 14300 8550 50  0001 C CNN "Description"
 	1    14300 8550
 	0    1    1    0   
 $EndComp
@@ -3783,8 +3415,6 @@ Wire Wire Line
 	14450 8550 14500 8550
 Text Label 14500 8550 0    50   ~ 0
 DAC3
-Wire Wire Line
-	13900 8200 14100 8200
 Wire Wire Line
 	13900 8950 13900 8900
 Connection ~ 13900 8200
@@ -3806,10 +3436,8 @@ F 3 "" H 12750 8150 50  0001 C CNN
 $EndComp
 Text Notes 12700 7800 0    50   ~ 0
 1.14 <VCCB < 3.465
-Text Notes 13500 1650 0    50   ~ 0
-ADC voltage divider
-Text Notes 13700 2950 0    50   ~ 0
-ADC pull up/down
+Text Notes 12350 2600 0    50   ~ 0
+ADC voltage divider / pull-up / pull-down
 Text Notes 9650 1100 0    50   ~ 0
 1.1V, 2.5V power supplies
 Wire Wire Line
@@ -3854,7 +3482,7 @@ F 3 "" H -13250 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	-13250 4700 -13250 4650
-Text Label -11100 1150 2    50   ~ 0
+Text Label -11000 1150 2    50   ~ 0
 VCCIO1
 $Comp
 L power:VCC #PWR039
@@ -3886,7 +3514,7 @@ L Device:C C23
 U 1 1 5D16D1A5
 P -11350 1300
 F 0 "C23" H -11235 1346 50  0000 L CNN
-F 1 "100nF" H -11235 1255 50  0000 L CNN
+F 1 "0.1uF" H -11235 1255 50  0000 L CNN
 F 2 "gsg-modules:0402" H -11312 1150 50  0001 C CNN
 F 3 "~" H -11350 1300 50  0001 C CNN
 F 4 "Taiyo Yuden " H -11350 1300 50  0001 C CNN "Manufacturer"
@@ -3941,7 +3569,7 @@ L Device:C C29
 U 1 1 5D1C6203
 P -10500 1300
 F 0 "C29" H -10385 1346 50  0000 L CNN
-F 1 "100nF" H -10385 1255 50  0000 L CNN
+F 1 "0.1uF" H -10385 1255 50  0000 L CNN
 F 2 "gsg-modules:0402" H -10462 1150 50  0001 C CNN
 F 3 "~" H -10500 1300 50  0001 C CNN
 F 4 "Taiyo Yuden " H -10500 1300 50  0001 C CNN "Manufacturer"
@@ -4007,7 +3635,7 @@ L Device:C C30
 U 1 1 5D24F878
 P -10500 2150
 F 0 "C30" H -10385 2196 50  0000 L CNN
-F 1 "100nF" H -10385 2105 50  0000 L CNN
+F 1 "0.1uF" H -10385 2105 50  0000 L CNN
 F 2 "gsg-modules:0402" H -10462 2000 50  0001 C CNN
 F 3 "~" H -10500 2150 50  0001 C CNN
 F 4 "Taiyo Yuden " H -10500 2150 50  0001 C CNN "Manufacturer"
@@ -4071,7 +3699,7 @@ L Device:C C34
 U 1 1 5D27EEB9
 P -9650 2150
 F 0 "C34" H -9535 2196 50  0000 L CNN
-F 1 "100nF" H -9535 2105 50  0000 L CNN
+F 1 "0.1uF" H -9535 2105 50  0000 L CNN
 F 2 "gsg-modules:0402" H -9612 2000 50  0001 C CNN
 F 3 "~" H -9650 2150 50  0001 C CNN
 F 4 "Taiyo Yuden " H -9650 2150 50  0001 C CNN "Manufacturer"
@@ -4130,7 +3758,7 @@ L Device:C C18
 U 1 1 5D2AF52A
 P -12200 2150
 F 0 "C18" H -12085 2196 50  0000 L CNN
-F 1 "100nF" H -12085 2105 50  0000 L CNN
+F 1 "0.1uF" H -12085 2105 50  0000 L CNN
 F 2 "gsg-modules:0402" H -12162 2000 50  0001 C CNN
 F 3 "~" H -12200 2150 50  0001 C CNN
 F 4 "Taiyo Yuden " H -12200 2150 50  0001 C CNN "Manufacturer"
@@ -4192,7 +3820,7 @@ L Device:C C24
 U 1 1 5D2AF551
 P -11350 2150
 F 0 "C24" H -11235 2196 50  0000 L CNN
-F 1 "100nF" H -11235 2105 50  0000 L CNN
+F 1 "0.1uF" H -11235 2105 50  0000 L CNN
 F 2 "gsg-modules:0402" H -11312 2000 50  0001 C CNN
 F 3 "~" H -11350 2150 50  0001 C CNN
 F 4 "Taiyo Yuden " H -11350 2150 50  0001 C CNN "Manufacturer"
@@ -4256,7 +3884,7 @@ L Device:C C19
 U 1 1 5D3116C0
 P -12200 3000
 F 0 "C19" H -12085 3046 50  0000 L CNN
-F 1 "100nF" H -12085 2955 50  0000 L CNN
+F 1 "0.1uF" H -12085 2955 50  0000 L CNN
 F 2 "gsg-modules:0402" H -12162 2850 50  0001 C CNN
 F 3 "~" H -12200 3000 50  0001 C CNN
 F 4 "Taiyo Yuden " H -12200 3000 50  0001 C CNN "Manufacturer"
@@ -4328,7 +3956,7 @@ L Device:C C25
 U 1 1 5D3A9D59
 P -11350 3000
 F 0 "C25" H -11235 3046 50  0000 L CNN
-F 1 "100nF" H -11235 2955 50  0000 L CNN
+F 1 "0.1uF" H -11235 2955 50  0000 L CNN
 F 2 "gsg-modules:0402" H -11312 2850 50  0001 C CNN
 F 3 "~" H -11350 3000 50  0001 C CNN
 F 4 "Taiyo Yuden " H -11350 3000 50  0001 C CNN "Manufacturer"
@@ -4385,7 +4013,7 @@ L Device:C C33
 U 1 1 5D4436DD
 P -9650 1300
 F 0 "C33" H -9535 1346 50  0000 L CNN
-F 1 "100nF" H -9535 1255 50  0000 L CNN
+F 1 "0.1uF" H -9535 1255 50  0000 L CNN
 F 2 "gsg-modules:0402" H -9612 1150 50  0001 C CNN
 F 3 "~" H -9650 1300 50  0001 C CNN
 F 4 "Taiyo Yuden " H -9650 1300 50  0001 C CNN "Manufacturer"
@@ -4582,6 +4210,915 @@ F 3 "~" H 14600 6600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14100 6600 14400 6600
+Text Label -10150 6200 3    50   ~ 0
+DIR_7
+Text Label -10250 6200 3    50   ~ 0
+A7_shift
+Text Label -10350 6200 3    50   ~ 0
+S0_7
+Text Label -10550 6200 3    50   ~ 0
+S1_7
+Text Label -8450 6200 3    50   ~ 0
+S2_7
+Text Label -8750 6200 3    50   ~ 0
+DIR_8
+Text Label -8950 6200 3    50   ~ 0
+A8_shift
+Text Label -7050 6200 3    50   ~ 0
+S0_8
+Text Label -7250 6200 3    50   ~ 0
+S1_8
+Text Label -7350 6200 3    50   ~ 0
+S2_8
+Text Label -5650 6200 3    50   ~ 0
+DIR_3
+Text Label -5750 6200 3    50   ~ 0
+S0_3
+Text Label -7150 6200 3    50   ~ 0
+S1_3
+Text Label -5450 6200 3    50   ~ 0
+S2_3
+Text Label -3850 6200 3    50   ~ 0
+A3_shift
+Wire Wire Line
+	12650 2900 12700 2900
+Wire Wire Line
+	12650 3100 13150 3100
+Wire Wire Line
+	13150 3100 13150 2900
+Wire Wire Line
+	13150 2900 13000 2900
+Wire Wire Line
+	12700 3000 12650 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1A956D
+P 12000 3000
+AR Path="/5C7E37E4/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5C7E37E4/5CF37D46/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5CF421CD/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D17D622/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D0C/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D190D22/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4654/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A466A/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4680/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A4696/5D1A956D" Ref="#PWR?"  Part="1" 
+AR Path="/5D1A956D" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 12000 2850 50  0001 C CNN
+F 1 "+5V" V 12015 3128 50  0000 L CNN
+F 2 "" H 12000 3000 50  0001 C CNN
+F 3 "" H 12000 3000 50  0001 C CNN
+	1    12000 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13900 3650 13900 3750
+Wire Wire Line
+	12850 3300 12900 3300
+Wire Wire Line
+	13200 3300 13200 3450
+Wire Wire Line
+	13150 2900 13300 2900
+Wire Wire Line
+	13300 2900 13300 3350
+Connection ~ 13150 2900
+Wire Wire Line
+	13300 2900 13350 2900
+Connection ~ 13300 2900
+Text Label -9050 4700 1    50   ~ 0
+B1_P
+Text Label -10750 4700 1    50   ~ 0
+B1_N
+Text Label -12550 4700 1    50   ~ 0
+B3_P
+Text Label -12650 4700 1    50   ~ 0
+B3_N
+Text Label -10650 4700 1    50   ~ 0
+B2_P
+Text Label -12350 4700 1    50   ~ 0
+B2_N
+Wire Wire Line
+	15300 2500 15350 2500
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J4
+U 1 1 5D4FD960
+P 19350 1450
+F 0 "J4" H 19400 2067 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 19400 1976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19350 1450 50  0001 C CNN
+F 3 "~" H 19350 1450 50  0001 C CNN
+F 4 "Sullins Connector Solutions" H 19350 1450 50  0001 C CNN "Manufacturer"
+F 5 "SBH11-PBPC-D10-RA-BK" H 19350 1450 50  0001 C CNN "Part Number"
+F 6 "CONN HEADER R/A 20POS 2.54MM" H 19350 1450 50  0001 C CNN "Description"
+	1    19350 1450
+	1    0    0    -1  
+$EndComp
+Text Label 19150 1050 2    50   ~ 0
+VCCB
+$Comp
+L power:GND #PWR?
+U 1 1 5D4FE67E
+P 19700 1550
+AR Path="/5C7E37E4/5D4FE67E" Ref="#PWR?"  Part="1" 
+AR Path="/5D4FE67E" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 19700 1300 50  0001 C CNN
+F 1 "GND" V 19705 1422 50  0000 R CNN
+F 2 "" H 19700 1550 50  0001 C CNN
+F 3 "" H 19700 1550 50  0001 C CNN
+	1    19700 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19650 1150 19650 1250
+Connection ~ 19650 1250
+Wire Wire Line
+	19650 1250 19650 1350
+Connection ~ 19650 1350
+Wire Wire Line
+	19650 1350 19650 1450
+Connection ~ 19650 1450
+Wire Wire Line
+	19650 1450 19650 1550
+Connection ~ 19650 1550
+Wire Wire Line
+	19650 1550 19650 1650
+Connection ~ 19650 1650
+Wire Wire Line
+	19650 1650 19650 1750
+Connection ~ 19650 1750
+Wire Wire Line
+	19650 1750 19650 1850
+Connection ~ 19650 1850
+Wire Wire Line
+	19650 1850 19650 1950
+Wire Wire Line
+	19650 1550 19700 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5D5989DD
+P 19100 1950
+AR Path="/5C7E37E4/5D5989DD" Ref="#PWR?"  Part="1" 
+AR Path="/5D5989DD" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 19100 1700 50  0001 C CNN
+F 1 "GND" V 19105 1822 50  0000 R CNN
+F 2 "" H 19100 1950 50  0001 C CNN
+F 3 "" H 19100 1950 50  0001 C CNN
+	1    19100 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19100 1950 19150 1950
+$Sheet
+S 17700 100  600  200 
+U 5D737162
+F0 "Sheet5D737161" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 200 50 
+F3 "host" I L 17700 200 50 
+$EndSheet
+$Sheet
+S 17700 450  600  200 
+U 5D96E70D
+F0 "sheet5D96E709" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 550 50 
+F3 "host" I L 17700 550 50 
+$EndSheet
+$Sheet
+S 17700 800  600  200 
+U 5D9A1BDE
+F0 "sheet5D9A1BD9" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 900 50 
+F3 "host" I L 17700 900 50 
+$EndSheet
+$Sheet
+S 17700 1150 600  200 
+U 5D9A1BE2
+F0 "sheet5D9A1BDA" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 1250 50 
+F3 "host" I L 17700 1250 50 
+$EndSheet
+$Sheet
+S 17700 1500 600  200 
+U 5D9D50BB
+F0 "sheet5D9D50B4" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 1600 50 
+F3 "host" I L 17700 1600 50 
+$EndSheet
+$Sheet
+S 17700 1850 600  200 
+U 5D9D50BF
+F0 "sheet5D9D50B5" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 1950 50 
+F3 "host" I L 17700 1950 50 
+$EndSheet
+$Sheet
+S 17700 2200 600  200 
+U 5D9D50C3
+F0 "sheet5D9D50B6" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 2300 50 
+F3 "host" I L 17700 2300 50 
+$EndSheet
+$Sheet
+S 17700 2550 600  200 
+U 5D9D50C7
+F0 "sheet5D9D50B7" 50
+F1 "bankB_frontend.sch" 50
+F2 "target" I R 18300 2650 50 
+F3 "host" I L 17700 2650 50 
+$EndSheet
+Wire Wire Line
+	18300 200  18950 200 
+Wire Wire Line
+	18950 200  18950 1150
+Wire Wire Line
+	18950 1150 19150 1150
+Wire Wire Line
+	18300 550  18900 550 
+Wire Wire Line
+	18900 550  18900 1250
+Wire Wire Line
+	18900 1250 19150 1250
+Wire Wire Line
+	18300 900  18850 900 
+Wire Wire Line
+	18850 900  18850 1350
+Wire Wire Line
+	18850 1350 19150 1350
+Wire Wire Line
+	18300 1250 18800 1250
+Wire Wire Line
+	18800 1250 18800 1450
+Wire Wire Line
+	18800 1450 19150 1450
+Wire Wire Line
+	18300 1600 19150 1600
+Wire Wire Line
+	19150 1600 19150 1550
+Wire Wire Line
+	18300 2650 18800 2650
+Wire Wire Line
+	18800 2650 18800 1850
+Wire Wire Line
+	18800 1850 19150 1850
+Wire Wire Line
+	18300 2300 18750 2300
+Wire Wire Line
+	18750 2300 18750 1750
+Wire Wire Line
+	18750 1750 19150 1750
+Wire Wire Line
+	18300 1950 18700 1950
+Wire Wire Line
+	18700 1950 18700 1650
+Wire Wire Line
+	18700 1650 19150 1650
+$Comp
+L Memory_EEPROM:AT25xxx U8
+U 1 1 5D0F2A29
+P -9700 9600
+F 0 "U8" H -9850 9350 50  0000 C CNN
+F 1 "AT25xxx" H -9850 9250 50  0000 C CNN
+F 2 "gsg-modules:SOIC8-154" H -9700 9600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H -9700 9600 50  0001 C CNN
+F 4 "DNP" H -9900 9850 50  0000 C CNN "Note"
+	1    -9700 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-9700 9300 -9650 9300
+Wire Wire Line
+	-9700 9900 -9650 9900
+$Comp
+L power:GND #PWR0118
+U 1 1 5D161379
+P -9650 9900
+F 0 "#PWR0118" H -9650 9650 50  0001 C CNN
+F 1 "GND" V -9645 9772 50  0000 R CNN
+F 2 "" H -9650 9900 50  0001 C CNN
+F 3 "" H -9650 9900 50  0001 C CNN
+	1    -9650 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0119
+U 1 1 5D161602
+P -9650 9300
+F 0 "#PWR0119" H -9650 9150 50  0001 C CNN
+F 1 "VCC" V -9633 9428 50  0000 L CNN
+F 2 "" H -9650 9300 50  0001 C CNN
+F 3 "" H -9650 9300 50  0001 C CNN
+	1    -9650 9300
+	0    1    1    0   
+$EndComp
+Text Notes -10000 10100 0    50   ~ 0
+optional SPI flash
+Text Label -9300 9500 0    50   ~ 0
+SCK
+Text Label -10100 9700 2    50   ~ 0
+CSSPIN
+Text Label -9300 9600 0    50   ~ 0
+MOSI
+Text Label -9300 9700 0    50   ~ 0
+MISO
+$Comp
+L power:VCC #PWR0120
+U 1 1 5D16C39C
+P -10150 9550
+F 0 "#PWR0120" H -10150 9400 50  0001 C CNN
+F 1 "VCC" V -10132 9677 50  0000 L CNN
+F 2 "" H -10150 9550 50  0001 C CNN
+F 3 "" H -10150 9550 50  0001 C CNN
+	1    -10150 9550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-10150 9500 -10100 9500
+Wire Wire Line
+	-10100 9600 -10150 9600
+Wire Wire Line
+	-10150 9600 -10150 9550
+Connection ~ -10150 9550
+Wire Wire Line
+	-10150 9550 -10150 9500
+Text Label -5550 6200 3    50   ~ 0
+DIR_1
+Text Label -4150 6200 3    50   ~ 0
+A1_shift
+Text Label -3950 6200 3    50   ~ 0
+S0_1
+Text Label -4050 6200 3    50   ~ 0
+S1_1
+Text Label -2550 6200 3    50   ~ 0
+S2_1
+Text Label -2450 6200 3    50   ~ 0
+S2_2
+Text Label -13650 4700 1    50   ~ 0
+S1_2
+Text Label -2250 6200 3    50   ~ 0
+DIR_2
+Text Label -2350 6200 3    50   ~ 0
+A2_shift
+Text Label -12150 4700 1    50   ~ 0
+S0_2
+Text Label -13550 4700 1    50   ~ 0
+DIR_4
+Text Label -11850 4700 1    50   ~ 0
+A4_shift
+Text Label -11950 4700 1    50   ~ 0
+S0_4
+Text Label -12050 4700 1    50   ~ 0
+S1_4
+Text Label -10550 4700 1    50   ~ 0
+S2_4
+Text Label -7350 4700 1    50   ~ 0
+S0_6
+Text Label -8850 4700 1    50   ~ 0
+S1_6
+Text Label -8950 4700 1    50   ~ 0
+S2_6
+Text Label -8650 4700 1    50   ~ 0
+A6_shift
+Text Label -8750 4700 1    50   ~ 0
+DIR_6
+Text Label -5650 4700 1    50   ~ 0
+S0_5
+Text Label -6950 4700 1    50   ~ 0
+S1_5
+Text Label -8550 4700 1    50   ~ 0
+S2_5
+Text Label -10350 4700 1    50   ~ 0
+DIR_5
+Text Label -10450 4700 1    50   ~ 0
+A5_shift
+Wire Wire Line
+	11900 6300 11900 6600
+Text Label -9350 6200 3    50   ~ 0
+pull_sel
+Text Label -9250 6200 3    50   ~ 0
+pull_en
+Text Label -6050 6200 3    50   ~ 0
+J2.38
+$Comp
+L gsg-symbols:PCA6408A U26
+U 1 1 5D21CE35
+P 11150 8600
+F 0 "U26" H 11050 9075 50  0000 C CNN
+F 1 "PCA6408A" H 11050 8984 50  0000 C CNN
+F 2 "gsg-modules:TSSOP16" H 11150 8600 50  0001 C CNN
+F 3 "" H 11150 8600 50  0001 C CNN
+F 4 "NXP USA Inc." H 11150 8600 50  0001 C CNN "Manufacturer"
+F 5 "PCA6408APW,118" H 11150 8600 50  0001 C CNN "Part Number"
+F 6 "IC I/O EXPANDER 8BIT GP 16TSSOP" H 11150 8600 50  0001 C CNN "Description"
+	1    11150 8600
+	1    0    0    -1  
+$EndComp
+Text Label 11400 8550 0    50   ~ 0
+J2.40
+Text Label 11400 8450 0    50   ~ 0
+J2.39
+$Comp
+L power:+5V #PWR?
+U 1 1 5D2210DF
+P 11900 6300
+AR Path="/5C842523/5D2210DF" Ref="#PWR?"  Part="1" 
+AR Path="/5D2210DF" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 11900 6150 50  0001 C CNN
+F 1 "+5V" V 11915 6428 50  0000 L CNN
+F 2 "" H 11900 6300 50  0001 C CNN
+F 3 "" H 11900 6300 50  0001 C CNN
+	1    11900 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D221375
+P 11450 8350
+AR Path="/5C842523/5D221375" Ref="#PWR?"  Part="1" 
+AR Path="/5D221375" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 11450 8200 50  0001 C CNN
+F 1 "+5V" V 11465 8478 50  0000 L CNN
+F 2 "" H 11450 8350 50  0001 C CNN
+F 3 "" H 11450 8350 50  0001 C CNN
+	1    11450 8350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 8350 11450 8350
+$Comp
+L power:+5V #PWR?
+U 1 1 5D25A151
+P 10650 8450
+AR Path="/5C842523/5D25A151" Ref="#PWR?"  Part="1" 
+AR Path="/5D25A151" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 10650 8300 50  0001 C CNN
+F 1 "+5V" V 10665 8578 50  0000 L CNN
+F 2 "" H 10650 8450 50  0001 C CNN
+F 3 "" H 10650 8450 50  0001 C CNN
+	1    10650 8450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 8450 10650 8450
+$Comp
+L power:VCC #PWR0133
+U 1 1 5D29349A
+P 10650 8350
+F 0 "#PWR0133" H 10650 8200 50  0001 C CNN
+F 1 "VCC" V 10650 8550 50  0000 C CNN
+F 2 "" H 10650 8350 50  0001 C CNN
+F 3 "" H 10650 8350 50  0001 C CNN
+	1    10650 8350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 8350 10700 8350
+Wire Wire Line
+	10700 8550 10400 8550
+$Comp
+L power:VCC #PWR0137
+U 1 1 5D307922
+P 10100 8550
+F 0 "#PWR0137" H 10100 8400 50  0001 C CNN
+F 1 "VCC" V 10100 8750 50  0000 C CNN
+F 2 "" H 10100 8550 50  0001 C CNN
+F 3 "" H 10100 8550 50  0001 C CNN
+	1    10100 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5D308848
+P 10650 9050
+F 0 "#PWR0138" H 10650 8800 50  0001 C CNN
+F 1 "GND" V 10655 8922 50  0000 R CNN
+F 2 "" H 10650 9050 50  0001 C CNN
+F 3 "" H 10650 9050 50  0001 C CNN
+	1    10650 9050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 9050 10700 9050
+$Comp
+L power:VCC #PWR0139
+U 1 1 5D37C3BC
+P 12050 8650
+F 0 "#PWR0139" H 12050 8500 50  0001 C CNN
+F 1 "VCC" V 12050 8850 50  0000 C CNN
+F 2 "" H 12050 8650 50  0001 C CNN
+F 3 "" H 12050 8650 50  0001 C CNN
+	1    12050 8650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12000 8650 12050 8650
+Text Label 10700 8950 2    50   ~ 0
+DAC~SYNC~
+Text Label 11400 8750 0    50   ~ 0
+VCCA_EN
+Text Label 10700 8650 2    50   ~ 0
+DAC2_EN
+Text Label 11400 8850 0    50   ~ 0
+VCCB_EN
+Text Label 11400 9050 0    50   ~ 0
+COUT1
+Text Label 11400 8950 0    50   ~ 0
+COUT2
+Text Notes 10300 9200 0    50   ~ 0
+also comes in smaller/cheaper packages
+NoConn ~ 10700 8750
+Wire Wire Line
+	11400 8650 11700 8650
+Text Label 10700 8850 2    50   ~ 0
+div_en
+Text Label -3600 3000 1    50   ~ 0
+J2.38
+Text Label -11350 1150 2    50   ~ 0
+VCCIO0
+Text Label 18800 200  2    50   ~ 0
+B1T_P
+Text Label 18800 550  2    50   ~ 0
+B1T_N
+Text Label 18750 900  2    50   ~ 0
+B2T_P
+Text Label 18700 1250 2    50   ~ 0
+B2T_N
+Text Label 18700 1600 2    50   ~ 0
+B3T_P
+Text Label 18600 1950 2    50   ~ 0
+B3T_N
+Text Label 18600 2300 2    50   ~ 0
+B4T_P
+Text Label 18600 2650 2    50   ~ 0
+B4T_N
+Text Label 19650 1050 0    50   ~ 0
+Vtarget
+Wire Wire Line
+	19650 1050 19950 1050
+$Comp
+L Device:R R?
+U 1 1 5D235AE1
+P 20100 1050
+AR Path="/5C7E37E4/5D235AE1" Ref="R?"  Part="1" 
+AR Path="/5D235AE1" Ref="R73"  Part="1" 
+F 0 "R73" V 20200 1050 50  0000 C CNN
+F 1 "0" V 20100 1050 50  0000 C CNN
+F 2 "gsg-modules:0402" V 20030 1050 50  0001 C CNN
+F 3 "~" H 20100 1050 50  0001 C CNN
+F 4 "DNP" V 20000 1050 50  0000 C CNN "Note"
+	1    20100 1050
+	0    1    1    0   
+$EndComp
+Text Label 20250 1050 0    50   ~ 0
+ADC_A
+$Comp
+L Device:R R59
+U 1 1 5D279782
+P -8150 7300
+F 0 "R59" V -8050 7300 50  0000 C CNN
+F 1 "4.7k" V -8150 7300 50  0000 C CNN
+F 2 "gsg-modules:0402" V -8220 7300 50  0001 C CNN
+F 3 "~" H -8150 7300 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -8150 7300 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -8150 7300 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -8150 7300 50  0001 C CNN "Description"
+	1    -8150 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 5D27BC64
+P -8500 7300
+F 0 "R57" V -8400 7300 50  0000 C CNN
+F 1 "4.7k" V -8500 7300 50  0000 C CNN
+F 2 "gsg-modules:0402" V -8570 7300 50  0001 C CNN
+F 3 "~" H -8500 7300 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -8500 7300 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -8500 7300 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -8500 7300 50  0001 C CNN "Description"
+	1    -8500 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R56
+U 1 1 5D27D44B
+P -9950 6700
+F 0 "R56" V -9850 6700 50  0000 C CNN
+F 1 "4.7k" V -9950 6700 50  0000 C CNN
+F 2 "gsg-modules:0402" V -10020 6700 50  0001 C CNN
+F 3 "~" H -9950 6700 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -9950 6700 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -9950 6700 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -9950 6700 50  0001 C CNN "Description"
+	1    -9950 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D27DDC7
+P -11450 6950
+F 0 "R6" V -11350 6950 50  0000 C CNN
+F 1 "4.7k" V -11450 6950 50  0000 C CNN
+F 2 "gsg-modules:0402" V -11520 6950 50  0001 C CNN
+F 3 "~" H -11450 6950 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -11450 6950 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -11450 6950 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -11450 6950 50  0001 C CNN "Description"
+	1    -11450 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D27E2B3
+P -11800 6700
+F 0 "R4" V -11700 6700 50  0000 C CNN
+F 1 "4.7k" V -11800 6700 50  0000 C CNN
+F 2 "gsg-modules:0402" V -11870 6700 50  0001 C CNN
+F 3 "~" H -11800 6700 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -11800 6700 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -11800 6700 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -11800 6700 50  0001 C CNN "Description"
+	1    -11800 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D27E78D
+P -11600 7250
+F 0 "R5" V -11500 7250 50  0000 C CNN
+F 1 "4.7k" V -11600 7250 50  0000 C CNN
+F 2 "gsg-modules:0402" V -11670 7250 50  0001 C CNN
+F 3 "~" H -11600 7250 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -11600 7250 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -11600 7250 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -11600 7250 50  0001 C CNN "Description"
+	1    -11600 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D27F22B
+P -13350 6750
+F 0 "R1" V -13250 6750 50  0000 C CNN
+F 1 "4.7k" V -13350 6750 50  0000 C CNN
+F 2 "gsg-modules:0402" V -13420 6750 50  0001 C CNN
+F 3 "~" H -13350 6750 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -13350 6750 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -13350 6750 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -13350 6750 50  0001 C CNN "Description"
+	1    -13350 6750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D27F609
+P -13150 7250
+F 0 "R2" V -13050 7250 50  0000 C CNN
+F 1 "4.7k" V -13150 7250 50  0000 C CNN
+F 2 "gsg-modules:0402" V -13220 7250 50  0001 C CNN
+F 3 "~" H -13150 7250 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -13150 7250 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -13150 7250 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -13150 7250 50  0001 C CNN "Description"
+	1    -13150 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D27FA59
+P -12850 7250
+F 0 "R3" V -12750 7250 50  0000 C CNN
+F 1 "4.7k" V -12850 7250 50  0000 C CNN
+F 2 "gsg-modules:0402" V -12920 7250 50  0001 C CNN
+F 3 "~" H -12850 7250 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H -12850 7250 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT4K70" H -12850 7250 50  0001 C CNN "Part Number"
+F 6 "RES 4.7K OHM 5% 1/16W 0402" H -12850 7250 50  0001 C CNN "Description"
+	1    -12850 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5D2C48DB
+P 10800 1000
+F 0 "R43" V 10900 1000 50  0000 C CNN
+F 1 "100k" V 10800 1000 50  0000 C CNN
+F 2 "gsg-modules:0402" V 10730 1000 50  0001 C CNN
+F 3 "~" H 10800 1000 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 10800 1000 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT100K" H 10800 1000 50  0001 C CNN "Part Number"
+F 6 "RES 100K OHM 5% 1/16W 0402" H 10800 1000 50  0001 C CNN "Description"
+	1    10800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2CC3E8
+P 13050 3300
+AR Path="/5C7E37E4/5D2CC3E8" Ref="R?"  Part="1" 
+AR Path="/5D2CC3E8" Ref="R45"  Part="1" 
+F 0 "R45" V 12950 3350 50  0000 R CNN
+F 1 "10k" V 13050 3400 50  0000 R CNN
+F 2 "gsg-modules:0402" V 12980 3300 50  0001 C CNN
+F 3 "~" H 13050 3300 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13050 3300 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 13050 3300 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 13050 3300 50  0001 C CNN "Description"
+	1    13050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2CD2A6
+P 14200 3400
+AR Path="/5C7E37E4/5D2CD2A6" Ref="R?"  Part="1" 
+AR Path="/5D2CD2A6" Ref="R18"  Part="1" 
+F 0 "R18" V 14100 3450 50  0000 R CNN
+F 1 "10k" V 14200 3500 50  0000 R CNN
+F 2 "gsg-modules:0402" V 14130 3400 50  0001 C CNN
+F 3 "~" H 14200 3400 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 14200 3400 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 14200 3400 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 14200 3400 50  0001 C CNN "Description"
+	1    14200 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2CD4D5
+P 14200 3600
+AR Path="/5C7E37E4/5D2CD4D5" Ref="R?"  Part="1" 
+AR Path="/5D2CD4D5" Ref="R19"  Part="1" 
+F 0 "R19" V 14100 3650 50  0000 R CNN
+F 1 "10k" V 14200 3650 50  0000 R CNN
+F 2 "gsg-modules:0402" V 14130 3600 50  0001 C CNN
+F 3 "~" H 14200 3600 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 14200 3600 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 14200 3600 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 14200 3600 50  0001 C CNN "Description"
+	1    14200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5D2D59A6
+P 13700 6400
+F 0 "C9" H 13815 6446 50  0000 L CNN
+F 1 "4.7uF" H 13815 6355 50  0000 L CNN
+F 2 "gsg-modules:0402" H 13738 6250 50  0001 C CNN
+F 3 "~" H 13700 6400 50  0001 C CNN
+F 4 "Murata Electronics North America" H 13700 6400 50  0001 C CNN "Manufacturer"
+F 5 "GRM155R61A475MEAAD" H 13700 6400 50  0001 C CNN "Part Number"
+F 6 "CAP CER 4.7UF 10V X5R 0402" H 13700 6400 50  0001 C CNN "Description"
+	1    13700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5D2D6540
+P 14100 6750
+F 0 "C11" H 14215 6796 50  0000 L CNN
+F 1 "2.7nF" H 14215 6705 50  0000 L CNN
+F 2 "gsg-modules:0402" H 14138 6600 50  0001 C CNN
+F 3 "~" H 14100 6750 50  0001 C CNN
+F 4 "Yageo" H 14100 6750 50  0001 C CNN "Manufacturer"
+F 5 "CC0402KRX7R9BB272" H 14100 6750 50  0001 C CNN "Part Number"
+F 6 "CAP CER 2700PF 50V X7R 0402" H 14100 6750 50  0001 C CNN "Description"
+	1    14100 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5D2D6A9F
+P 13900 6750
+F 0 "R8" H 13830 6704 50  0000 R CNN
+F 1 "89.8k" H 13830 6795 50  0000 R CNN
+F 2 "gsg-modules:0402" V 13830 6750 50  0001 C CNN
+F 3 "~" H 13900 6750 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13900 6750 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT88K7" H 13900 6750 50  0001 C CNN "Part Number"
+F 6 "RES 88.7K OHM 1% 1/16W 0402" H 13900 6750 50  0001 C CNN "Description"
+	1    13900 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 6600 13900 6600
+Connection ~ 13900 6600
+Wire Wire Line
+	13900 6600 14100 6600
+$Comp
+L Device:R R11
+U 1 1 5D2D6EAE
+P 13900 7150
+F 0 "R11" V 14107 7150 50  0000 C CNN
+F 1 "20k" V 14016 7150 50  0000 C CNN
+F 2 "gsg-modules:0402" V 13830 7150 50  0001 C CNN
+F 3 "~" H 13900 7150 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13900 7150 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT20K0" H 13900 7150 50  0001 C CNN "Part Number"
+F 6 "RES 20K OHM 5% 1/16W 0402" H 13900 7150 50  0001 C CNN "Description"
+	1    13900 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5D2D75A4
+P 14300 6950
+F 0 "R16" V 14507 6950 50  0000 C CNN
+F 1 "118.1k" V 14400 6950 50  0000 C CNN
+F 2 "gsg-modules:0402" V 14230 6950 50  0001 C CNN
+F 3 "~" H 14300 6950 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 14300 6950 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402FT118K" H 14300 6950 50  0001 C CNN "Part Number"
+F 6 "RES 118K OHM 1% 1/16W 0402" H 14300 6950 50  0001 C CNN "Description"
+	1    14300 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5D2D8FC2
+P 13700 8000
+F 0 "C10" H 13815 8046 50  0000 L CNN
+F 1 "4.7uF" H 13815 7955 50  0000 L CNN
+F 2 "gsg-modules:0402" H 13738 7850 50  0001 C CNN
+F 3 "~" H 13700 8000 50  0001 C CNN
+F 4 "Murata Electronics North America" H 13700 8000 50  0001 C CNN "Manufacturer"
+F 5 "GRM155R61A475MEAAD" H 13700 8000 50  0001 C CNN "Part Number"
+F 6 "CAP CER 4.7UF 10V X5R 0402" H 13700 8000 50  0001 C CNN "Description"
+	1    13700 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5D2D95C3
+P 14100 8350
+F 0 "C12" H 14215 8396 50  0000 L CNN
+F 1 "2.7nF" H 14215 8305 50  0000 L CNN
+F 2 "gsg-modules:0402" H 14138 8200 50  0001 C CNN
+F 3 "~" H 14100 8350 50  0001 C CNN
+F 4 "Yageo" H 14100 8350 50  0001 C CNN "Manufacturer"
+F 5 "CC0402KRX7R9BB272" H 14100 8350 50  0001 C CNN "Part Number"
+F 6 "CAP CER 2700PF 50V X7R 0402" H 14100 8350 50  0001 C CNN "Description"
+	1    14100 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 8200 14100 8200
+Connection ~ 14100 8200
+Wire Wire Line
+	14100 8200 14150 8200
+$Comp
+L Device:R R13
+U 1 1 5D2D9E35
+P 13900 8750
+F 0 "R13" V 14107 8750 50  0000 C CNN
+F 1 "20k" V 14016 8750 50  0000 C CNN
+F 2 "gsg-modules:0402" V 13830 8750 50  0001 C CNN
+F 3 "~" H 13900 8750 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 13900 8750 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT20K0" H 13900 8750 50  0001 C CNN "Part Number"
+F 6 "RES 20K OHM 5% 1/16W 0402" H 13900 8750 50  0001 C CNN "Description"
+	1    13900 8750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2DC3E2
+P 11900 6750
+AR Path="/5C7E37E4/5D2DC3E2" Ref="R?"  Part="1" 
+AR Path="/5D2DC3E2" Ref="R15"  Part="1" 
+F 0 "R15" V 11800 6800 50  0000 R CNN
+F 1 "10k" V 11900 6800 50  0000 R CNN
+F 2 "gsg-modules:0402" V 11830 6750 50  0001 C CNN
+F 3 "~" H 11900 6750 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 11900 6750 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 11900 6750 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 11900 6750 50  0001 C CNN "Description"
+	1    11900 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D2DD8D4
+P 10250 8550
+AR Path="/5C7E37E4/5D2DD8D4" Ref="R?"  Part="1" 
+AR Path="/5D2DD8D4" Ref="R71"  Part="1" 
+F 0 "R71" V 10150 8600 50  0000 R CNN
+F 1 "10k" V 10250 8600 50  0000 R CNN
+F 2 "gsg-modules:0402" V 10180 8550 50  0001 C CNN
+F 3 "~" H 10250 8550 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 10250 8550 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 10250 8550 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 10250 8550 50  0001 C CNN "Description"
+	1    10250 8550
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	-5400 2700 -3400 2700
 Wire Bus Line
@@ -4592,4 +5129,20 @@ Wire Bus Line
 	-12700 9100 -10900 9100
 Wire Bus Line
 	-2150 4150 -400 4150
+$Comp
+L Device:R R?
+U 1 1 5D318884
+P 11850 8650
+AR Path="/5C7E37E4/5D318884" Ref="R?"  Part="1" 
+AR Path="/5D318884" Ref="R72"  Part="1" 
+F 0 "R72" V 11750 8700 50  0000 R CNN
+F 1 "10k" V 11850 8700 50  0000 R CNN
+F 2 "gsg-modules:0402" V 11780 8650 50  0001 C CNN
+F 3 "~" H 11850 8650 50  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 11850 8650 50  0001 C CNN "Manufacturer"
+F 5 "RMCF0402JT10K0" H 11850 8650 50  0001 C CNN "Part Number"
+F 6 "RES 10K OHM 5% 1/16W 0402" H 11850 8650 50  0001 C CNN "Description"
+	1    11850 8650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
