@@ -1352,6 +1352,7 @@ F 3 "~" H 10050 6700 50  0001 C CNN
 F 4 "AVX Corporation" H 10050 6700 50  0001 C CNN "Manufacturer"
 F 5 "F981A106MMA" H 10050 6700 50  0001 C CNN "Part Number"
 F 6 "CAP TANT 10UF 20% 10V 0603  " H 10050 6700 50  0001 C CNN "Description"
+F 7 "DNP" H 10150 6600 50  0000 C CNN "Note"
 	1    10050 6700
 	-1   0    0    1   
 $EndComp
@@ -3436,7 +3437,7 @@ F 3 "" H 12750 8150 50  0001 C CNN
 $EndComp
 Text Notes 12700 7800 0    50   ~ 0
 1.14 <VCCB < 3.465
-Text Notes 12350 2600 0    50   ~ 0
+Text Notes 11750 2650 0    50   ~ 0
 ADC voltage divider / pull-up / pull-down
 Text Notes 9650 1100 0    50   ~ 0
 1.1V, 2.5V power supplies
@@ -4128,6 +4129,7 @@ F 3 "~" H 11350 6450 50  0001 C CNN
 F 4 "AVX Corporation" H 11350 6450 50  0001 C CNN "Manufacturer"
 F 5 "F981A106MMA" H 11350 6450 50  0001 C CNN "Part Number"
 F 6 "CAP TANT 10UF 20% 10V 0603  " H 11350 6450 50  0001 C CNN "Description"
+F 7 "DNP" H 11450 6350 50  0000 C CNN "Note"
 	1    11350 6450
 	-1   0    0    1   
 $EndComp
@@ -4303,16 +4305,16 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J4
 U 1 1 5D4FD960
-P 19350 1450
-F 0 "J4" H 19400 2067 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 19400 1976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19350 1450 50  0001 C CNN
-F 3 "~" H 19350 1450 50  0001 C CNN
-F 4 "Sullins Connector Solutions" H 19350 1450 50  0001 C CNN "Manufacturer"
-F 5 "SBH11-PBPC-D10-RA-BK" H 19350 1450 50  0001 C CNN "Part Number"
-F 6 "CONN HEADER R/A 20POS 2.54MM" H 19350 1450 50  0001 C CNN "Description"
-	1    19350 1450
-	1    0    0    -1  
+P 19450 1550
+F 0 "J4" H 19500 2167 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 19500 2076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19450 1550 50  0001 C CNN
+F 3 "~" H 19450 1550 50  0001 C CNN
+F 4 "Sullins Connector Solutions" H 19450 1550 50  0001 C CNN "Manufacturer"
+F 5 "SBH11-PBPC-D10-RA-BK" H 19450 1550 50  0001 C CNN "Part Number"
+F 6 "CONN HEADER R/A 20POS 2.54MM" H 19450 1550 50  0001 C CNN "Description"
+	1    19450 1550
+	-1   0    0    1   
 $EndComp
 Text Label 19150 1050 2    50   ~ 0
 VCCB
@@ -5119,16 +5121,6 @@ F 6 "RES 10K OHM 5% 1/16W 0402" H 10250 8550 50  0001 C CNN "Description"
 	1    10250 8550
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	-5400 2700 -3400 2700
-Wire Bus Line
-	-5700 3800 -3400 3800
-Wire Bus Line
-	-13800 8000 -10900 8000
-Wire Bus Line
-	-12700 9100 -10900 9100
-Wire Bus Line
-	-2150 4150 -400 4150
 $Comp
 L Device:R R?
 U 1 1 5D318884
@@ -5145,4 +5137,174 @@ F 6 "RES 10K OHM 5% 1/16W 0402" H 11850 8650 50  0001 C CNN "Description"
 	1    11850 8650
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D434205
+P 13500 1700
+F 0 "TP8" H 13550 1800 50  0000 L CNN
+F 1 "TestPoint" H 13350 1900 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1" H 13700 1700 50  0001 C CNN
+F 3 "~" H 13700 1700 50  0001 C CNN
+	1    13500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5D4347AB
+P 13500 1750
+F 0 "#PWR0140" H 13500 1500 50  0001 C CNN
+F 1 "GND" H 13500 1600 50  0000 C CNN
+F 2 "" H 13500 1750 50  0001 C CNN
+F 3 "" H 13500 1750 50  0001 C CNN
+	1    13500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 1700 13500 1750
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5D4A93E9
+P 13850 1700
+F 0 "TP10" H 13900 1800 50  0000 L CNN
+F 1 "TestPoint" H 13700 1900 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1" H 14050 1700 50  0001 C CNN
+F 3 "~" H 14050 1700 50  0001 C CNN
+	1    13850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 5D4A93F0
+P 13850 1750
+F 0 "#PWR0141" H 13850 1500 50  0001 C CNN
+F 1 "GND" H 13850 1600 50  0000 C CNN
+F 2 "" H 13850 1750 50  0001 C CNN
+F 3 "" H 13850 1750 50  0001 C CNN
+	1    13850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 1700 13850 1750
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5D4E3991
+P 14200 1700
+F 0 "TP12" H 14250 1800 50  0000 L CNN
+F 1 "TestPoint" H 14050 1900 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1" H 14400 1700 50  0001 C CNN
+F 3 "~" H 14400 1700 50  0001 C CNN
+	1    14200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5D4E3998
+P 14200 1750
+F 0 "#PWR0142" H 14200 1500 50  0001 C CNN
+F 1 "GND" H 14200 1600 50  0000 C CNN
+F 2 "" H 14200 1750 50  0001 C CNN
+F 3 "" H 14200 1750 50  0001 C CNN
+	1    14200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 1700 14200 1750
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5D4E399F
+P 14550 1700
+F 0 "TP14" H 14600 1800 50  0000 L CNN
+F 1 "TestPoint" H 14400 1900 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1" H 14750 1700 50  0001 C CNN
+F 3 "~" H 14750 1700 50  0001 C CNN
+	1    14550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5D4E39A6
+P 14550 1750
+F 0 "#PWR0143" H 14550 1500 50  0001 C CNN
+F 1 "GND" H 14550 1600 50  0000 C CNN
+F 2 "" H 14550 1750 50  0001 C CNN
+F 3 "" H 14550 1750 50  0001 C CNN
+	1    14550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 1700 14550 1750
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5D55A260
+P 13500 2200
+F 0 "TP9" H 13550 2300 50  0000 L CNN
+F 1 "TestPoint" H 13350 2400 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1-TESTPROBE" H 13700 2200 50  0001 C CNN
+F 3 "~" H 13700 2200 50  0001 C CNN
+	1    13500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 2200 13500 2250
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5D55A26E
+P 13850 2200
+F 0 "TP11" H 13900 2300 50  0000 L CNN
+F 1 "TestPoint" H 13700 2400 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1-TESTPROBE" H 14050 2200 50  0001 C CNN
+F 3 "~" H 14050 2200 50  0001 C CNN
+	1    13850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 2200 13850 2250
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5D55A27C
+P 14200 2200
+F 0 "TP13" H 14250 2300 50  0000 L CNN
+F 1 "TestPoint" H 14050 2400 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1-TESTPROBE" H 14400 2200 50  0001 C CNN
+F 3 "~" H 14400 2200 50  0001 C CNN
+	1    14200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 2200 14200 2250
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5D55A28A
+P 14550 2200
+F 0 "TP15" H 14600 2300 50  0000 L CNN
+F 1 "TestPoint" H 14400 2400 50  0000 L CNN
+F 2 "gsg-modules:HEADER-1x1-TESTPROBE" H 14750 2200 50  0001 C CNN
+F 3 "~" H 14750 2200 50  0001 C CNN
+	1    14550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 2200 14550 2250
+Text Label 13500 2250 0    50   ~ 0
+VCCA
+Text Label 13850 2250 0    50   ~ 0
+VCCA
+Text Label 14200 2250 0    50   ~ 0
+VCCB
+Text Label 14550 2250 0    50   ~ 0
+VCCB
+Text Notes 13450 1400 0    50   ~ 0
+through-hole test points\non board ends
+Text Notes 9850 6150 0    50   ~ 0
+DNP 10uF tant caps?
+Wire Bus Line
+	-5400 2700 -3400 2700
+Wire Bus Line
+	-5700 3800 -3400 3800
+Wire Bus Line
+	-13800 8000 -10900 8000
+Wire Bus Line
+	-12700 9100 -10900 9100
+Wire Bus Line
+	-2150 4150 -400 4150
 $EndSCHEMATC
