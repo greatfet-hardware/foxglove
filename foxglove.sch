@@ -4305,16 +4305,16 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J4
 U 1 1 5D4FD960
-P 19350 1450
-F 0 "J4" H 19400 2067 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 19400 1976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19350 1450 50  0001 C CNN
-F 3 "~" H 19350 1450 50  0001 C CNN
-F 4 "Sullins Connector Solutions" H 19350 1450 50  0001 C CNN "Manufacturer"
-F 5 "SBH11-PBPC-D10-RA-BK" H 19350 1450 50  0001 C CNN "Part Number"
-F 6 "CONN HEADER R/A 20POS 2.54MM" H 19350 1450 50  0001 C CNN "Description"
-	1    19350 1450
-	1    0    0    -1  
+P 19450 1550
+F 0 "J4" H 19500 2167 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 19500 2076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 19450 1550 50  0001 C CNN
+F 3 "~" H 19450 1550 50  0001 C CNN
+F 4 "Sullins Connector Solutions" H 19450 1550 50  0001 C CNN "Manufacturer"
+F 5 "SBH11-PBPC-D10-RA-BK" H 19450 1550 50  0001 C CNN "Part Number"
+F 6 "CONN HEADER R/A 20POS 2.54MM" H 19450 1550 50  0001 C CNN "Description"
+	1    19450 1550
+	-1   0    0    1   
 $EndComp
 Text Label 19150 1050 2    50   ~ 0
 VCCB
@@ -5285,16 +5285,6 @@ F 3 "~" H 14750 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14550 2200 14550 2250
-Wire Bus Line
-	-5400 2700 -3400 2700
-Wire Bus Line
-	-5700 3800 -3400 3800
-Wire Bus Line
-	-13800 8000 -10900 8000
-Wire Bus Line
-	-12700 9100 -10900 9100
-Wire Bus Line
-	-2150 4150 -400 4150
 Text Label 13500 2250 0    50   ~ 0
 VCCA
 Text Label 13850 2250 0    50   ~ 0
@@ -5307,4 +5297,14 @@ Text Notes 13450 1400 0    50   ~ 0
 through-hole test points\non board ends
 Text Notes 9850 6150 0    50   ~ 0
 DNP 10uF tant caps?
+Wire Bus Line
+	-5400 2700 -3400 2700
+Wire Bus Line
+	-5700 3800 -3400 3800
+Wire Bus Line
+	-13800 8000 -10900 8000
+Wire Bus Line
+	-12700 9100 -10900 9100
+Wire Bus Line
+	-2150 4150 -400 4150
 $EndSCHEMATC
