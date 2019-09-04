@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:foxglove-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 17
+Sheet 2 17
 Title ""
 Date ""
 Rev ""
@@ -34,7 +34,7 @@ AR Path="/5D9D50BB/5D737602" Ref="C47"  Part="1"
 AR Path="/5D9D50BF/5D737602" Ref="C48"  Part="1" 
 AR Path="/5D9D50C3/5D737602" Ref="C49"  Part="1" 
 AR Path="/5D9D50C7/5D737602" Ref="C50"  Part="1" 
-F 0 "C50" H 5065 4796 50  0000 L CNN
+F 0 "C?" H 5065 4796 50  0000 L CNN
 F 1 "0.1uF" H 5065 4705 50  0000 L CNN
 F 2 "gsg-modules:0402" H 4988 4600 50  0001 C CNN
 F 3 "~" H 4950 4750 50  0001 C CNN
@@ -64,7 +64,7 @@ AR Path="/5D9D50BB/5D73760C" Ref="R67"  Part="1"
 AR Path="/5D9D50BF/5D73760C" Ref="R68"  Part="1" 
 AR Path="/5D9D50C3/5D73760C" Ref="R69"  Part="1" 
 AR Path="/5D9D50C7/5D73760C" Ref="R70"  Part="1" 
-F 0 "R70" V 4850 4600 50  0000 C CNN
+F 0 "R?" V 4850 4600 50  0000 C CNN
 F 1 "100" V 4950 4600 50  0000 C CNN
 F 2 "gsg-modules:0402" V 4880 4600 50  0001 C CNN
 F 3 "~" H 4950 4600 50  0001 C CNN
