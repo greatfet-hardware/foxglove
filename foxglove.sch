@@ -191,13 +191,13 @@ $EndComp
 Wire Wire Line
 	14100 1050 14100 1000
 Text Label 15900 3650 3    50   ~ 0
-SSEL
+CS
 Text Label 15900 3150 1    50   ~ 0
 SCK
 Text Label 16000 3650 3    50   ~ 0
-MOSI
+COPI
 Text Label 16000 3150 1    50   ~ 0
-MISO
+CIPO
 Wire Wire Line
 	14100 1600 14100 1550
 Wire Wire Line
@@ -844,7 +844,7 @@ VCCA
 Text Label 8350 1500 0    50   ~ 0
 SCK
 Text Label 8350 1700 0    50   ~ 0
-MOSI
+COPI
 Text Label 8850 1600 0    50   ~ 0
 DAC~SYNC~
 $Comp
@@ -2211,7 +2211,7 @@ J1.29
 Text Label 2900 8500 3    50   ~ 0
 J1.26
 Text Label 3300 8500 3    50   ~ 0
-SSEL
+CS
 Text Label 3500 8500 3    50   ~ 0
 J1.23
 Text Label 3600 8500 3    50   ~ 0
@@ -2233,9 +2233,9 @@ Wire Wire Line
 Wire Wire Line
 	6150 9450 6150 8950
 Text Label 1700 8500 3    50   ~ 0
-MOSI
+COPI
 Text Label 1800 8500 3    50   ~ 0
-MISO
+CIPO
 Text Label 2300 8500 3    50   ~ 0
 J1.16
 Text Label 2200 8500 3    50   ~ 0
@@ -3971,9 +3971,9 @@ SCK
 Text Label 10700 9900 2    50   ~ 0
 CSSPIN
 Text Label 11500 9800 0    50   ~ 0
-MOSI
+COPI
 Text Label 11500 9900 0    50   ~ 0
-MISO
+CIPO
 $Comp
 L power:VCC #PWR0120
 U 1 1 5D16C39C
